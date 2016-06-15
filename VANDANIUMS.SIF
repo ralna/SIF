@@ -12,8 +12,8 @@ NAME          VANDANIUMS
 
 *   Fit: y = BS(x,b) + e
 
-*   Source: fit to a cubic B-spline to data 
-*     vanadium_pattern_enginx236516_bank1.txt from Mantid 
+*   Source: fit to a cubic B-spline to data
+*     vanadium_pattern_enginx236516_bank1.txt from Mantid
 *     (http://www.mantidproject.org)
 *     obtained from a bank of detectors of ISIS's ENGIN-X
 
@@ -102,7 +102,7 @@ CONSTANTS
  R/ EINV      ONE                      E
  A* YOVERE    EINV                     Y(I)
  Z  VESUVIO   F(I)                     YOVERE
- ND        
+ ND
 
 BOUNDS
 
@@ -150,7 +150,7 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN               
+*LO SOLTN
 
 ENDATA
 
@@ -164,6 +164,7 @@ ELEMENTS      VANDANIUMS
 TEMPORARIES
 
  R  BK
+ R  B
  F  B
 
 INDIVIDUALS
@@ -197,10 +198,10 @@ C
       ELSE IF ( xx .GE. x0 + h ) THEN
         b = ( twoh - ( xx - x0 ) ** 3 ) / 6.0D0
       ELSE IF ( xx .LE. x0 ) THEN
-        b = twoh * h * h / 3.0D0 
+        b = twoh * h * h / 3.0D0
      *      - 5.0D-1 * ( twoh + xx - x0 ) * ( xx - x0 ) ** 2
       ELSE
-        b = twoh * h * h / 3.0D0 
+        b = twoh * h * h / 3.0D0
      *      - 5.0D-1 * ( twoh - xx + x0 ) * ( xx - x0 ) ** 2
       END IF
       RETURN
