@@ -20,6 +20,7 @@ NAME          NONCVXU2
 *IE N                   1000           $-PARAMETER     original value
  IE N                   5000           $-PARAMETER
 *IE N                   10000          $-PARAMETER
+*IE N                   100000         $-PARAMETER
 
 *  Other useful values.
 
@@ -52,6 +53,8 @@ START POINT
  ZV NONCVXU2  X(I)                     RI
  ND
 
+ V  START2    'DEFAULT' 0.6318
+
 ELEMENT TYPE
 
  EV SQ        V1                       V2
@@ -64,7 +67,7 @@ ELEMENT TYPE
 
 ELEMENT USES
 
-*  the i-th square and cosine elements have nonzeros in positions 
+*  the i-th square and cosine elements have nonzeros in positions
 *  i, mod( 3i - 2, n ) + 1 and mod( 7i - 3, n ) + 1
 
  DO I         1                        N
@@ -76,7 +79,7 @@ ELEMENT USES
  IA J         J         -2
  I/ K         J                        N
  I* K         K                        N
- I- J         J                        K 
+ I- J         J                        K
  IA J         J         1
  ZV SQ(I)     V2                       X(J)
  ZV COS(I)    V2                       X(J)
@@ -84,7 +87,7 @@ ELEMENT USES
  IA J         J         -3
  I/ K         J                        N
  I* K         K                        N
- I- J         J                        K 
+ I- J         J                        K
  IA J         J         1
  ZV SQ(I)     V3                       X(J)
  ZV COS(I)    V3                       X(J)
@@ -103,9 +106,11 @@ OBJECT BOUND
 *   Solution
 
 *LO SOLUTION            2.3168084D+1   $ (n=10)
-*LO SOLUTION            2.3226637D+2   $ (n=100)
-*LO SOLUTION            2.3178668D+3   $ (n=1000)
-*LO SOLUTION            2.3168368D+4   $ (n=10000)
+*LO SOLUTION            2.3168084D+2   $ (n=100)
+*LO SOLUTION            2.3168084D+3   $ (n=1000)
+*LO SOLUTION            1.1584042E+4   $ (n=5000)
+*LO SOLUTION            2.3168084D+4   $ (n=10000)
+*LO SOLUTION            2.3168084D+5   $ (n=100000)
 
 ENDATA
 
@@ -125,14 +130,14 @@ TEMPORARIES
 INDIVIDUALS
 
  T  SQ
- R  V         V1        1.0            V2        1.0       
+ R  V         V1        1.0            V2        1.0
  R  V         V3        1.0
  F                      V * V
  G  V                   V + V
  H  V         V         2.0
 
  T  COS
- R  V         V1        1.0            V2        1.0       
+ R  V         V1        1.0            V2        1.0
  R  V         V3        1.0
  A  COSV                4.0 * COS( V )
  F                      COSV
