@@ -8,8 +8,10 @@ NAME          HAGER4
 *   *********
 
 *   A nonlinear optimal control problem, by W. Hager.
-*   The solution given by Hager is dubious, since x(t) is not
-*   continuous at 1/2.
+
+*   NOTE: The solution for x given in the article below by Hager has
+*   a typo. On the interval [1/2, 1], x(t) = (exp(2t) + exp(t))/d. In
+*   other words, the minus sign in the article should be a plus sign.
 
 *   Source: problem P4 in
 *   W.W. Hager,
