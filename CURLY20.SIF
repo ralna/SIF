@@ -59,7 +59,7 @@ BOUNDS
 
 START POINT
 
-*  start with X(I) = 0.0001/N+1.
+*  start with X(I) = 0.0001 * I / (N+1).
 
  DO I         1                        N
 
