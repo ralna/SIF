@@ -80,7 +80,7 @@ START POINT
  RI RI        I
  R/ T         RI                       RN+1
  RM T         T         0.0001
- AM T         T                        S(I)
+ A* T         T                        S(I)
  ZV SCURLY10  X(I)                     T
 
  ND
