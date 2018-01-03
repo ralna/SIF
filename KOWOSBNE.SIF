@@ -20,7 +20,7 @@ NAME          KOWOSBNE
 *   SIF input: Ph. Toint, Dec 1989.
 *   Modification as a set of nonlinear equations: Nick Gould, Oct 2015.
 
-*   classification SUR2-MN-4-11
+*   classification NOR2-MN-4-11
 
 *   This function  is a nonlinear least squares with 11 groups.  Each
 *   group has a linear and a nonlinear element.
