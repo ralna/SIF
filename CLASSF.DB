@@ -426,7 +426,7 @@ GAUSS2LS   SUR2-MN-        8-        0
 GAUSS3     NOR2-MN-        8-      250
 GAUSS3LS   SUR2-MN-        8-        0
 GAUSSELM   LOR2-AN-        V-        V
-GAUSSIAN   SOR2-AN-        3-        0
+GAUSSIAN   SUR2-AN-        3-        0
 GBRAIN     NOR2-AN-        2-     2200
 GBRAINLS   SUR2-MN-        2-        0
 GENHS28    QLR2-AY-       10-        8
