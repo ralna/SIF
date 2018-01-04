@@ -392,10 +392,10 @@ EXTRASIM   LLR2-AN-        2-        1
 EXTROSNB   SUR2-AN-        V-        0
 FBRAIN     NOR2-AN-        2-     2211
 FBRAIN2    NOR2-AN-        4-     2211
-FBRAIN2LS  SUR2-AN-        4-        0
+FBRAIN2LS  SBR2-AN-        4-        0
 FBRAIN3    NOR2-AN-        6-     2211
 FBRAIN3LS  SUR2-AN-        6-        0
-FBRAINLS   SUR2-AN-        2-        0
+FBRAINLS   SBR2-AN-        2-        0
 FCCU       SLR2-MN-       19-        8
 FEEDLOC    LOR2-AN-       90-      259
 FERRISDC   QLR2-AN-        V-        V
