@@ -1269,10 +1269,10 @@ VESUVIOU   NOR2-MN-        8-     1025
 VESUVIOULS SUR2-MN-        8-        0
 VIBRBEAM   SUR2-MN-        8-        0
 WACHBIEG   LQR2-AN-        3-        2
-WALL10     QLR2-RN-     1461-        0
-WALL100    QLR2-RN-   149624-        0
-WALL20     QLR2-RN-     5924-        0
-WALL50     QLR2-RN-    37311-        0
+WALL10     QBR2-RN-     1461-        0
+WALL100    QBR2-RN-   149624-        0
+WALL20     QBR2-RN-     5924-        0
+WALL50     QBR2-RN-    37311-        0
 WATER      ONR2-MN-       31-       10
 WATSON     SUR2-AN-        V-        0
 WATSONNE   NOR2-AN-        V-       31
