@@ -107,7 +107,7 @@ BA-L52LS   SUR2-MN-   192627-        0
 BA-L73     NOR2-MN-    33753-    46122
 BA-L73LS   SUR2-MN-    33753-        0
 BARD       SUR2-AN-        3-        0
-BARDNE     NOR2-AN-        3-        0
+BARDNE     NOR2-AN-        3-       15
 BATCH      OOR2-AN-       46-       73
 BDEXP      OBR2-AY-        V-        0
 BDQRTIC    SUR2-AN-        V-        0
@@ -121,7 +121,7 @@ BIGBANK    ONI2-RN-     2230-     1112
 BIGGS3     SXR2-AN-        6-        0
 BIGGS5     SXR2-AN-        6-        0
 BIGGS6     SUR2-AN-        6-        0
-BIGGS6NE   NOR2-AN-        6-        0
+BIGGS6NE   NOR2-AN-        6-       13
 BIGGSB1    QBR2-AN-        V-        V
 BIGGSC4    QLR2-AN-        4-        7
 BLEACHNG   SBR1-RN-       17-        0
@@ -137,7 +137,7 @@ BOOTH      NLR2-AN-        2-        2
 BOX        OUR2-AN-        V-        0
 BOX2       SXR2-AN-        3-        0
 BOX3       SUR2-AN-        3-        0
-BOX3NE     NOR2-AN-        3-        0
+BOX3NE     NOR2-AN-        3-       10
 BOXBOD     NOR2-MN-        2-        6
 BOXBODLS   SUR2-MN-        2-        0
 BOXPOWER   OUR2-AN-        V-        0
@@ -166,7 +166,7 @@ BROWNAL    SUR2-AN-        V-        0
 BROWNALE   NOR2-AN-        V-        0
 BROWNBS    SUR2-AN-        2-        0
 BROWNDEN   SUR2-AN-        4-        0
-BROWNDENE  NOR2-AN-        4-        0
+BROWNDENE  NOR2-AN-        4-       20
 BROYDN3D   NQR2-AN-        V-        V
 BROYDN3DLS SUR2-AN-        V-        0
 BROYDN7D   OUR2-AN-        V-        0
@@ -306,7 +306,7 @@ DIXMAANP   OUR2-AN-        V-        0
 DIXON3DQ   QUR2-AN-        V-        0
 DJTL       OUR2-AN-        2-        0
 DMN15102   NOR2-MN-       66-     4643
-DMN15102LS NOR2-MN-        2-       66
+DMN15102LS NOR2-MN-       66-        0
 DMN15103   NOR2-MN-       99-     4643
 DMN15103LS SUR2-MN-       99-        0
 DMN15332   NOR2-MN-       66-     4643
@@ -416,7 +416,7 @@ FLOSP2TM   NQR2-MY-        V-        V
 FLT        QOR2-AN-        2-        2
 FMINSRF2   OUR2-MY-        V-        0
 FMINSURF   OUR2-MY-        V-        0
-FREURONE   NOR2-AN-        V-        0
+FREURONE   NOR2-AN-        V-        V
 FREUROTH   SUR2-AN-        V-        0
 GASOIL     OOR2-AN-        V-        V
 GAUSS1     NOR2-MN-        8-      250
@@ -493,7 +493,7 @@ HEART6LS   SUR2-MN-        6-        0
 HEART8     NOR2-MN-        8-        8
 HEART8LS   SUR2-MN-        8-        0
 HELIX      SUR2-AN-        3-        0
-HELIXNE    NOR2-AN-        3-        0
+HELIXNE    NOR2-AN-        3-        3
 HELSBY     LOR2-AN-     1408-     1399
 HET-Z      LQR2-AN-        2-        V
 HIE1327D   QLR2-RN-     1183-     1443
@@ -678,7 +678,7 @@ INTEQNELS  SUR2-AN-        V-        0
 JANNSON3   OQR2-AN-        V-        3
 JANNSON4   OQR2-AN-        V-        2
 JENSMP     OUR2-AN-        2-        0
-JENSMPNE   NOR2-AN-        2-        0
+JENSMPNE   NOR2-AN-        2-       10
 JIMACK     OUR2-AN-     3549-        0
 JJTABEL3   QLR2-RN-     3025-     1650
 JNLBRNG1   QBR2-AY-        V-        0
@@ -693,7 +693,7 @@ KISSING2   QQR2-RN-        V-        V
 KIWCRESC   LQR2-AN-        3-        2
 KOEBHELB   SBR2-RN-        3-        0
 KOWOSB     SUR2-MN-        4-        0
-KOWOSBNE   NOR2-MN-        4-        0
+KOWOSBNE   NOR2-MN-        4-       11
 KSIP       QLR2-AN-       20-     1001
 KSS        NOR2-AN-        V-        0
 KTMODEL    NOR2-MN-      720-      450
@@ -826,7 +826,7 @@ METHANL8   NOR2-MN-       31-       31
 METHANOL   OOR2-AN-        V-        V
 MEXHAT     OUR2-AN-        2-        0
 MEYER3     SUR2-RN-        3-        0
-MEYER3NE   NOR2-RN-        3-        0
+MEYER3NE   NOR2-RN-        3-       16
 MGH09      NOR2-MN-        4-       11
 MGH09LS    SUR2-MN-        4-        0
 MGH10      NOR2-MN-        3-       16
@@ -855,7 +855,7 @@ MISTAKE    QQR2-AY-        9-       13
 MODBEALE   SUR2-AN-        V-        0
 MODEL      LLR2-AN-     1557-       38
 MOREBV     SUR2-MN-        V-        0
-MOREBVNE   NOR2-MN-        V-        0
+MOREBVNE   NOR2-MN-        V-        V
 MOSARQP1   QLR2-AN-        V-        V
 MOSARQP2   QLR2-AN-        V-        V
 MPC1       QLR2-RN-     2549-     3832
@@ -952,8 +952,8 @@ ORTHREGE   QOR2-AY-        V-        V
 ORTHREGF   QOR2-AY-        V-        V
 ORTHRGDM   QOR2-AY-        V-        V
 ORTHRGDS   QOR2-AY-        V-        V
-OSBORNE1   NOR2-MN-        5-        0
-OSBORNE2   NOR2-MN-       11-        0
+OSBORNE1   NOR2-MN-        5-       33
+OSBORNE2   NOR2-MN-       11-       65
 OSBORNEA   SUR2-MN-        5-        0
 OSBORNEB   SUR2-MN-       11-        0
 OSCIGRAD   SUR2-AN-        V-        0
@@ -1003,8 +1003,8 @@ PDE2       LLR2-AN-        V-        V
 PENALTY1   SUR2-AN-        V-        0
 PENALTY2   SUR2-AN-        V-        0
 PENALTY3   OUR2-AY-        V-        0
-PENLT1NE   NOR2-AN-        V-        0
-PENLT2NE   NOR2-AN-        V-        0
+PENLT1NE   NOR2-AN-        V-        V
+PENLT2NE   NOR2-AN-        V-        V
 PENTAGON   OLR2-AY-        6-       15
 PENTDI     QBR2-AN-        V-        0
 PFIT1      NOR2-AN-        3-        3
@@ -1036,7 +1036,7 @@ POWELL20   QLR2-AN-        V-        V
 POWELLBC   OBR2-AN-        V-        0
 POWELLBS   NOR2-AN-        2-        2
 POWELLBSLS SUR2-AN-        2-        0
-POWELLSE   NOR2-AN-        V-        0
+POWELLSE   NOR2-AN-        V-        V
 POWELLSG   OUR2-AN-        V-        0
 POWELLSQ   NOR2-AN-        2-        2
 POWER      OUR2-AN-        V-        0
@@ -1259,7 +1259,7 @@ VANDERM2   NOR2-AN-        V-        V
 VANDERM3   NOR2-AN-        V-        V
 VANDERM4   NOR2-AN-        V-        V
 VARDIM     OUR2-AN-        V-        0
-VARDIMNE   NOR2-AN-        V-        0
+VARDIMNE   NOR2-AN-        V-        V
 VAREIGVL   SUR2-AN-        V-        0
 VESUVIA    NOR2-MN-        8-     1025
 VESUVIALS  SUR2-MN-        8-        0
@@ -1275,7 +1275,7 @@ WALL20     QLR2-RN-     5924-        0
 WALL50     QLR2-RN-    37311-        0
 WATER      ONR2-MN-       31-       10
 WATSON     SUR2-AN-        V-        0
-WATSONNE   NOR2-AN-        V-        0
+WATSONNE   NOR2-AN-        V-       31
 WEEDS      SBR2-RN-        3-        0
 WOMFLET    LOR2-AN-        3-        3
 WOODS      SUR2-AN-        V-        0
