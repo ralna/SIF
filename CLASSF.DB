@@ -68,7 +68,7 @@ ALLINITC   OOR2-AY-        4-        1
 ALLINITU   OUR2-AY-        4-        0
 ALLINQP    QLR2-AN-        V-        V
 ALSOTAME   OOR2-AN-        2-        1
-ANTWERP    SBR2-RN-       27-        8
+ANTWERP    SLR2-RN-       27-        8
 ARGAUSS    NOR2-AN-        3-       15
 ARGLALE    NLR2-AN-        V-        V
 ARGLBLE    NLR2-AN-        V-        V
@@ -97,7 +97,7 @@ BA-L16     NOR2-MN-    66462-    83718
 BA-L16LS   SUR2-MN-    66462-        0
 BA-L1LS    SUR2-MN-       57-        0
 BA-L1SP    NOR2-MN-       57-       12
-BA-L1SPLS  NOR2-MN-       57-        0
+BA-L1SPLS  SUR2-MN-       57-        0
 BA-L21     NOR2-MN-    34134-    36455
 BA-L21LS   SUR2-MN-    34134-        0
 BA-L49     NOR2-MN-    23769-    31843
@@ -264,7 +264,7 @@ DANWOODLS  SUR2-MN-        2-        0
 DECONVB    SBR2-MN-       61-        0
 DECONVC    SQR2-MN-       61-        1
 DECONVNE   NOR2-MN-       61-        0
-DECONVU    SUR2-MN-       61-        0
+DECONVU    SXR2-MN-       61-        0
 DEGDIAG    QBR2-AN-        V-        0
 DEGENLPA   LLR2-AN-       20-       15
 DEGENLPB   LLR2-AN-       20-       15
@@ -306,7 +306,7 @@ DIXMAANP   OUR2-AN-        V-        0
 DIXON3DQ   QUR2-AN-        V-        0
 DJTL       OUR2-AN-        2-        0
 DMN15102   NOR2-MN-       66-     4643
-DMN15102LS NOR2-MN-       66-        0
+DMN15102LS SUR2-MN-       66-        0
 DMN15103   NOR2-MN-       99-     4643
 DMN15103LS SUR2-MN-       99-        0
 DMN15332   NOR2-MN-       66-     4643
@@ -392,10 +392,10 @@ EXTRASIM   LLR2-AN-        2-        1
 EXTROSNB   SUR2-AN-        V-        0
 FBRAIN     NOR2-AN-        2-     2211
 FBRAIN2    NOR2-AN-        4-     2211
-FBRAIN2LS  SUR2-AN-        4-        0
+FBRAIN2LS  SBR2-AN-        4-        0
 FBRAIN3    NOR2-AN-        6-     2211
 FBRAIN3LS  SUR2-AN-        6-        0
-FBRAINLS   SUR2-AN-        2-        0
+FBRAINLS   SBR2-AN-        2-        0
 FCCU       SLR2-MN-       19-        8
 FEEDLOC    LOR2-AN-       90-      259
 FERRISDC   QLR2-AN-        V-        V
@@ -424,9 +424,9 @@ GAUSS1LS   SUR2-MN-        8-        0
 GAUSS2     NOR2-MN-        8-      250
 GAUSS2LS   SUR2-MN-        8-        0
 GAUSS3     NOR2-MN-        8-      250
-GAUSS3LS   NOR2-MN-        8-        0
+GAUSS3LS   SUR2-MN-        8-        0
 GAUSSELM   LOR2-AN-        V-        V
-GAUSSIAN   SOR2-AN-        3-        0
+GAUSSIAN   SUR2-AN-        3-        0
 GBRAIN     NOR2-AN-        2-     2200
 GBRAINLS   SUR2-MN-        2-        0
 GENHS28    QLR2-AY-       10-        8
@@ -986,7 +986,7 @@ PALMER4E   SBR2-RN-        8-        0
 PALMER5A   SBR2-RN-        8-        0
 PALMER5B   SBR2-RN-        9-        0
 PALMER5C   SUR2-RN-        6-        0
-PALMER5D   SBR2-RN-        4-        0
+PALMER5D   SUR2-RN-        4-        0
 PALMER5E   SBR2-RN-        8-        0
 PALMER6A   SBR2-RN-        6-        0
 PALMER6C   SUR2-RN-        8-        0
@@ -1092,7 +1092,7 @@ READING7   OOR2-MN-     1002-      500
 READING8   OOR2-MN-     2002-     1000
 READING9   OOR2-MN-        V-        V
 RECIPE     NOR2-AY-        3-        3
-RES        NOR2-MN-       20-       14
+RES        NLR2-MN-       20-       14
 RK23       LOR2-RN-       17-       11
 ROBOT      QOR2-MY-       14-        2
 ROBOTARM   OOR2-AN-        V-        V
@@ -1113,7 +1113,7 @@ S365       QOR2-AY-        7-        5
 S365MOD    QOR2-AY-        7-        5
 S368       OBR2-MN-        V-        0
 SANTA      NOR2-AN-       21-       23
-SANTALS    NOR2-AN-       21-        0
+SANTALS    SBR2-AN-       21-        0
 SARO       LOR1-MN-     4754-     4015
 SAROMM     LOR1-MN-     5120-     5110
 SAWPATH    QOR2-AN-      583-      774
@@ -1189,7 +1189,7 @@ STRATEC    OUR2-RN-       10-        0
 SUPERSIM   LLR2-AN-        2-        2
 SVANBERG   OOR2-MN-        V-        V
 SWOPF      LQR2-RN-       83-       92
-SYNPOP24   SOR2-RN-    16080-    16896
+SYNPOP24   SLR2-RN-    16080-    16896
 SYNTHES1   OOR2-AN-        6-        6
 SYNTHES2   OOR2-AN-       11-       14
 SYNTHES3   OOR2-AN-       17-       19
@@ -1269,10 +1269,10 @@ VESUVIOU   NOR2-MN-        8-     1025
 VESUVIOULS SUR2-MN-        8-        0
 VIBRBEAM   SUR2-MN-        8-        0
 WACHBIEG   LQR2-AN-        3-        2
-WALL10     QLR2-RN-     1461-        0
-WALL100    QLR2-RN-   149624-        0
-WALL20     QLR2-RN-     5924-        0
-WALL50     QLR2-RN-    37311-        0
+WALL10     QBR2-RN-     1461-        0
+WALL100    QBR2-RN-   149624-        0
+WALL20     QBR2-RN-     5924-        0
+WALL50     QBR2-RN-    37311-        0
 WATER      ONR2-MN-       31-       10
 WATSON     SUR2-AN-        V-        0
 WATSONNE   NOR2-AN-        V-       31
