@@ -253,6 +253,7 @@ Corrections to classification:
 05/Dec/12: ARGLALE.SIF  ARGLBLE.SIF  ARGLCLE.SIF  ARWHDNE.SIF  CUBENE.SIF
            CHNRSBNE.SIF DECONVNE.SIF RSNBRNE.SIF  SINVALNE.SIF WOODSNE.SIF
            YFITNE.SIF
+08/May/18: MARATOSB.SIF
 
 Corrections to citations or comments:
 
@@ -265,6 +266,7 @@ Corrections to citations or comments:
            PALMER6E.SIF PALMER7A.SIF PALMER7C.SIF PALMER7E.SIF PALMER8A.SIF
            PALMER8C.SIF PALMER8E.SIF
 11/Oct/16: HAGER4.SIF
+08/May/18: MEYER3.SIF
 
 Cosmetic changes:
 
@@ -280,10 +282,3 @@ Removals:
 16/Apr/02: LHAIFAM.SIF violates SIF restrictions on non-trivial groups for
            inequality constraints
 02/Dec/05: CKEOHELB.SIF renamed correctly as CKOEHELB.SIF
-
-
-
-
-
-
-
