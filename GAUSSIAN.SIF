@@ -17,7 +17,7 @@ NAME          GAUSSIAN
 *   See also Buckley#28
 *   SIF input: Ph. Toint, Dec 1989.
 
-*   classification SOR2-AN-3-0
+*   classification SUR2-AN-3-0
 
 *   This function  is a nonlinear least squares with 15 groups.  Each
 *   group has a nonlinear element.
