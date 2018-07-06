@@ -852,6 +852,10 @@ MISRA1CLS  SUR2-MN-        2-        0
 MISRA1D    NOR2-MN-        2-       14
 MISRA1DLS  SUR2-MN-        2-        0
 MISTAKE    QQR2-AY-        9-       13
+MNISTS0    NOR2-MN-      494-     6000
+MNISTS0LS  SUR2-MN-      494-        0
+MNISTS5    NOR2-MN-      494-     6000
+MNISTS5LS  SUR2-MN-      494-        0
 MODBEALE   SUR2-AN-        V-        0
 MODEL      LLR2-AN-     1557-       38
 MOREBV     SUR2-MN-        V-        0
@@ -1098,6 +1102,7 @@ ROBOT      QOR2-MY-       14-        2
 ROBOTARM   OOR2-AN-        V-        V
 ROCKET     OOR2-AN-        V-        V
 ROSENBR    SUR2-AN-        2-        0
+ROSENBRTU  SUR2-AN-        2-        0
 ROSENMMX   LQR2-AN-        5-        4
 ROSEPETAL  LQR2-AN-        V-        V
 ROSEPETAL2 LQR2-AN-        V-        V
