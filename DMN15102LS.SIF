@@ -9551,7 +9551,7 @@ OBJECT BOUND
 
 *   Least square problems are bounded below by zero
 
- LO DMN15102            0.0
+ LO DMN15102LS          0.0
 
 *   Solution
 

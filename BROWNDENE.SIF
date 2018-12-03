@@ -41,19 +41,19 @@ VARIABLES
 GROUPS
 
  DO I         1                        M
- XN G(I)
+ XE G(I)
  ND
 
 BOUNDS
 
- FR BROWNDEN  'DEFAULT'
+ FR BROWNDENE 'DEFAULT'
 
 START POINT
 
-    BROWNDEN  X1        25.0
-    BROWNDEN  X2        5.0
-    BROWNDEN  X3        -5.0
-    BROWNDEN  X4        -1.0
+    BROWNDENE X1        25.0
+    BROWNDENE X2        5.0
+    BROWNDENE X3        -5.0
+    BROWNDENE X4        -1.0
 
 ELEMENT TYPE
 
@@ -93,7 +93,7 @@ GROUP USES
 
 OBJECT BOUND
 
- LO BROWNDEN            0.0
+ LO BROWNDENE           0.0
 
 *   Solution
 
