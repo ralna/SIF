@@ -22,12 +22,12 @@ NAME          BROYDNBDLS
 
 *   N is the number of equations and variables (variable).
 
- IE N                   10             $-PARAMETER     original value
+*IE N                   10             $-PARAMETER     original value
 *IE N                   50             $-PARAMETER
 *IE N                   100            $-PARAMETER
 *IE N                   500            $-PARAMETER
 *IE N                   1000           $-PARAMETER
-*IE N                   5000           $-PARAMETER
+ IE N                   5000           $-PARAMETER
 *IE N                   10000          $-PARAMETER
 
 *   Define some problem's parameters (see Buckley)
