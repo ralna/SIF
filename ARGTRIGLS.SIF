@@ -23,10 +23,10 @@ NAME          ARGTRIGLS
 
 *   N is the number of free variables
 
- IE N                   10             $-PARAMETER original value
-*IE N                   50             $-PARAMETER 
+*IE N                   10             $-PARAMETER original value
+*IE N                   50             $-PARAMETER
 *IE N                   100            $-PARAMETER
-*IE N                   200            $-PARAMETER
+ IE N                   200            $-PARAMETER
 
 *   Define useful parameters
 

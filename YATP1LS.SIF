@@ -2,13 +2,13 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          YATP1LS 
+NAME          YATP1LS
 
 *   Problem :
 *   *********
 
 *   Yet another test problem involving double pseudo-stochastic constraints
-*   on a square matrix. If the matrix dimension is N, the number of 
+*   on a square matrix. If the matrix dimension is N, the number of
 *   variables is equal to  N**2 + 2* N. The equations are
 *
 *   x_{ij}^3 - A x_{ij}^2 - ( y_i + z_j ) ( x_{ij}cos(x_{ij} - sin(x_{ij}) ) = 0
@@ -23,7 +23,7 @@ NAME          YATP1LS
 
 *  Least-squares version
 
-*   Source:  
+*   Source:
 *   a late evening idea by Ph. Toint
 
 *   SIF input: Ph. Toint, June 2003.
@@ -33,10 +33,10 @@ NAME          YATP1LS
 *   The dimension of the matrix
 
 *IE N                   10             $-PARAMETER n = 120
- IE N                   50             $-PARAMETER n = 2600
+*IE N                   50             $-PARAMETER n = 2600
 *IE N                   100            $-PARAMETER n = 10200
 *IE N                   200            $-PARAMETER n = 40400
-*IE N                   350            $-PARAMETER n = 123200
+ IE N                   350            $-PARAMETER n = 123200
 
  RE A                   10.0
 
@@ -141,15 +141,15 @@ GROUP USES
  XT 'DEFAULT' L2
  DO I         1                        N
  DO J         1                        N
- XE E(I,J)    CB(I,J)    1.0 
+ XE E(I,J)    CB(I,J)    1.0
  ZE E(I,J)    LS(I,J)                  -A
  XE E(I,J)    DC(I,J)   -1.0           DS(I,J)    1.0
  ND
 
  DO I         1                        N
  DO J         1                        N
- XE ER(I)     SX(I,J) 
- XE EC(J)     SX(I,J) 
+ XE ER(I)     SX(I,J)
+ XE EC(J)     SX(I,J)
  ND
 
 *   Solution
@@ -163,7 +163,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      YATP1LS 
+ELEMENTS      YATP1LS
 
 TEMPORARIES
 
@@ -218,7 +218,7 @@ ENDATA
 * ROUTINE           *
 *********************
 
-GROUPS        YATP1LS 
+GROUPS        YATP1LS
 
 INDIVIDUALS
 
