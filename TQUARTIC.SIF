@@ -19,7 +19,7 @@ NAME          TQUARTIC
 
 *   number of variables
 
- IE N                   5              $-PARAMETER     original value
+*IE N                   5              $-PARAMETER     original value
 *IE N                   10             $-PARAMETER
 *IE N                   50             $-PARAMETER
 *IE N                   100            $-PARAMETER
