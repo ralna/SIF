@@ -7,14 +7,14 @@ NAME          CURLY10
 *   Problem :
 *   --------
 
-*   A banded function with semi-bandwidth 10 and 
+*   A banded function with semi-bandwidth 10 and
 *   negative curvature near the starting point
 
 *   Source: Nick Gould
 
 *   SIF input: Nick Gould, September 1997.
 
-*   classification SUR2-AN-V-0
+*   classification OUR2-AN-V-0
 
 *   Number of variables
 
@@ -101,11 +101,10 @@ INDIVIDUALS
 
  T  P4
  A  APB                 2.0D+1
- F                      GVAR * ( GVAR * ( GVAR ** 2 - APB ) 
+ F                      GVAR * ( GVAR * ( GVAR ** 2 - APB )
  F+                     - 1.0D-1 )
- G                      2.0D+0 * GVAR * ( 2.0D+0 * GVAR ** 2 
+ G                      2.0D+0 * GVAR * ( 2.0D+0 * GVAR ** 2
  G+                     - APB ) - 1.0D-1
  H                      1.2D+1 * GVAR ** 2 - 2.0D+0 * APB
 
 ENDATA
-

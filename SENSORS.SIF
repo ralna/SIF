@@ -9,14 +9,14 @@ NAME          SENSORS
 
 *   A problem arising from two-dimensional optimal sensor placement
 
-*   Source:  
+*   Source:
 *   H. Zhang and X. Wang,
 *   "Optimal sensor placement",
 *   SIAM Review, vol. 35, p. 641, 1993.
 
 *   SIF input: Nick Gould, June 1994
 
-*   classification SUR2-AN-V-0
+*   classification OUR2-AN-V-0
 
 *   Number of unknowns
 

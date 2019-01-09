@@ -7,18 +7,18 @@ NAME          GENHUMPS
 *   Problem :
 *   *********
 
-*   A multi-dimensional variant of HUMPS, a two dimensional function 
-*   with a lot of humps. The density of humps increases with the 
+*   A multi-dimensional variant of HUMPS, a two dimensional function
+*   with a lot of humps. The density of humps increases with the
 *   parameter ZETA, making the problem more difficult.
 
 *   The problem is nonconvex.
 
-*   Source: 
+*   Source:
 *   Ph. Toint, private communication, 1997.
 
 *   SDIF input: N. Gould and Ph. Toint, November 1997.
 
-*   classification SUR2-AN-V-0
+*   classification OUR2-AN-V-0
 
 *   Number of variables
 
@@ -54,7 +54,7 @@ BOUNDS
  FR GENHUMPS  'DEFAULT'
 
 START POINT
- 
+
  V  GENHUMPS  'DEFAULT' -506.2
  XV GENHUMPS  X(1)      -506.0
 
