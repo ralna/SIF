@@ -238,7 +238,8 @@ Corrections to problem statement:
            TABLE8.SIF   TARGUS.SIF   TOYSARAH.SIF TWO5IN6.SIF
 21/Feb/17: BA-L21LS.SIF LSC2LS.SIF
 30/Mar/17: BA-L21LS.SIF
-19/Feb/18: GULF.SIF     GULFNE.SIF
+19/Feb/18: GULF.SIF      GULFNE.SIF
+09/Jan/19: MNISTS5LS.SIF MNISTS0LS.SIF
 
 Changes to default sizes:
 
@@ -285,3 +286,4 @@ Removals:
 16/Apr/02: LHAIFAM.SIF violates SIF restrictions on non-trivial groups for
            inequality constraints
 02/Dec/05: CKEOHELB.SIF renamed correctly as CKOEHELB.SIF
+09/Jan/19: YATP1SS.SIF and YATP1SQ.SIF removed as duplicates of YATP1NE.SIF
