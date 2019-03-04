@@ -2,16 +2,16 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          YATP2SQ 
+NAME          YATP2SQ
 
 *   Problem :
 *   *********
 
 *   Another test problem involving double pseudo-stochastic constraints
-*   on a square matrix. If the matrix dimension is N, the number of 
+*   on a square matrix. If the matrix dimension is N, the number of
 *   variables is equal to  N**2 + 2 * N. The equations are
 *
-*   x_{ij} - ( y_i + z_j ) ( 1 + cos( x_{ij} ) ) = A   (i,j = 1, ..., N )
+*   x_{ij} - ( y_i + z_i ) ( 1 + cos( x_{ij} ) ) = A   (i,j = 1, ..., N )
 *
 *   \sum_i^N ( x_{ij} + sin( x_{ij}) ) = 1             (j = 1,..., N)
 *
@@ -19,7 +19,7 @@ NAME          YATP2SQ
 *
 *   The problem is non convex.
 
-*   Source:  
+*   Source:
 *   a late evening idea by Ph. Toint
 
 *   SIF input: Ph. Toint, June 2003.
@@ -114,7 +114,7 @@ GROUP USES
 
  DO I         1                        N
  DO J         1                        N
- XE E(I,J)    DC(I,J)   -1.0 
+ XE E(I,J)    DC(I,J)   -1.0
  ND
 
  DO I         1                        N
@@ -134,7 +134,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      YATP2SQ 
+ELEMENTS      YATP2SQ
 
 TEMPORARIES
 

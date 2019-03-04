@@ -11,7 +11,7 @@ NAME          YATP1LS
 *   on a square matrix. If the matrix dimension is N, the number of
 *   variables is equal to  N**2 + 2* N. The equations are
 *
-*   x_{ij}^3 - A x_{ij}^2 - ( y_i + z_j ) ( x_{ij}cos(x_{ij} - sin(x_{ij}) ) = 0
+*   x_{ij}^3 - A x_{ij}^2 - ( y_i + z_i ) ( x_{ij}cos(x_{ij} - sin(x_{ij}) ) = 0
 *
 *                                                    (i,j = 1, ..., N )
 *

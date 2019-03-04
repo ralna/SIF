@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          YATP2LS
+NAME          YATP2CLS
 
 *   Problem :
 *   *********
@@ -11,7 +11,7 @@ NAME          YATP2LS
 *   on a square matrix. If the matrix dimension is N, the number of
 *   variables is equal to  N**2 + 2 * N. The equations are
 *
-*   x_{ij} - ( y_i + z_i ) ( 1 + cos( x_{ij} ) ) = A   (i,j = 1, ..., N )
+*   x_{ij} - ( y_i + z_j ) ( 1 + cos( x_{ij} ) ) = A   (i,j = 1, ..., N )
 *
 *   \sum_i^N ( x_{ij} + sin( x_{ij}) ) = 1             (j = 1,..., N)
 *
@@ -23,6 +23,7 @@ NAME          YATP2LS
 *   a late evening idea by Ph. Toint
 
 *   SIF input: Ph. Toint, June 2003.
+*              corrected Nick Gould, March 2019
 
 *   classification SUR2-AN-V-V
 
@@ -72,21 +73,21 @@ GROUPS
 CONSTANTS
 
  DO I         1                        N
- X  YATP2LS   ER(I)     1.0
- X  YATP2LS   EC(I)     1.0
+ X  YATP2CLS  ER(I)     1.0
+ X  YATP2CLS  EC(I)     1.0
  DO J         1                        N
- Z  YATP2LS   E(I,J)                   A
+ Z  YATP2CLS  E(I,J)                   A
  ND
 
 BOUNDS
 
- FR YATP2LS   'DEFAULT'
+ FR YATP2CLS  'DEFAULT'
 
 START POINT
 
  DO I         1                        N
  DO J         1                        N
- X  YATP2LS   X(I,J)    10.0
+ X  YATP2CLS  X(I,J)    10.0
  ND
 
 ELEMENT TYPE
@@ -106,7 +107,7 @@ ELEMENT USES
  XT DC(I,J)   ATP2
  ZV DC(I,J)   X                        X(I,J)
  ZV DC(I,J)   Y                        Y(I)
- ZV DC(I,J)   Z                        Z(I)
+ ZV DC(I,J)   Z                        Z(J)
 
  XT SX(I,J)   SINX
  ZV SX(I,J)   X                        X(I,J)
@@ -141,7 +142,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      YATP2LS
+ELEMENTS      YATP2CLS
 
 TEMPORARIES
 
@@ -175,7 +176,7 @@ ENDATA
 * ROUTINE           *
 *********************
 
-GROUPS        YATP2LS
+GROUPS        YATP2CLS
 
 INDIVIDUALS
 

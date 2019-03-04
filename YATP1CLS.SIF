@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          YATP1NE
+NAME          YATP1CLS
 
 *   Problem :
 *   *********
@@ -11,7 +11,7 @@ NAME          YATP1NE
 *   on a square matrix. If the matrix dimension is N, the number of
 *   variables is equal to  N**2 + 2* N. The equations are
 *
-*   x_{ij}^3 - A x_{ij}^2 - ( y_i + z_i ) ( x_{ij}cos(x_{ij} - sin(x_{ij}) ) = 0
+*   x_{ij}^3 - A x_{ij}^2 - ( y_i + z_j ) ( x_{ij}cos(x_{ij} - sin(x_{ij}) ) = 0
 *
 *                                                    (i,j = 1, ..., N )
 *
@@ -21,16 +21,17 @@ NAME          YATP1NE
 *
 *   The problem is non convex.
 
+*  Least-squares version
+
 *   Source:
 *   a late evening idea by Ph. Toint
 
 *   SIF input: Ph. Toint, June 2003.
+*              corrected Nick Gould, March 2019
 
-*   classification NOR2-AN-V-V
+*   classification SUR2-AN-V-V
 
 *   The dimension of the matrix
-
-*   nonlinear equation version
 
 *IE N                   10             $-PARAMETER n = 120
 *IE N                   50             $-PARAMETER n = 2600
@@ -65,30 +66,30 @@ GROUPS
 
  DO I         1                        N
  DO J         1                        N
- XE E(I,J)
+ XN E(I,J)
  ND
 
  DO I         1                        N
- XE ER(I)
- XE EC(I)
+ XN ER(I)
+ XN EC(I)
  ND
 
 CONSTANTS
 
  DO I         1                        N
- X  ATP1SQ    ER(I)     1.0
- X  ATP1SQ    EC(I)     1.0
+ X  YATP1CLS  ER(I)     1.0
+ X  YATP1CLS  EC(I)     1.0
  ND
 
 BOUNDS
 
- FR YATP1SQ   'DEFAULT'
+ FR YATP1CLS  'DEFAULT'
 
 START POINT
 
  DO I         1                        N
  DO J         1                        N
- X  YATP1SQ   X(I,J)    6.0
+ X  YATP1CLS  X(I,J)    6.0
  ND
 
 ELEMENT TYPE
@@ -115,29 +116,34 @@ ELEMENT USES
  XT CB(I,J)   CB
  ZV CB(I,J)   X                        X(I,J)
 
- XT SQ(I,J)   SQ
- ZV SQ(I,J)   X                        X(I,J)
+ XT LS(I,J)   SQ
+ ZV LS(I,J)   X                        X(I,J)
 
  XT DC(I,J)   LXC
  ZV DC(I,J)   X                        X(I,J)
  ZV DC(I,J)   Y                        Y(I)
- ZV DC(I,J)   Z                        Z(I)
+ ZV DC(I,J)   Z                        Z(J)
 
  XT DS(I,J)   LS
  ZV DS(I,J)   X                        X(I,J)
  ZV DS(I,J)   Y                        Y(I)
- ZV DS(I,J)   Z                        Z(I)
+ ZV DS(I,J)   Z                        Z(J)
 
  XT SX(I,J)   RAT
  ZV SX(I,J)   X                        X(I,J)
  ND
 
+GROUP TYPE
+
+ GV L2        GVAR
+
 GROUP USES
 
+ XT 'DEFAULT' L2
  DO I         1                        N
  DO J         1                        N
  XE E(I,J)    CB(I,J)    1.0
- ZE E(I,J)    SQ(I,J)                  -A
+ ZE E(I,J)    LS(I,J)                  -A
  XE E(I,J)    DC(I,J)   -1.0           DS(I,J)    1.0
  ND
 
@@ -158,7 +164,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      YATP1NE
+ELEMENTS      YATP1CLS
 
 TEMPORARIES
 
@@ -205,5 +211,23 @@ INDIVIDUALS
  F                      S / X
  G  X                   ( C - S / X ) / X
  H  X         X         - S/X - (C+C)/X**2 + (S+S)/X**3
+
+ENDATA
+
+*********************
+* SET UP THE GROUPS *
+* ROUTINE           *
+*********************
+
+GROUPS        YATP1CLS
+
+INDIVIDUALS
+
+*   Least-square root groups
+
+ T  L2
+ F                      GVAR * GVAR
+ G                      GVAR + GVAR
+ H                      2.0
 
 ENDATA
