@@ -2,21 +2,22 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          YFITNE 
+NAME          YFITNE
 
 *   Problem:
 *   ********
 
 *   This problem arises in measuring angles and distances to a vibrating beam
 *   using a laser-Doppler velocimeter.
-*   This is a nonlinear equation variant of the bounded constrained 
+*   This is a nonlinear equation variant of the bounded constrained
 *   problem YFIT.
 
 *   Source:
 *   an exercize for L. Watson course on LANCELOT in the Spring 1993.
 
-*   SIF input: B. E. Lindholm, Virginia Tech., Spring 1993, 
+*   SIF input: B. E. Lindholm, Virginia Tech., Spring 1993,
 *              modified by Ph. Toint, March 1994.
+*              derivatives corrected by Nick Gould, June 2019.
 
 *   classification NOR2-MN-3-16
 
@@ -104,9 +105,9 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      YFITNE 
+ELEMENTS      YFITNE
 
-TEMPORARIES 
+TEMPORARIES
 
  R  ttan
  R  tsec
@@ -126,9 +127,9 @@ INDIVIDUALS
  G  a1                  d1*(1.0-frac)*tsec2
  G  b1                  d1*frac*tsec2
  G  d1                  ttan
- H  a1        a1        d1*((1.0-frac)**2)*tsec2*ttan
- H  b1        b1        d1*(frac**2)*tsec2*ttan
- H  a1        b1        d1*(1.0-frac)*frac*tsec2*ttan
+ H  a1        a1        2.0*d1*((1.0-frac)**2)*tsec2*ttan
+ H  b1        b1        2.0*d1*(frac**2)*tsec2*ttan
+ H  a1        b1        2.0*d1*(1.0-frac)*frac*tsec2*ttan
  H  a1        d1        (1.0-frac)*tsec2
  H  b1        d1        frac*tsec2
  H  d1        d1        0.0

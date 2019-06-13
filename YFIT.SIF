@@ -13,6 +13,7 @@ NAME          YFIT
 *   an exercize for L. Watson course on LANCELOT in the Spring 1993.
 
 *   SIF input: Brian E. Lindholm, Virginia Tech., Spring 1993.
+*              derivatives corrected by Nick Gould, June 2019.
 
 *   classification SBR2-MN-3-0
 
@@ -109,7 +110,7 @@ ENDATA
 
 ELEMENTS      YFIT
 
-TEMPORARIES 
+TEMPORARIES
 
  R  ttan
  R  tsec
@@ -129,9 +130,9 @@ INDIVIDUALS
  G  a1                  d1*(1.0-frac)*tsec2
  G  b1                  d1*frac*tsec2
  G  d1                  ttan
- H  a1        a1        d1*((1.0-frac)**2)*tsec2*ttan
- H  b1        b1        d1*(frac**2)*tsec2*ttan
- H  a1        b1        d1*(1.0-frac)*frac*tsec2*ttan
+ H  a1        a1        2.0*d1*((1.0-frac)**2)*tsec2*ttan
+ H  b1        b1        2.0*d1*(frac**2)*tsec2*ttan
+ H  a1        b1        2.0*d1*(1.0-frac)*frac*tsec2*ttan
  H  a1        d1        (1.0-frac)*tsec2
  H  b1        d1        frac*tsec2
  H  d1        d1        0.0
@@ -153,4 +154,3 @@ INDIVIDUALS
  H                      2.0
 
 ENDATA
-
