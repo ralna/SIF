@@ -17,10 +17,10 @@ NAME          OSCIPATH
 
 *IE N                   2              $-PARAMETER
 *IE N                   5              $-PARAMETER
- IE N                   10             $-PARAMETER
+*IE N                   10             $-PARAMETER
 *IE N                   25             $-PARAMETER
 *IE N                   100            $-PARAMETER
-*IE N                   500            $-PARAMETER
+ IE N                   500            $-PARAMETER
 
 *   the weight factor
 

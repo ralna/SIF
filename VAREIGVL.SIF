@@ -29,17 +29,17 @@ NAME          VAREIGVL
 *   Number of variables -1 (variable)
 
 *IE N                   9              $-PARAMETER
- IE N                   49             $-PARAMETER     original value
+*IE N                   49             $-PARAMETER     original value
 *IE N                   99             $-PARAMETER
 *IE N                   499            $-PARAMETER
 *IE N                   999            $-PARAMETER
-*IE N                   4999           $-PARAMETER
+ IE N                   4999           $-PARAMETER
 
 *   Half bandwidth  (must be at most N)
 
- IE M                   4              $-PARAMETER  .le. N
+*IE M                   4              $-PARAMETER  .le. N
 *IE M                   5              $-PARAMETER  .le. N
-*IE M                   6              $-PARAMETER  .le. N
+ IE M                   6              $-PARAMETER  .le. N
 
 *   Power parameter (must be in (1,2])
 
