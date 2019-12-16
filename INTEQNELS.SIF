@@ -6,7 +6,7 @@ NAME          INTEQNELS
 
 *   Problem :
 *   *********
-*   The discrete integral problem (INTEGREQ) without fized variables
+*   The discrete integral problem (INTEGREQ) without fixed variables
 *   in least-squares form.
 
 *   Source:  Problem 29 in
@@ -22,10 +22,10 @@ NAME          INTEQNELS
 *   N+2 is the number of discretization points .
 *   The number of free variables is N.
 
- IE N                   10             $-PARAMETER
+*IE N                   10             $-PARAMETER
 *IE N                   50             $-PARAMETER     original value
 *IE N                   100            $-PARAMETER
-*IE N                   500            $-PARAMETER
+ IE N                   500            $-PARAMETER
 
 *   Define useful parameters
 
