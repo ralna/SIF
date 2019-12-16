@@ -22,9 +22,10 @@ NAME          VAREIGVL
 *   Argonne National Laboratory MCS-P60-0289, 1989.
 
 *   SIF input: Ph. Toint, Dec 1989.
-*              correction by Ph. Shott, January, 1995.
+*              correction by Ph. Shott, January, 1995
+*              and Nick Gould, December, 2019.
 
-*   classification OUR2-AN-V-0
+*   classification SUR2-AN-V-0
 
 *   Number of variables -1 (variable)
 
@@ -174,6 +175,8 @@ GROUP TYPE
 
  GV LQ        GVAR
  GP LQ        POWER
+ GV LQ2       GVAR
+ GP LQ2       POWER
 
 GROUP USES
 
@@ -183,7 +186,7 @@ GROUP USES
  XP G(I)      POWER     2.0
  ND
 
- XT G(N+1)    LQ
+ XT G(N+1)    LQ2
 
  DO I         1                        N
  XE G(N+1)    S(I)
@@ -244,5 +247,9 @@ INDIVIDUALS
  F                      GVAR**IPOWER / POWER
  G                      GVAR**PM1
  H                      PM1 * GVAR**( IPOWER - 2)
+ T  LQ2
+ F                      GVAR ** POWER / POWER
+ G                      GVAR ** (POWER - 1.0D0)
+ H                      (POWER - 1.0D0) * GVAR ** (POWER - 2.0D0)
 
 ENDATA
