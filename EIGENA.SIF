@@ -21,7 +21,7 @@ NAME          EIGENA
 
 *   SIF input: Nick Gould, Nov 1992.
 
-*   classification NOR2-AN-V-V
+*   classification NBR2-AN-V-V
 
 *   The dimension of the matrix.
 
@@ -82,6 +82,8 @@ CONSTANTS
  ND
 
 BOUNDS
+
+* nonnegative eigenvalues
 
 START POINT
 

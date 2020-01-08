@@ -11,15 +11,15 @@ NAME          KSS
 *   as a function of dimension.
 
 *   Source:  problem 8.1 in
-*   Wenrui Hao, Andrew J. Sommese and Zhonggang Zeng, 
-*   "An algorithm and software for computing multiplicity structures 
+*   Wenrui Hao, Andrew J. Sommese and Zhonggang Zeng,
+*   "An algorithm and software for computing multiplicity structures
 *    at zeros of nonlinear systems", Technical Report,
 *   Department of Applied & Computational Mathematics & Statistics
 *   University of Notre Dame, Indiana, USA (2012)
 
 *   SIF input: Nick Gould, Jan 2012.
 
-*   classification NOR2-AN-V-0
+*   classification NOR2-AN-V-V
 
 *   Problem dimension
 
@@ -31,7 +31,7 @@ NAME          KSS
 *   Define useful parameters
 
  IE 1                   1
- RI RN        N               
+ RI RN        N
  RA RN-1      RN        -1.0
 
 VARIABLES
@@ -114,4 +114,3 @@ INDIVIDUALS
  H  X         X         2.0
 
 ENDATA
-

@@ -14,6 +14,7 @@ NAME          DMN15332LS
 *     Diamond Light Source, Harwell, Oxfordshire, England, EU.
 
 *   SIF input: Nick Gould and Tyrone Rees, Feb 2016
+*   Least-squares version of DMN15332.SIF, Nick Gould, Jan 2020.
 
 *   classification SUR2-MN-66-0
 
@@ -23,7 +24,8 @@ NAME          DMN15332LS
 
 *   Number of variables
 
- IE N                   33
+ IE NVEC                33
+ IE N                   66
 
 *   Useful parameters
 
@@ -9355,7 +9357,7 @@ NAME          DMN15332LS
 
 VARIABLES
 
- DO I         1                        N
+ DO I         1                        NVEC
  X  WEIGHT(I)
  X  WIDTH(I)
  ND
@@ -9526,7 +9528,7 @@ ELEMENT TYPE
 ELEMENT USES
 
  DO I         1                        M
- DO J         1                        N
+ DO J         1                        NVEC
  XT E(I,J)    LORENTZ
  ZV E(I,J)    WEIGHT                   WEIGHT(J)
  ZV E(I,J)    WIDTH                    WIDTH(J)
@@ -9543,7 +9545,7 @@ GROUP USES
  T  'DEFAULT' L2
 
  DO I         1                        M
- DO J         1                        N
+ DO J         1                        NVEC
  XE R(I)      E(I,J)
  ND
 

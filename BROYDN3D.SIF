@@ -7,8 +7,7 @@ NAME          BROYDN3D
 *   Problem :
 *   *********
 
-*   Broyden tridiagonal system on nonlinear equations in the least
-*   square sense.
+*   Broyden tridiagonal system on nonlinear equations
 
 *   Source:  problem 30 in
 *   J.J. More', B.S. Garbow and K.E. Hillstrom,

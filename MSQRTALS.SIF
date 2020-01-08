@@ -7,8 +7,7 @@ NAME          MSQRTALS
 *   Problem :
 *   *********
 
-*   The dense matrix square root problem by Nocedal and Liu.
-*   (Case 0) seen as a nonlinear equation problem.
+*   The dense matrix square root problem by Nocedal and Liu (Case 0).
 
 *   This is a least-squares variant of problem MSQRTA.
 

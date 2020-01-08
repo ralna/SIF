@@ -16,7 +16,7 @@ NAME          JENSMP
 
 *   SIF input: Ph. Toint, Dec 1989.
 
-*   classification OUR2-AN-2-0
+*   classification SUR2-AN-2-0
 
 *   This function  is a nonlinear least squares with m groups.  Each
 *   group has two nonlinear elements.

@@ -19,7 +19,7 @@ NAME          PALMER8C
 
 *   SIF input: Nick Gould, 1992.
 
-*   classification SUR2-RN-8-0
+*   classification QUR2-RN-8-0
 
 *   Number of data points
 
@@ -32,18 +32,18 @@ NAME          PALMER8C
 
 *   X (radians)
 
- RE X12                 0.000000    
- RE X13                 0.174533    
- RE X14                 0.314159    
- RE X15                 0.436332    
- RE X16                 0.514504    
- RE X17                 0.610865    
- RE X18                 0.785398    
- RE X19                 0.959931    
- RE X20                 1.134464    
- RE X21                 1.308997    
- RE X22                 1.483530    
- RE X23                 1.570796    
+ RE X12                 0.000000
+ RE X13                 0.174533
+ RE X14                 0.314159
+ RE X15                 0.436332
+ RE X16                 0.514504
+ RE X17                 0.610865
+ RE X18                 0.785398
+ RE X19                 0.959931
+ RE X20                 1.134464
+ RE X21                 1.308997
+ RE X22                 1.483530
+ RE X23                 1.570796
 
 *   Y( KJmol-1)
 
@@ -149,7 +149,3 @@ INDIVIDUALS
  H                      2.0
 
 ENDATA
-
-
-
-

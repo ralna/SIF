@@ -14,8 +14,9 @@ NAME          DMN15102LS
 *     Diamond Light Source, Harwell, Oxfordshire, England, EU.
 
 *   SIF input: Nick Gould and Tyrone Rees, Feb 2016
+*   Least-squares version of DMN15102.SIF, Nick Gould, Jan 2020.
 
-*   classification SUR2-MN-66-0
+*   classification NOR2-SUR2-66-0
 
 *   Number of data values
 
@@ -23,7 +24,8 @@ NAME          DMN15102LS
 
 *   Number of variables
 
- IE N                   33
+ IE NVEC                33
+ IE N                   66
 
 *   Useful parameters
 
@@ -9355,7 +9357,7 @@ NAME          DMN15102LS
 
 VARIABLES
 
- DO I         1                        N
+ DO I         1                        NVEC
  X  WEIGHT(I)
  X  WIDTH(I)
  ND
@@ -9526,7 +9528,7 @@ ELEMENT TYPE
 ELEMENT USES
 
  DO I         1                        M
- DO J         1                        N
+ DO J         1                        NVEC
  XT E(I,J)    LORENTZ
  ZV E(I,J)    WEIGHT                   WEIGHT(J)
  ZV E(I,J)    WIDTH                    WIDTH(J)
@@ -9543,7 +9545,7 @@ GROUP USES
  T  'DEFAULT' L2
 
  DO I         1                        M
- DO J         1                        N
+ DO J         1                        NVEC
  XE R(I)      E(I,J)
  ND
 
@@ -9551,7 +9553,7 @@ OBJECT BOUND
 
 *   Least square problems are bounded below by zero
 
- LO DMN15102LS          0.0
+ LO DMN15102            0.0
 
 *   Solution
 

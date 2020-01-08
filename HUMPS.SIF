@@ -8,17 +8,17 @@ NAME          HUMPS
 *   *********
 
 *   A two dimensional function with a lot of humps.
-*   The density of humps increases with the parameter ZETA, 
+*   The density of humps increases with the parameter ZETA,
 *   making the problem more difficult.
 
 *   The problem is nonconvex.
 
-*   Source: 
+*   Source:
 *   Ph. Toint, private communication, 1997.
 
 *   SDIF input: Ph. Toint, May 1997.
 
-*   classification SUR2-AN-2-0
+*   classification OUR2-AN-2-0
 
 *   Density of humps
 
@@ -40,7 +40,7 @@ BOUNDS
  FR HUMPS     'DEFAULT'
 
 START POINT
- 
+
  V  HUMPS     X         -506.0
  V  HUMPS     Y         -506.2
 
@@ -66,7 +66,7 @@ ELEMENT USES
 
 GROUP USES
 
- E  OBJ       H         1.0            
+ E  OBJ       H         1.0
  E  OBJ       SY        0.05           SX        0.05
 
 OBJECT BOUND

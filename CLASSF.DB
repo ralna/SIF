@@ -206,6 +206,16 @@ CB3        LOR2-AN-        3-        3
 CBRATU2D   NOR2-MN-        V-        V
 CBRATU3D   NOR2-MN-        V-        V
 CBS        QLR2-RN-    11163-      244
+CERI651A   NOR2-MN-        7-       61
+CERI651ALS SUR2-MN-        7-        0
+CERI651B   NOR2-MN-        7-       66
+CERI651BLS SUR2-MN-        7-        0
+CERI651C   NOR2-MN-        7-       56
+CERI651CLS SUR2-MN-        7-        0
+CERI651D   NOR2-MN-        7-       67
+CERI651DLS SUR2-MN-        7-        0
+CERI651E   NOR2-MN-        7-       64
+CERI651ELS SUR2-MN-        7-        0
 CHACONN1   LOR2-AY-        3-        3
 CHACONN2   LOR2-AY-        3-        3
 CHAIN      OOR2-AN-        V-        V
@@ -330,6 +340,10 @@ DIAGNQT    QBR2-AN-        V-        0
 DIAGPQB    QBR2-AN-        V-        0
 DIAGPQE    QBR2-AN-        V-        0
 DIAGPQT    QBR2-AN-        V-        0
+DIAMON2D   NOR2-MN-       66-     4643
+DIAMON2DLS SUR2-MN-       66-        0
+DIAMON3D   NOR2-MN-       99-     4643
+DIAMON3DLS SUR2-MN-       99-        0
 DIPIGRI    OOR2-AN-        7-        4
 DISC2      LQR2-MY-       29-       23
 DISCS      LQR2-MY-       36-       66

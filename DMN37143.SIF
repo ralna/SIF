@@ -24,7 +24,8 @@ NAME          DMN37143
 
 *   Number of variables
 
- IE N                   33
+ IE NVEC                33
+ IE N                   99
 
 *   Useful parameters
 
@@ -9322,7 +9323,7 @@ NAME          DMN37143
 
 VARIABLES
 
- DO I         1                        N
+ DO I         1                        NVEC
  X  WEIGHT(I)
  X  WIDTH(I)
  X  POSIT(I)
@@ -9666,7 +9667,7 @@ ELEMENT TYPE
 ELEMENT USES
 
  DO I         1                        M
- DO J         1                        N
+ DO J         1                        NVEC
  XT E(I,J)    LORENTZ3
  ZV E(I,J)    WEIGHT                   WEIGHT(J)
  ZV E(I,J)    WIDTH                    WIDTH(J)
@@ -9677,7 +9678,7 @@ ELEMENT USES
 GROUP USES
 
  DO I         1                        M
- DO J         1                        N
+ DO J         1                        NVEC
  XE R(I)      E(I,J)
  ND
 

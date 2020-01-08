@@ -7,8 +7,7 @@ NAME          MSQRTBLS
 *   Problem :
 *   *********
 
-*   The dense matrix square root problem by Nocedal and Liu.
-*   (Case 1) seen as a system of nonlinear equations.
+*   The dense matrix square root problem by Nocedal and Liu (Case 1)
 
 *   This is a least-squares variant of problem MSQRTB.
 

@@ -14,13 +14,13 @@ NAME          PALMER5C
 *   fitting Y to A0 T_0 + A2 T_2 + A4 T_4 + A6 T_6 + A8 T_8 +
 *                A10 T_10 + A12 T_12 + A14 T_14
 *   where T_i is the i-th (shifted) Chebyshev polynomial
- 
+
 *   Source:
 *   M. Palmer, Edinburgh, private communication.
 
 *   SIF input: Nick Gould, 1992.
 
-*   classification SUR2-RN-6-0
+*   classification QUR2-RN-6-0
 
 *   Number of data points
 
@@ -35,23 +35,23 @@ NAME          PALMER5C
 
 *   X (radians)
 
- RE X12                  0.000000 
- RE X13                  1.570796 
- RE X14                  1.396263 
- RE X15                  1.308997 
- RE X16                  1.221730 
- RE X17                  1.125835 
- RE X18                  1.047198 
- RE X19                  0.872665 
- RE X20                  0.698132 
- RE X21                  0.523599 
- RE X22                  0.349066 
- RE X23                  0.174533 
+ RE X12                  0.000000
+ RE X13                  1.570796
+ RE X14                  1.396263
+ RE X15                  1.308997
+ RE X16                  1.221730
+ RE X17                  1.125835
+ RE X18                  1.047198
+ RE X19                  0.872665
+ RE X20                  0.698132
+ RE X21                  0.523599
+ RE X22                  0.349066
+ RE X23                  0.174533
 
- R= B         X13       
+ R= B         X13
  RM A         B         -1.0D+0
  RM DIFF      B         2.0D+0
- 
+
 *   Y( KJmol-1)
 
  RE Y12                 83.57418
@@ -158,7 +158,3 @@ INDIVIDUALS
  H                      2.0
 
 ENDATA
-
-
-
-
