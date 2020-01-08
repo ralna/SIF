@@ -1,0 +1,109 @@
+***************************
+* SET UP THE INITIAL DATA *
+***************************
+
+NAME          S308NE
+
+*   Problem :
+*   *********
+
+*   Source: problem 308 in
+*   K. Schittkowski,
+*   " More Test Problems for Nonlinear Programming Codes",
+*   Springer Verlag, Berlin, 1987.
+
+*   SIF input: Ph. Toint, April 1991.
+*   Nonlinear-equations version of S308.SIF, Nick Gould, Jan 2020.
+
+*   classification SUR2-AN-2-0
+
+VARIABLES
+
+    X1
+    X2
+
+GROUPS
+
+ E  O1
+ E  O2
+ E  O3
+
+BOUNDS
+
+ FR S308      'DEFAULT'
+
+START POINT
+
+ XV S308      X1        3.0
+ XV S308      X2        0.1
+
+ELEMENT TYPE
+
+ EV QUAD      X                        Y
+ EV SINE      X
+ EV COSN      X
+
+ELEMENT USES
+
+ T  EQ        QUAD
+ ZV EQ        X                        X1
+ ZV EQ        Y                        X2
+
+ T  ES        SINE
+ ZV ES        X                        X1
+
+ T  EC        COSN
+ ZV EC        X                        X2
+
+GROUP USES
+
+ E  O1        EQ
+ E  O2        ES
+ E  O3        EC
+
+OBJECT BOUND
+
+ LO S308                0.0
+
+*   Solution
+
+*LO SOLTN               0.773199
+
+ENDATA
+
+***********************
+* SET UP THE FUNCTION *
+* AND RANGE ROUTINES  *
+***********************
+
+ELEMENTS      S308NE
+
+TEMPORARIES
+
+ R  COSX
+ R  SINX
+ M  COS
+ M  SIN
+
+INDIVIDUALS
+
+ T  QUAD
+ F                      X * X + X * Y + Y * Y
+ G  X                   2.0 * X + Y
+ G  Y                   2.0 * Y + X
+ H  X         X         2.0
+ H  X         Y         1.0
+ H  Y         Y         2.0
+
+ T  SINE
+ A  SINX                SIN(X)
+ F                      SINX
+ G  X                   COS(X)
+ H  X         X         - SINX
+
+ T  COSN
+ A  COSX                COS(X)
+ F                      COSX
+ G  X                   - SIN(X)
+ H  X         X         - COSX
+ENDATA

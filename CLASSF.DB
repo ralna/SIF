@@ -116,6 +116,7 @@ BDRY2      QLR2-AN-        V-        V
 BDVALUE    NOR2-MN-        V-        V
 BDVALUES   NOR2-MN-        V-        V
 BEALE      SUR2-AN-        2-        0
+BEALENE    NOR2-AN-        2-        3
 BENNETT5   NOR2-MN-        3-      154
 BENNETT5LS SUR2-MN-        3-        0
 BIGBANK    ONI2-RN-     2230-     1112
@@ -166,6 +167,7 @@ BRKMCC     OUR2-AN-        2-        0
 BROWNAL    SUR2-AN-        V-        0
 BROWNALE   NOR2-AN-        V-        0
 BROWNBS    SUR2-AN-        2-        0
+BROWNBSNE  NOR2-AN-        2-        3
 BROWNDEN   SUR2-AN-        4-        0
 BROWNDENE  NOR2-AN-        4-       20
 BROYDN3D   NQR2-AN-        V-        V
@@ -215,7 +217,7 @@ CHANNEL    NOR2-AN-        V-        V
 CHARDIS0   OBR2-AY-        V-        V
 CHARDIS1   OQR2-AY-        V-        V
 CHEBYQAD   SBR2-AN-        V-        0
-CHEBYQADNE NOR2-AN-        V-        0
+CHEBYQADNE NBR2-AN-        V-        0
 CHEMRCTA   NOR2-MN-        V-        V
 CHEMRCTB   NOR2-MN-        V-        V
 CHENHARK   QBR2-AN-        V-        V
@@ -239,6 +241,7 @@ CLPLATEA   OXR2-MN-        V-        0
 CLPLATEB   OXR2-MN-        V-        0
 CLPLATEC   OXR2-MN-        V-        0
 CLUSTER    NOR2-AN-        2-        2
+CLUSTERLS  SUR2-AN-        2-        0
 CMPC1      QLR2-RN-     2549-     3832
 CMPC10     QLR2-RN-     1530-     2351
 CMPC11     QLR2-RN-     1530-     2351
@@ -260,6 +263,7 @@ CONGIGMZ   LQR2-AN-        3-        5
 CONT5-QP   QLR2-MN-        V-        V
 CONT6-QQ   QQR2-AN-        V-        V
 COOLHANS   NQR2-RN-        9-        9
+COOLHANSLS SUR2-RN-        9-        0
 CORE1      LQI2-RN-       65-       59
 CORE2      LQI2-RN-      157-      134
 CORKSCRW   SOR2-AN-        V-        V
@@ -282,6 +286,7 @@ CVXQP1     QLR2-AN-        V-        V
 CVXQP2     QLR2-AN-        V-        V
 CVXQP3     QLR2-AN-        V-        V
 CYCLIC3    NOR2-AN-        V-        0
+CYCLIC3LS  NOR2-AN-        V-        0
 DALE       QLR2-RN-    16514-      405
 DALLASL    ONR2-MN-      906-      667
 DALLASM    ONR2-MN-      196-      151
@@ -307,10 +312,15 @@ DEMBO7     QOR2-MN-       16-       20
 DEMYMALO   LQR2-AN-        3-        3
 DENSCHNA   OUR2-AN-        2-        0
 DENSCHNB   SUR2-AN-        2-        0
+DENSCHNBNE NOR2-AN-        2-        2
 DENSCHNC   SUR2-AN-        2-        0
+DENSCHNCNE NOR2-AN-        2-        2
 DENSCHND   SUR2-AN-        3-        0
+DENSCHNDNE NOR2-AN-        3-        3
 DENSCHNE   SUR2-AN-        3-        0
+DENSCHNENE NOR2-AN-        3-        3
 DENSCHNF   SUR2-AY-        2-        0
+DENSCHNFNE NOR2-AY-        2-        2
 DIAGIQB    QBR2-AN-        V-        0
 DIAGIQE    QBR2-AN-        V-        0
 DIAGIQT    QBR2-AN-        V-        0
@@ -391,7 +401,7 @@ EDENSCH    OUR2-AN-        V-        0
 EG1        OBR2-AY-        3-        0
 EG2        OUR2-AN-     1000-        0
 EG3        OOR2-AY-        V-        V
-EIGENA     NOR2-AN-        V-        V
+EIGENA     NBR2-AN-        V-        V
 EIGENA2    QQR2-AN-        V-        V
 EIGENACO   SQR2-AN-        V-        V
 EIGENALS   SUR2-AN-        V-        0
@@ -414,6 +424,7 @@ ELATTAR    LOR2-AN-        7-      102
 ELEC       OOR2-AN-        V-        V
 ENGVAL1    OUR2-AN-        V-        0
 ENGVAL2    SUR2-AN-        3-        0
+ENGVAL2NE  NOR2-AN-        3-        3
 ENSO       NOR2-MN-        9-      168
 ENSOLS     SUR2-MN-        9-        0
 EQC        OLR2-MY-        9-        3
@@ -426,6 +437,7 @@ EXPFIT     SUR2-AN-        2-        0
 EXPFITA    OLR2-AN-        5-       22
 EXPFITB    OLR2-AN-        5-      102
 EXPFITC    OLR2-AN-        5-      502
+EXPFITNE   NOR2-AN-        2-        2
 EXPLIN     OBR2-AN-        V-        V
 EXPLIN2    OBR2-AN-        V-        V
 EXPQUAD    OBR2-AN-        V-        V
@@ -435,11 +447,11 @@ EXTROSNBNE NOR2-AN-        V-        V
 FBRAIN     NOR2-AN-        2-     2211
 FBRAIN2    NOR2-AN-        4-     2211
 FBRAIN2LS  SBR2-AN-        4-        0
-FBRAIN2NE  NOR2-AN-        4-        0
+FBRAIN2NE  NOR2-AN-        4-     2211
 FBRAIN3    NOR2-AN-        6-     2211
 FBRAIN3LS  SUR2-AN-        6-        0
 FBRAINLS   SBR2-AN-        2-        0
-FBRAINNE   NOR2-AN-        2-        0
+FBRAINNE   NOR2-AN-        2-     2211
 FCCU       SLR2-MN-       19-        8
 FEEDLOC    LOR2-AN-       90-      259
 FERRISDC   QLR2-AN-        V-        V
@@ -532,10 +544,15 @@ HATFLDBNE  NOR2-AN-        4-        0
 HATFLDC    SBR2-AN-       25-        0
 HATFLDCNE  NOR2-AN-       25-        0
 HATFLDD    SUR2-AN-        3-        0
+HATFLDDNE  NOR2-AN-        3-       10
 HATFLDE    SUR2-AN-        3-        0
+HATFLDENE  NOR2-AN-        3-       21
 HATFLDF    NOR2-AN-        3-        3
-HATFLDFL   OUR2-AN-        3-        3
+HATFLDFL   SUR2-AN-        3-        0
+HATFLDFLNE NOR2-AN-        3-        3
+HATFLDFLS  SUR2-AN-        3-        0
 HATFLDG    NOR2-AY-       25-       25
+HATFLDGLS  SUR2-AY-       25-        0
 HATFLDH    QLR2-AN-        4-        7
 HEART6     NOR2-MN-        6-        6
 HEART6LS   SUR2-MN-        6-        0
@@ -568,6 +585,7 @@ HIMMELBC   NQR2-AN-        2-        2
 HIMMELBD   NQR2-AN-        2-        2
 HIMMELBE   NQR2-AY-        3-        3
 HIMMELBF   SUR2-AN-        4-        0
+HIMMELBFNE NOR2-AN-        4-        7
 HIMMELBG   OUR2-AN-        2-        0
 HIMMELBH   OUR2-AN-        2-        0
 HIMMELBI   OLR2-MN-      100-       12
@@ -713,11 +731,12 @@ HS99EXP    OOR2-AN-       31-       21
 HUBFIT     OLR2-AN-        2-        1
 HUES-MOD   QLR2-MN-        V-        V
 HUESTIS    QLR2-MN-        V-        V
-HUMPS      SUR2-AN-        2-        0
+HUMPS      OUR2-AN-        2-        0
 HVYCRASH   LOR2-AN-        V-        V
 HYDC20LS   SUR2-AN-       99-        0
 HYDCAR20   NOR2-AN-       99-       99
 HYDCAR6    NOR2-AN-       29-       29
+HYDCAR6LS  SUR2-AN-       29-        0
 HYDROELL   OLR2-AN-     1009-     1008
 HYDROELM   OLR2-AN-      505-      504
 HYDROELS   OLR2-AN-      169-      168
@@ -729,7 +748,7 @@ INTEQNE    NOR2-AN-        V-        V
 INTEQNELS  SUR2-AN-        V-        0
 JANNSON3   OQR2-AN-        V-        3
 JANNSON4   OQR2-AN-        V-        2
-JENSMP     OUR2-AN-        2-        0
+JENSMP     SUR2-AN-        2-        0
 JENSMPNE   NOR2-AN-        2-       10
 JIMACK     OUR2-AN-     3549-        0
 JJTABEL3   QLR2-RN-     3025-     1650
@@ -748,7 +767,8 @@ KOEBHELBNE NOR2-RN-        3-        0
 KOWOSB     SUR2-MN-        4-        0
 KOWOSBNE   NOR2-MN-        4-       11
 KSIP       QLR2-AN-       20-     1001
-KSS        NOR2-AN-        V-        0
+KSS        NOR2-AN-        V-        V
+KSSLS      SUR2-AN-        V-        0
 KTMODEL    NOR2-MN-      720-      450
 LAKES      QOR2-RN-       90-       78
 LANCZOS1   NOR2-MN-        6-       24
@@ -878,7 +898,9 @@ MCONCON    LOI2-MN-       15-       11
 MDHOLE     OBR2-AN-        2-        0
 MESH       OOR2-AY-       41-       48
 METHANB8   NOR2-MN-       31-       31
+METHANB8LS SUR2-MN-       31-        0
 METHANL8   NOR2-MN-       31-       31
+METHANL8LS SUR2-MN-       31-        0
 METHANOL   OOR2-AN-        V-        V
 MEXHAT     OUR2-AN-        2-        0
 MEYER3     SUR2-RN-        3-        0
@@ -888,9 +910,11 @@ MGH09LS    SUR2-MN-        4-        0
 MGH10      NOR2-MN-        3-       16
 MGH10LS    SUR2-MN-        3-        0
 MGH10S     NOR2-MN-        3-       16
+MGH10SLS   SUR2-MN-        3-        0
 MGH17      NOR2-MN-        5-       33
 MGH17LS    SUR2-MN-        5-        0
 MGH17S     NOR2-MN-        5-       33
+MGH17SLS   NOR2-MN-        5-       33
 MIFFLIN1   LQR2-AN-        3-        2
 MIFFLIN2   LQR2-AN-        3-        2
 MINC44     LQR2-AN-        V-        V
@@ -944,6 +968,7 @@ MSS1       QQR2-AN-       90-       73
 MSS2       QQR2-AN-      756-      703
 MSS3       QQR2-AN-     2070-     1981
 MUONSINE   NOR2-MN-        1-      512
+MUONSINELS SUR2-MN-        1-        0
 MWRIGHT    OQR2-AN-        5-        3
 NASH       QLR2-AN-       72-       24
 NCB20      OUR2-AN-        V-        0
@@ -1067,8 +1092,8 @@ PALMER5A   SBR2-RN-        8-        0
 PALMER5ANE NOR2-RN-        8-        0
 PALMER5B   SBR2-RN-        9-        0
 PALMER5BNE NOR2-RN-        9-        0
-PALMER5C   SUR2-RN-        6-        0
-PALMER5D   SUR2-RN-        4-        0
+PALMER5C   QUR2-RN-        6-        0
+PALMER5D   QUR2-RN-        4-        0
 PALMER5E   SBR2-RN-        8-        0
 PALMER5ENE NOR2-RN-        8-        0
 PALMER6A   SBR2-RN-        6-        0
@@ -1078,12 +1103,12 @@ PALMER6E   SBR2-RN-        8-        0
 PALMER6ENE NOR2-RN-        8-        0
 PALMER7A   SBR2-RN-        6-        0
 PALMER7ANE NOR2-RN-        6-        0
-PALMER7C   SUR2-RN-        8-        0
+PALMER7C   QUR2-RN-        8-        0
 PALMER7E   SBR2-RN-        8-        0
 PALMER7ENE NOR2-RN-        8-        0
 PALMER8A   SBR2-RN-        6-        0
 PALMER8ANE NOR2-RN-        6-        0
-PALMER8C   SUR2-RN-        8-        0
+PALMER8C   QUR2-RN-        8-        0
 PALMER8E   SBR2-RN-        8-        0
 PALMER8ENE NOR2-RN-        8-        0
 PARKCH     OUR2-RN-       15-        0
@@ -1128,6 +1153,7 @@ POWELLBSLS SUR2-AN-        2-        0
 POWELLSE   NOR2-AN-        V-        V
 POWELLSG   OUR2-AN-        V-        0
 POWELLSQ   NOR2-AN-        2-        2
+POWELLSQLS SUR2-AN-        2-        0
 POWER      OUR2-AN-        V-        0
 PRIMAL1    QLR2-MN-      325-       85
 PRIMAL2    QLR2-MN-      649-       96
@@ -1181,13 +1207,14 @@ READING7   OOR2-MN-     1002-      500
 READING8   OOR2-MN-     2002-     1000
 READING9   OOR2-MN-        V-        V
 RECIPE     NOR2-AY-        3-        3
+RECIPELS   SUR2-AY-        3-        0
 RES        NLR2-MN-       20-       14
 RK23       LOR2-RN-       17-       11
 ROBOT      QOR2-MY-       14-        2
 ROBOTARM   OOR2-AN-        V-        V
 ROCKET     OOR2-AN-        V-        V
 ROSENBR    SUR2-AN-        2-        0
-ROSENBRTU  SUR2-AN-        2-        0
+ROSENBRTU  OUR2-AN-        2-        0
 ROSENMMX   LQR2-AN-        5-        4
 ROSEPETAL  LQR2-AN-        V-        V
 ROSEPETAL2 LQR2-AN-        V-        V
@@ -1198,6 +1225,7 @@ RSNBRNE    NOR2-AN-        2-        2
 S268       QLR2-AN-        5-        5
 S277-280   LLR2-AN-        V-        V
 S308       SUR2-AN-        2-        0
+S308NE     SUR2-AN-        2-        0
 S316-322   QQR2-AN-        2-        1
 S365       QOR2-AY-        7-        5
 S365MOD    QOR2-AY-        7-        5
@@ -1248,7 +1276,9 @@ SPECAN     SBR2-AN-        V-        0
 SPECANNE   NOR2-AN-        V-        0
 SPIN       NOR2-AN-        V-        V
 SPIN2      NOR2-AN-        V-        V
+SPIN2LS    SUR2-AN-        V-        0
 SPIN2OP    QOR2-AN-        V-        V
+SPINLS     SUR2-AN-        V-        0
 SPINOP     QOR2-AN-        V-        V
 SPIRAL     LOR2-AN-        3-        2
 SPMSQRT    NQR2-AN-        V-        V
@@ -1281,6 +1311,7 @@ STNQP1     QLR2-AN-        V-        V
 STNQP2     QLR2-AN-        V-        V
 STRATEC    OUR2-RN-       10-        0
 STREG      SUR2-AN-        4-        0
+STREGNE    NOR2-AN-        4-        2
 SUPERSIM   LLR2-AN-        2-        2
 SVANBERG   OOR2-MN-        V-        V
 SWOPF      LQR2-RN-       83-       92
@@ -1356,6 +1387,7 @@ TWOD       QLR2-AN-        V-        V
 UBH1       QLR2-MN-        V-        V
 UBH5       LQR2-MN-        V-        V
 VANDANIUMS NOR2-MN-        V-       10
+VANDANMSLS SUR2-MN-        V-        0
 VANDERM1   NOR2-AN-        V-        V
 VANDERM2   NOR2-AN-        V-        V
 VANDERM3   NOR2-AN-        V-        V
@@ -1370,6 +1402,7 @@ VESUVIOLS  SUR2-MN-        8-        0
 VESUVIOU   NOR2-MN-        8-     1025
 VESUVIOULS SUR2-MN-        8-        0
 VIBRBEAM   SUR2-MN-        8-        0
+VIBRBEAMNE NOR2-MN-        8-       30
 WACHBIEG   LQR2-AN-        3-        2
 WALL10     QBR2-RN-     1461-        0
 WALL100    QBR2-RN-   149624-        0

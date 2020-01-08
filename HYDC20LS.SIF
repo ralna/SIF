@@ -99,20 +99,20 @@ GROUPS
 
  DO J         1                        M
  ZN 2.1-(J)   X(0,J)                   B
- XN 2.1-(J)   'SCALE'   100.0
+ XN 2.1-(J)   'SCALE'   1.0D+4
  XN 2.3-(J)   X(N-1,J)  -1.0
  DO I         1                        N-2
- XN 2.2-(I,J) 'SCALE'   100.0
+ XN 2.2-(I,J) 'SCALE'   1.0D+4
  ND
 
  DO I         0                        N-1
  XN 2.7-(I)
  ND
 
- N  2.8       'SCALE'   100000.0
+ N  2.8       'SCALE'   1.0D+10
 
  DO I         1                        N-2
- XN 2.9-(I)   'SCALE'   100000.0
+ XN 2.9-(I)   'SCALE'   1.0D+10
  ND
 
 CONSTANTS

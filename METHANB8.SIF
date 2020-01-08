@@ -82,20 +82,20 @@ GROUPS
 
  DO J         1                        M
  ZE 2.1-(J)   X(0,J)                   B
- XE 2.1-(J)   'SCALE'   100.0
+ XE 2.1-(J)   'SCALE'   1.0D+2
  XE 2.3-(J)   X(N-1,J)  -1.0
  DO I         1                        N-2
- XE 2.2-(I,J) 'SCALE'   100.0
+ XE 2.2-(I,J) 'SCALE'   1.0D+2
  ND
 
  DO I         0                        N-1
  XE 2.7-(I)
  ND
 
- E  2.8       'SCALE'   100000.0
+ E  2.8       'SCALE'   1.0D+5
 
  DO I         1                        N-2
- XE 2.9-(I)   'SCALE'   100000.0
+ XE 2.9-(I)   'SCALE'   1.0D+5
  ND
 
 CONSTANTS
