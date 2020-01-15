@@ -268,6 +268,8 @@ CMPC6      QLR2-RN-     1529-     2350
 CMPC7      QLR2-RN-     1530-     2351
 CMPC8      QLR2-RN-     1529-     2350
 CMPC9      QLR2-RN-     1529-     2350
+COATING    SUR2-MN-      134-        0
+COATINGNE  SUR2-MN-      134-      252
 CONCON     LOI2-MN-       15-       11
 CONGIGMZ   LQR2-AN-        3-        5
 CONT5-QP   QLR2-MN-        V-        V
@@ -331,6 +333,10 @@ DENSCHNE   SUR2-AN-        3-        0
 DENSCHNENE NOR2-AN-        3-        3
 DENSCHNF   SUR2-AY-        2-        0
 DENSCHNFNE NOR2-AY-        2-        2
+DEVGLA1    SUR2-MN-        4-        0
+DEVGLA1NE  NOR2-MN-        4-       24
+DEVGLA2    SUR2-MN-        5-        0
+DEVGLA2NE  SUR2-MN-        5-       16
 DIAGIQB    QBR2-AN-        V-        0
 DIAGIQE    QBR2-AN-        V-        0
 DIAGIQT    QBR2-AN-        V-        0
@@ -415,6 +421,8 @@ EDENSCH    OUR2-AN-        V-        0
 EG1        OBR2-AY-        3-        0
 EG2        OUR2-AN-     1000-        0
 EG3        OOR2-AY-        V-        V
+EGGCRATE   SUR2-MN-        4-        0
+EGGCRATENE NOR2-MN-        4-        2
 EIGENA     NBR2-AN-        V-        V
 EIGENA2    QQR2-AN-        V-        V
 EIGENACO   SQR2-AN-        V-        V
@@ -435,6 +443,8 @@ EIGMINA    LQR2-AN-        V-        V
 EIGMINB    LQR2-AN-        V-        V
 EIGMINC    LQR2-AN-        V-        V
 ELATTAR    LOR2-AN-        7-      102
+ELATVIDU   SUR2-MN-        2-        0
+ELATVIDUNE NOR2-MN-        2-        3
 ELEC       OOR2-AN-        V-        V
 ENGVAL1    OUR2-AN-        V-        0
 ENGVAL2    SUR2-AN-        3-        0
@@ -447,6 +457,8 @@ ERRINROS   SUR2-AN-        V-        0
 ERRINROSNE NOR2-AN-        V-        V
 ERRINRSM   SUR2-AN-        V-        0
 ERRINRSMNE NOR2-AN-        V-        V
+EXP2       SUR2-MN-        2-        0
+EXP2NE     NOR2-MN-        2-       10
 EXPFIT     SUR2-AN-        2-        0
 EXPFITA    OLR2-AN-        5-       22
 EXPFITB    OLR2-AN-        5-      102
