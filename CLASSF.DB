@@ -608,6 +608,7 @@ HILBERTB   QUR2-AN-        V-        0
 HIMMELBA   NLR2-AN-        2-        2
 HIMMELBB   OUR2-AN-        2-        0
 HIMMELBC   NQR2-AN-        2-        2
+HIMMELBCLS OUR2-AN-        2-        0
 HIMMELBD   NQR2-AN-        2-        2
 HIMMELBE   NQR2-AY-        3-        3
 HIMMELBF   SUR2-AN-        4-        0
@@ -782,6 +783,8 @@ JNLBRNG1   QBR2-AY-        V-        0
 JNLBRNG2   QBR2-AY-        V-        0
 JNLBRNGA   QBR2-AY-        V-        0
 JNLBRNGB   QBR2-AY-        V-        0
+JUDGE      SUR2-MN-        2-        0
+JUDGENE    NOR2-MN-        2-       20
 JUNKTURN   QQR2-MN-        V-        V
 KIRBY2     NOR2-MN-        5-      151
 KIRBY2LS   SUR2-MN-        5-        0
@@ -1181,6 +1184,12 @@ POWELLSG   OUR2-AN-        V-        0
 POWELLSQ   NOR2-AN-        2-        2
 POWELLSQLS SUR2-AN-        2-        0
 POWER      OUR2-AN-        V-        0
+POWERSUM   SUR2-MN-        V-        0
+POWERSUMNE NOR2-MN-        V-        V
+PRICE3     SUR2-MN-        V-        0
+PRICE3NE   NOR2-MN-        2-        2
+PRICE4     SUR2-MN-        2-        0
+PRICE4NE   NOR2-MN-        2-        2
 PRIMAL1    QLR2-MN-      325-       85
 PRIMAL2    QLR2-MN-      649-       96
 PRIMAL3    QLR2-MN-      745-      111
@@ -1196,6 +1205,8 @@ PSPDOC     SBR2-AY-        4-        0
 PT         LLR2-AN-        2-        V
 QC         OLR2-MY-        9-        4
 QCNEW      OLR2-MY-        9-        3
+QING       SUR2-MN-        V-        0
+QINGNE     NOR2-MN-        V-        V
 QPBAND     QLR2-AN-        V-        V
 QPCBLEND   QLR2-MN-       83-       74
 QPCBOEI1   QLR2-MN-      384-      351
@@ -1338,6 +1349,8 @@ STNQP2     QLR2-AN-        V-        V
 STRATEC    OUR2-RN-       10-        0
 STREG      SUR2-AN-        4-        0
 STREGNE    NOR2-AN-        4-        2
+STRTCHDV   SUR2-MN-        V-        0
+STRTCHDVNE NOR2-MN-        V-        V
 SUPERSIM   LLR2-AN-        2-        2
 SVANBERG   OOR2-MN-        V-        V
 SWOPF      LQR2-RN-       83-       92
@@ -1393,6 +1406,10 @@ TRAINF     QQR2-MN-        V-        V
 TRAINH     QOR2-MN-        V-        V
 TRIDIA     QUR2-AN-        V-        0
 TRIGGER    NOR2-MY-        7-        6
+TRIGON1    SUR2-MN-        V-        0
+TRIGON1NE  NOR2-MN-        V-        V
+TRIGON2    SUR2-MN-        V-        0
+TRIGON2NE  NOR2-MN-        V-        V
 TRIMLOSS   LOR2-AN-      142-       75
 TRO11X3    LOR2-RN-      150-       61
 TRO21X5    LOR2-RN-      540-      201
@@ -1437,6 +1454,10 @@ WALL50     QBR2-RN-    37311-        0
 WATER      ONR2-MN-       31-       10
 WATSON     SUR2-AN-        V-        0
 WATSONNE   NOR2-AN-        V-       31
+WAYSEA1    SUR2-MN-        2-        0
+WAYSEA1NE  NOR2-MN-        2-        2
+WAYSEA2    SUR2-MN-        2-        0
+WAYSEA2NE  NOR2-MN-        2-        2
 WEEDS      SBR2-RN-        3-        0
 WEEDSNE    NOR2-RN-        3-        0
 WOMFLET    LOR2-AN-        3-        3
