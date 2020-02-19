@@ -299,6 +299,10 @@ CVXQP2     QLR2-AN-        V-        V
 CVXQP3     QLR2-AN-        V-        V
 CYCLIC3    NOR2-AN-        V-        0
 CYCLIC3LS  NOR2-AN-        V-        0
+CYCLOOCF   NQR2-MN-        V-        V
+CYCLOOCFLS SUR2-MN-        V-        0
+CYCLOOCT   NQR2-MN-        V-        V
+CYCLOOCTLS SBR2-MN-        V-        0
 DALE       QLR2-RN-    16514-      405
 DALLASL    ONR2-MN-      906-      667
 DALLASM    ONR2-MN-      196-      151
