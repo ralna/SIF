@@ -21,6 +21,7 @@ These are
  nlesif  Nonlinear equation and inequality examples
  uncsif  Unconstrained examples
  bcsif   Bound-Constrained examples
+ lcsif   Linearly-constrained nonlinear programming examples
  nlpsif  Nonlinear Programming examples
 
 Each directory contains a file *.dat listing the examples in alphabetical order.
@@ -30,4 +31,4 @@ Further subsets may be found using the SIFDecode select tool from
   https://github.com/ralna/SIFDecode/wiki
 
 Nick Gould, for GALAHAD productions
-2nd March, 2018
+29th July, 2020
