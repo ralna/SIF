@@ -1169,6 +1169,8 @@ POLAK3     LOR2-AN-       12-       10
 POLAK4     LQR2-AN-        3-        3
 POLAK5     LOR2-AN-        3-        2
 POLAK6     LOR2-AN-        5-        4
+POLYGEVEN  OOR2-AN-        V-        V
+POLYGODD   OOR2-AN-        V-        V
 POLYGON    OOR2-AN-        V-        V
 POROUS1    NOR2-MN-        V-        V
 POROUS2    NOR2-MN-        V-        V
