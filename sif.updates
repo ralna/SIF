@@ -359,3 +359,7 @@ Removals:
            inequality constraints
 02/Dec/05: CKEOHELB.SIF renamed correctly as CKOEHELB.SIF
 09/Jan/19: YATP1SS.SIF and YATP1SQ.SIF removed as duplicates of YATP1NE.SIF
+21/Jun/21: remove HIER133B.SIF and HIER133C.SIF duplicates of HIER133A.SIF,
+           HIER163B.SIF and HIER163C.SIF duplicates of HIER163A.SIF,
+           HIER163E.SIF duplicate of HIER163D.SIF, and
+           TABLE4.SIF and TABLE5 duplicates of TABLE3.SIF

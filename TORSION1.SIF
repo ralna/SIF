@@ -33,6 +33,8 @@ NAME          TORSION1
 *   Q is half the number of discretized points along the X axis
 
 *IE Q                   2              $-PARAMETER n= 16
+*IE Q                   3              $-PARAMETER n= 36
+*IE Q                   4              $-PARAMETER n= 64
 *IE Q                   5              $-PARAMETER n= 100     original value
 *IE Q                   11             $-PARAMETER n= 484
 *IE Q                   16             $-PARAMETER n= 1024
