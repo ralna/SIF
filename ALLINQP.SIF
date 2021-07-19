@@ -14,13 +14,14 @@ NAME          ALLINQP
 
 *IE N                   10             $-PARAMETER
 *IE N                   100            $-PARAMETER
+*IE N                   1000           $-PARAMETER
 *IE N                   10000          $-PARAMETER
  IE N                   50000          $-PARAMETER     original value
 *IE N                   100000         $-PARAMETER
 *IE N                   200000         $-PARAMETER
 *IE N                   400000         $-PARAMETER
 *IE N                   500000         $-PARAMETER
- IE N                   10             $-PARAMETER
+*IE N                   10000          $-PARAMETER
 
  IE 1                   1
  IE 2                   2
