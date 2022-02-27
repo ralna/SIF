@@ -269,7 +269,7 @@ CMPC7      QLR2-RN-     1530-     2351
 CMPC8      QLR2-RN-     1529-     2350
 CMPC9      QLR2-RN-     1529-     2350
 COATING    SUR2-MN-      134-        0
-COATINGNE  SUR2-MN-      134-      252
+COATINGNE  NOR2-MN-      134-      252
 CONCON     LOI2-MN-       15-       11
 CONGIGMZ   LQR2-AN-        3-        5
 CONT5-QP   QLR2-MN-        V-        V
@@ -340,7 +340,7 @@ DENSCHNFNE NOR2-AY-        2-        2
 DEVGLA1    SUR2-MN-        4-        0
 DEVGLA1NE  NOR2-MN-        4-       24
 DEVGLA2    SUR2-MN-        5-        0
-DEVGLA2NE  SUR2-MN-        5-       16
+DEVGLA2NE  NOR2-MN-        5-       16
 DIAGIQB    QBR2-AN-        V-        0
 DIAGIQE    QBR2-AN-        V-        0
 DIAGIQT    QBR2-AN-        V-        0
