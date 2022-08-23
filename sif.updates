@@ -255,6 +255,7 @@ Additions:
            LEVYMONT9.SIF LEVYMONT10.SIF LEVYMONE5.SIF LEVYMONE6.SIF  
            LEVYMONE7.SIF LEVYMONE8.SIF  LEVYMONE9.SIF LEVYMONE10.SIF
            DGOSPEC.SIF
+23/Aug/22: DIXMAANA1.SIF DIXMAANE1.SIF  DIXMAANI1.SIF DIXMAANM1.SIF
 
 Corrections to problem statement:
 
@@ -361,7 +362,6 @@ Cosmetic changes:
            DMN15102.SIF   DMN15332LS.SIF DMN15333.SIF	DMN37143LS.SIF
            DMN15103LS.SIF DMN15332.SIF   DMN37142LS.SIF	DMN37143.SIF
 
-
 Removals:
 
 16/Apr/02: LHAIFAM.SIF violates SIF restrictions on non-trivial groups for
@@ -372,3 +372,7 @@ Removals:
            HIER163B.SIF and HIER163C.SIF duplicates of HIER163A.SIF,
            HIER163E.SIF duplicate of HIER163D.SIF, and
            TABLE4.SIF and TABLE5.SIF duplicates of TABLE3.SIF
+23/Aug/22: remove DIXMAANA.SIF and replace by spasity-accurate DIXMAANA1.SIF
+           remove DIXMAANE.SIF and replace by spasity-accurate DIXMAANE1.SIF
+           remove DIXMAANI.SIF and replace by spasity-accurate DIXMAANI1.SIF
+           remove DIXMAANM.SIF and replace by spasity-accurate DIXMAANM1.SIF

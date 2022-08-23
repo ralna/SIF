@@ -2,29 +2,23 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          DIXMAANM
+NAME          DIXMAANI1
 
 *   Problem :
 *   *********
-*   A variant on the Dixon-Maany test problem (version I)
+*   The Dixon-Maany test problem (version I) but removing elements/groups 
+*   of type 2 since the parameter beta=0
 
 *   Source:
-*   L. Luksan, C. Matonoha and J. Vlcek  
-*   Modified CUTE problems for sparse unconstraoined optimization
-*   Technical Report 1081
-*   Institute of Computer Science
-*   Academy of Science of the Czech Republic
-
-*   (problem 19) based on
-
 *   L.C.W. Dixon and Z. Maany,
 *   "A family of test problems with sparse Hessians for unconstrained
 *   optimization",
 *   TR 206, Numerical Optimization Centre, Hatfield Polytechnic, 1988.
 
+*   See also Buckley#221 (p. 49)
 *   SIF input: Ph. Toint, Dec 1989.
 *              correction by Ph. Shott, January 1995.
-*              this version Nick Gould, June, 2013
+*              update Nick Gould, August 2022, to remove beta=0 terms.
 
 *   classification OUR2-AN-V-0
 
@@ -51,8 +45,7 @@ NAME          DIXMAANM
 *   K-set 3
 
  IE K1                  2
- IE K2                  1
- IE K3                  1
+ IE K3                  0
  IE K4                  2
 
 *   Other parameters
@@ -72,26 +65,24 @@ VARIABLES
 GROUPS
 
  N  GA
- N  GB
  N  GC
  N  GD
 
 CONSTANTS
 
-    DIXMAANM  GA        -1.0
+    DIXMAANI  GA        -1.0
 
 BOUNDS
 
- FR DIXMAANM  'DEFAULT'
+ FR DIXMAANI  'DEFAULT'
 
 START POINT
 
- XV DIXMAANM  'DEFAULT' 2.0
+ XV DIXMAANI  'DEFAULT' 2.0
 
 ELEMENT TYPE
 
  EV SQ        X
- EV SQB       X                        Y
  EV SQC       X                        Y
  EV 2PR       X                        Y
 
@@ -102,15 +93,6 @@ ELEMENT USES
  DO I         1                        N
  XT A(I)      SQ
  ZV A(I)      X                        X(I)
- ND
-
-*   Second group
-
- DO I         1                        N-1
- IA I+1       I          1
- XT B(I)      SQB
- ZV B(I)      X                        X(I)
- ZV B(I)      Y                        X(I+1)
  ND
 
 *   Third group
@@ -146,19 +128,6 @@ GROUP USES
  ZE GA        A(I)                     AI
  ND
 
-*   Second group
-
- DO I         1                        N-1
- RI RI        I
- R/ I/N       RI                       RN
- RE TMP                 1.0
- DO J         1                        K2
- R* TMP       TMP                      I/N
- OD J
- R* BI        TMP                      BETA
- ZE GB        B(I)                     BI
- ND
-
 *   Third group
 
  DO I         1                        2M
@@ -187,7 +156,7 @@ GROUP USES
 
 OBJECT BOUND
 
- LO DIXMAANM            0.0
+ LO DIXMAANI            0.0
 
 *   Solution
 
@@ -200,7 +169,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      DIXMAANM
+ELEMENTS      DIXMAANI1
 
 TEMPORARIES
 
@@ -216,20 +185,6 @@ INDIVIDUALS
  F                      X * X
  G  X                   X + X
  H  X         X         2.0
-
-*   Second type
-
- T  SQB
- A  F1                  X * X
- A  F2                  Y + Y * Y
- A  DF2DY               1.0 + 2.0 * Y
- F                      F1 * F2 * F2
- G  X                   2.0 * X * F2 * F2
- G  Y                   2.0 * F1 * F2 * DF2DY
- H  X         X         2.0 * F2 * F2
- H  X         Y         4.0 * X * DF2DY * F2
- H  Y         Y         4.0 * F1 * F2 +
- H+                      2.0 * F1 * DF2DY * DF2DY
 
 *   Third type
 
