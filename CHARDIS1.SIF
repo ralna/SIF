@@ -70,14 +70,14 @@ GROUPS
  DO I         1                        NP1
  IA I+        I         1
  DO J         I+                       NP1                        
- XN O(I,J)            
+ XN O(I,J)
  OD J
  OD I
 
 *   Constraints
 
  DO I         2                        NP1
- XL RES(I)  
+ XL RES(I)
  OD I
 
 CONSTANTS

@@ -100,17 +100,17 @@ NAME          RDW2D51F
 
  DO I         N/2+1                    N
  DO J         N/2+1                    N
- AE V(I,J)    ZERO
+ A= V(I,J)    ZERO
  ND
 
  DO I         0                        N/2
  DO J         N/2+1                    N
- AE V(I,J)    ZERO
+ A= V(I,J)    ZERO
  ND
 
  DO I         N/2+1                    N
  DO J         0                        N/2
- AE V(I,J)    ZERO
+ A= V(I,J)    ZERO
  ND
 
 

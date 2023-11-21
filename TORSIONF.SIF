@@ -239,12 +239,12 @@ GROUP USES
 
  DO I         1                        P-1
  DO J         1                        P-1
- XE GR(I,J)   A(I,J)   0.25            B(I,J)    0.25
+ XE GR(I,J)   A(I,J)    0.25           B(I,J)    0.25
  ND
 *
  DO I         2                        P
  DO J         2                        P
- XE GL(I,J)   C(I,J)   0.25            D(I,J)    0.25
+ XE GL(I,J)   C(I,J)    0.25           D(I,J)    0.25
  ND
 
 

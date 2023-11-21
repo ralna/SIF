@@ -1041,6 +1041,7 @@ NONSCOMP   SBR2-AN-        V-        0
 NONSCOMPNE NOR2-AN-        V-        0
 NUFFIELD   LQR2-AN-        V-        V
 NYSTROM5   NOR2-RY-       18-       20
+NYSTROM5C  NOR2-RY-       18-       20
 OBSTCLAE   QBR2-AY-        V-        0
 OBSTCLAL   QBR2-AY-        V-        0
 OBSTCLBL   QBR2-AY-        V-        0
@@ -1066,6 +1067,7 @@ OPTPRLOC   QQR2-AN-       30-       30
 ORBIT2     LOR1-RN-        V-        V
 ORTHRDM2   QOR2-AY-        V-        V
 ORTHRDS2   QOR2-AY-        V-        V
+ORTHRDS2C  QOR2-AY-        V-        V
 ORTHREGA   QQR2-AN-        V-        V
 ORTHREGB   QQR2-AN-       27-        6
 ORTHREGC   QQR2-AN-        V-        V

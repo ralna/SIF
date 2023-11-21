@@ -103,7 +103,7 @@ NAME          TAXR213322
 
 *  regularization weight
 
- RE DELTA     1.0D-8
+ RE DELTA               1.0D-8
 
 *  objective and constraint coefficients
 

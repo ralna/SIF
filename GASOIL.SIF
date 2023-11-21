@@ -345,7 +345,7 @@ START POINT
 
  DO I         1                        NH
  DO J         1                        NE
- X  GASOIL    V(I,J)
+ X  GASOIL    V(I,J)    0.0
  OD J
  ND
 

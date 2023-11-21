@@ -258,6 +258,7 @@ Additions:
 23/Aug/22: DIXMAANA1.SIF DIXMAANE1.SIF  DIXMAANI1.SIF DIXMAANM1.SIF
 23/Jan/23: LRA9A.SIF     LRCOVTYPE.SIF  LRIJCNN1.SIF  LRW1A.SIF 
            LRW8A.SIF
+21/Nov/23: NYSTROM5C     ORTHRDS2C
 
 Corrections to problem statement:
 
@@ -363,6 +364,17 @@ Cosmetic changes:
            DMN15102LS.SIF DMN15103.SIF   DMN15333LS.SIF	DMN37142.SIF
            DMN15102.SIF   DMN15332LS.SIF DMN15333.SIF	DMN37143LS.SIF
            DMN15103LS.SIF DMN15332.SIF   DMN37142LS.SIF	DMN37143.SIF
+21/Nov/23: ALLINQP.SIF    BOX.SIF        BRITGAS.SIF    CHARDIS1.SIF   
+           COSINE.SIF     CYCLOOCF.SIF   CYCLOOCFLS.SIF DEGENQP.SIF   
+           DEMBO7.SIF     GASOIL.SIF     HS23.SIF       MARINE.SIF
+           METHANOL.SIF   NYSTROM5.SIF   ORTHRDS2.SIF   PINENE.SIF
+           POWERSUM.SIF   POWERSUMB.SIF  POWERSUMNE.SIF RDW2D51U.SIF
+           RDW2D51F.SIF   SCOSINE.SIF    SSCOSINE.SIF   SIM2BQP.SIF
+           TAXR13322.SIF  TAXR213322.SIF TAXR53322.SIF  TESTQUAD.SIF
+           TORSIONA.SIF   TORSIONB.SIF   TORSIONC.SIF   TORSIOND.SIF
+           TORSIONE.SIF   TORSIONF.SIF   TORSION1.SIF   TORSION2.SIF
+           TORSION3.SIF   TORSION4.SIF   TORSION5.SIF   TORSION6.SIF
+           YATP2CLS.SIF   YATP2CNE.SIF   YATP2LS.SIF   YATP2SQ.SIF 
 
 Removals:
 
@@ -374,7 +386,7 @@ Removals:
            HIER163B.SIF and HIER163C.SIF duplicates of HIER163A.SIF,
            HIER163E.SIF duplicate of HIER163D.SIF, and
            TABLE4.SIF and TABLE5.SIF duplicates of TABLE3.SIF
-23/Aug/22: remove DIXMAANA.SIF and replace by spasity-accurate DIXMAANA1.SIF
-           remove DIXMAANE.SIF and replace by spasity-accurate DIXMAANE1.SIF
-           remove DIXMAANI.SIF and replace by spasity-accurate DIXMAANI1.SIF
-           remove DIXMAANM.SIF and replace by spasity-accurate DIXMAANM1.SIF
+23/Aug/22: remove DIXMAANA.SIF and replace by sparsity-accurate DIXMAANA1.SIF
+           remove DIXMAANE.SIF and replace by sparsity-accurate DIXMAANE1.SIF
+           remove DIXMAANI.SIF and replace by sparsity-accurate DIXMAANI1.SIF
+           remove DIXMAANM.SIF and replace by sparsity-accurate DIXMAANM1.SIF

@@ -2,10 +2,12 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          ORTHRDS2
+NAME          ORTHRDS2C
 
 *   Problem :
 *   *********
+
+*   Corrected version of ORTHRDS2
 
 *   An orthogonal regression problem.
 
@@ -201,7 +203,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      ORTHRDS2
+ELEMENTS      ORTHRDS2C
 
 TEMPORARIES
 
@@ -248,7 +250,7 @@ ENDATA
 * ROUTINE           *
 *********************
 
-GROUPS        ORTHRDS2
+GROUPS        ORTHRDS2C
 
 *   Least-square groups
 

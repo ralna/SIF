@@ -26,6 +26,7 @@ NAME          GENROSE
 *IE N                   10             $-PARAMETER
 *IE N                   100            $-PARAMETER
  IE N                   500            $-PARAMETER
+*IE N                   10             $-PARAMETER
 
 *   other parameter definitions
 
@@ -139,7 +140,7 @@ INDIVIDUALS
  T  L2
  F                      GVAR * GVAR
  G                      GVAR + GVAR
- H                      2.0
+ H                      2.0D+0
 
 ENDATA
 

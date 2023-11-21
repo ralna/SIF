@@ -54,7 +54,7 @@ GROUPS
  IE J+1       J         1
  DO K         J+1                      N
  XG C(I,J,K)  X(I)      1.0            X(J)      1.0
- XG C(I,J,K)  X(K)
+ XG C(I,J,K)  X(K)      0.0
  ND
 
 CONSTANTS

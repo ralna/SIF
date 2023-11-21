@@ -26,6 +26,8 @@ NAME          CATMIX
 *IE NH                  200            $-PARAMETER
 *IE NH                  400            $-PARAMETER
  IE NH                  800            $-PARAMETER
+ IE NH                  3000           $-PARAMETER
+*IE NH                  30000          $-PARAMETER
 
 *  The ODE is defined in [0,TF]
 
@@ -97,6 +99,7 @@ BOUNDS
  ND
  ZX CATMIX    X1(0)                    X1_0
  ZX CATMIX    X2(0)                    X2_0
+*XX CATMIX    U(0)      1.0
 
 START POINT
 

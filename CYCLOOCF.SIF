@@ -90,7 +90,7 @@ BOUNDS
 
 START POINT
 
- RE RI        2.0
+ RE RI                  0.0
  R/ START     RI                       RP
  ZV CYCLOOCF  Y2                       START
  ZV CYCLOOCF  Z3                       START
@@ -100,6 +100,18 @@ START POINT
  ZV CYCLOOCF  X(I)                     START
  ZV CYCLOOCF  Y(I)                     START
  ZV CYCLOOCF  Z(I)                     START
+ ND
+
+ RE RI                  2.0
+ R/ START     RI                       RP
+ ZV CYCLOOC2  Y2                       START
+ ZV CYCLOOC2  Z2                       START
+ DO I         3                        P
+ RI RI        I
+ R/ START     RI                       RP
+ ZV CYCLOOC2  X(I)                     START
+ ZV CYCLOOC2  Y(I)                     START
+ ZV CYCLOOC2  Z(I)                     START
  ND
 
 ELEMENT TYPE

@@ -504,7 +504,7 @@ START POINT
 
  DO I         1                        NH
  DO J         1                        NE
- X  MARINE    V(I,J)
+ X  MARINE    V(I,J)    0.0
  OD J
  ND
 

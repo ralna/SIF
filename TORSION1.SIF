@@ -299,8 +299,8 @@ GROUP USES
 
  DO I         2                        P-1
  DO J         2                        P-1
- XE G(I,J)    A(I,J)   0.25            B(I,J)    0.25
- XE G(I,J)    C(I,J)   0.25            D(I,J)    0.25
+ XE G(I,J)    A(I,J)    0.25           B(I,J)    0.25
+ XE G(I,J)    C(I,J)    0.25           D(I,J)    0.25
  ND
 
 OBJECT BOUND

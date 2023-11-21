@@ -110,7 +110,7 @@ RANGES
 
 BOUNDS
  
- FR ALLINQP   'DEFAULT' 0.0
+ FR ALLINQP   'DEFAULT'
  DO I         N/7+1                    2N/7
  XL ALLINQP   X(I)      0.0
  ND 
@@ -139,9 +139,9 @@ QUADRATIC
 
  DO I         1                        N-1
  I+ I+1       I                        1
- X  X(I )     X(I)      2.0            X(I+1)    -1.0
+ X  X(I)      X(I)      2.0            X(I+1)    -1.0
  ND
- X  X(N )     X(N)      2.0
+ X  X(N)      X(N)      2.0
  
 ENDATA
  

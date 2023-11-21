@@ -43,7 +43,7 @@ NAME          POWERSUM
 
  DO I         1                        M
  RI P         I
- RE SUM       0.0
+ RE SUM                 0.0
  DO J         1                        4
  A= XJ        X(J)
  R( A         LOG                      XJ
