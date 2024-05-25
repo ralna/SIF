@@ -72,15 +72,17 @@ TEMPORARIES
 INDIVIDUALS
 
  T  SNCS
- A  PI                  4.0*ATAN(1.0)
- F                      SIN(PI*V1/12.0)*COS(PI*V2/16.0)
- G  V1                  COS(PI*V1/12.0)*COS(PI*V2/16.0)*PI/12.0
- G  V2                  -SIN(PI*V1/12.0)*SIN(PI*V2/16.0)*PI/16.0
- H  V1        V1        -SIN(PI*V1/12.0)*COS(PI*V2/16.0)*
- H+                     PI*PI/144.0
- H  V2        V2        -SIN(PI*V1/12.0)*COS(PI*V2/16.0)*
- H+                     PI*PI/256.0
- H  V1        V2        -COS(PI*V1/12.0)*SIN(PI*V2/16.0)*
- H+                     PI*PI/192.0
+ A  PI                  4.0D0*ATAN(1.0D0)
+ F                      SIN(PI*V1/12.0D0)*COS(PI*V2/16.0D0)
+ G  V1                  COS(PI*V1/12.0D0)*COS(PI*V2/16.0D0)
+ G+                     *PI/12.0D0
+ G  V2                  -SIN(PI*V1/12.0D0)*SIN(PI*V2/16.0D0)
+ G+                     *PI/16.0D0
+ H  V1        V1        -SIN(PI*V1/12.0D0)*COS(PI*V2/16.0D0)*
+ H+                     PI*PI/144.0D0
+ H  V2        V2        -SIN(PI*V1/12.0D0)*COS(PI*V2/16.0D0)*
+ H+                     PI*PI/256.0D0
+ H  V1        V2        -COS(PI*V1/12.0D0)*SIN(PI*V2/16.0D0)*
+ H+                     PI*PI/192.0D0
 
 ENDATA
