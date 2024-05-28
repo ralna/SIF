@@ -133,41 +133,41 @@ INDIVIDUALS
  T  CMPLQ
 
  A  TMP0                V2*V3
- A  TMP1                117.370892*V1/TMP0
- A  TMP2                117.370892/TMP0
+ A  TMP1                117.3708920187793427D0*V1/TMP0
+ A  TMP2                117.3708920187793427D0/TMP0
  F                      TMP1
  G  V1                  TMP2
  G  V2                  -TMP1/V2
  G  V3                  -TMP1/V3
  H  V1        V2        -TMP2/V2
  H  V1        V3        -TMP2/V3
- H  V2        V2        2.0*TMP1/(V2*V2)
+ H  V2        V2        2.0D0*TMP1/(V2*V2)
  H  V2        V3        TMP1/TMP0
- H  V3        V3        2.0*TMP1/(V3*V3)
+ H  V3        V3        2.0D0*TMP1/(V3*V3)
 
  T  SQQUT
 
- A  TMP                 V1*V2/48.0
+ A  TMP                 V1*V2/48.0D0
  F                      V1*TMP
- G  V1                  2.0*TMP
- G  V2                  V1*V1/48.0
- H  V1        V1        V2/24.0
- H  V1        V2        V1/24.0
+ G  V1                  2.0D0*TMP
+ G  V2                  V1*V1/48.0D0
+ H  V1        V1        V2/24.0D0
+ H  V1        V2        V1/24.0D0
 
  T  QUOTN
 
  A  TMP                 V1/V2
  F                      TMP
- G  V1                  1.0/V2
+ G  V1                  1.0D0/V2
  G  V2                  -TMP/V2
- H  V1        V2        -1.0/(V2*V2)
- H  V2        V2        2.0*TMP/(V2*V2)
+ H  V1        V2        -1.0D0/(V2*V2)
+ H  V2        V2        2.0D0*TMP/(V2*V2)
 
  T  PROD
 
  F                      V1*V2
  G  V1                  V2
  G  V2                  V1
- H  V1        V2        1.0
+ H  V1        V2        1.0D0
 
 ENDATA
