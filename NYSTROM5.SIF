@@ -34,6 +34,7 @@ NAME          NYSTROM5
 *   Computing 26:247-256, 1981.
 
 *   SIF input: Ph. Toint, March 1991.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification NOR2-RY-18-20
 
@@ -585,7 +586,7 @@ INDIVIDUALS
 
  T  2PRI2
  R  XX        X         1.0
- R  YY        Y1        1.0            Y2       1.0
+ R  YY        Y1        1.0            Y2        1.0
  F                      XX * YY
  G  XX                  YY
  G  YY                  XX
@@ -593,7 +594,7 @@ INDIVIDUALS
 
  T  2PRI3
  R  XX        X         1.0
- R  YY        Y1        1.0            Y2       1.0
+ R  YY        Y1        1.0            Y2        1.0
  R  YY        Y3        1.0
  F                      XX * YY
  G  XX                  YY
@@ -612,7 +613,7 @@ INDIVIDUALS
  T  3PRI2
  R  XX        X         1.0
  R  YY        Y         1.0
- R  ZZ        Z1        1.0            Z2       1.0
+ R  ZZ        Z1        1.0            Z2        1.0
  F                      XX * YY * ZZ
  G  XX                  YY * ZZ
  G  YY                  XX * ZZ
@@ -624,7 +625,7 @@ INDIVIDUALS
  T  3PRI3
  R  XX        X         1.0
  R  YY        Y         1.0
- R  ZZ        Z1        1.0            Z2       1.0
+ R  ZZ        Z1        1.0            Z2        1.0
  R  ZZ        Z3        1.0
  F                      XX * YY * ZZ
  G  XX                  YY * ZZ
@@ -656,7 +657,7 @@ INDIVIDUALS
 
  T  XY2I2
  R  XX        X         1.0
- R  YY        Y1        1.0            Y2       1.0
+ R  YY        Y1        1.0            Y2        1.0
  F                      XX * YY * YY
  G  XX                  YY * YY
  G  YY                  2.0 * XX * YY
@@ -665,7 +666,7 @@ INDIVIDUALS
 
  T  XY2I3
  R  XX        X         1.0
- R  YY        Y1        1.0            Y2       1.0
+ R  YY        Y1        1.0            Y2        1.0
  R  YY        Y3        1.0
  F                      XX * YY * YY
  G  XX                  YY * YY
@@ -700,7 +701,7 @@ INDIVIDUALS
  T  XY2ZI2
  R  XX        X         1.0
  R  YY        Y         1.0
- R  ZZ        Z1        1.0            Z2       1.0
+ R  ZZ        Z1        1.0            Z2        1.0
  F                      XX * YY * YY * ZZ
  G  XX                  YY * YY * ZZ
  G  YY                  2.0 * XX * YY * ZZ
@@ -713,7 +714,7 @@ INDIVIDUALS
  T  XY2ZI3
  R  XX        X         1.0
  R  YY        Y         1.0
- R  ZZ        Z1        1.0            Z2       1.0
+ R  ZZ        Z1        1.0            Z2        1.0
  R  ZZ        Z3        1.0
  F                      XX * YY * YY * ZZ
  G  XX                  YY * YY * ZZ

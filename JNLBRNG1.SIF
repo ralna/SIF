@@ -53,6 +53,9 @@ NAME          JNLBRNG1
 *IE PT                  125            $-PARAMETER  n=15625
 *IE PY                  125            $-PARAMETER
 
+ IE PT                  4              $-PARAMETER  n=16
+ IE PY                  4              $-PARAMETER
+
 *   The excentricity
 
  RE EX                  0.1            $-PARAMETER  the excentricity

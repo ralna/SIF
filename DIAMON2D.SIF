@@ -13,7 +13,7 @@ NAME          DIAMON2D
 *   Source: Data from Aaron Parsons, I14: Hard X-ray Nanoprobe,
 *     Diamond Light Source, Harwell, Oxfordshire, England, EU.
 
-*   SIF input: Nick Gould and Tyrone Rees, Feb 2016
+*   SIF input: Nick Gould and Tyrone Rees, Feb 2016, corrected May 2024
 
 *   classification NOR2-MN-66-4643
 
@@ -9570,7 +9570,7 @@ TEMPORARIES
 
 GLOBALS
 
- A  PIINV               0.25E0 / ATAN( 1.0E0 )
+ A  PIINV               0.25D0 / ATAN( 1.0D0 )
 
 INDIVIDUALS
 
@@ -9580,7 +9580,7 @@ INDIVIDUALS
  F                      PIINV * WEIGHT * RATIO
  G  WEIGHT              PIINV * RATIO
  G  WIDTH               PIINV * WEIGHT / DENOM -
- G+                     2.0E0 * PIINV * WEIGHT * RATIO ** 2
+ G+                     2.0D0 * PIINV * WEIGHT * RATIO ** 2
 
 
  H  WEIGHT    WIDTH     PIINV / DENOM -

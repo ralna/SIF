@@ -20,6 +20,7 @@ NAME          TWIRIMD1
 *   classification LOI2-RN-1247-544
 
 *   SIF input: Arie Quist, Delft, 1998.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 * Some useful constants
 
@@ -1153,6 +1154,7 @@ CONSTANTS
 * Rhs of Norm-constraints = 1
  DO t         1                        Ntim
  X            Norm(t)   1.0
+ ND
 
 * Rhs of peak constraints = Flim/Nnod
  DO i         1                        Nnod

@@ -19,6 +19,7 @@ NAME          MOREBV
 *   See also Buckley#17 (p. 75).
 
 *   SIF input: Ph. Toint, Dec 1989 and Nick Gould, Oct 1992.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification SUR2-MN-V-0
 
@@ -61,7 +62,7 @@ GROUPS
  XN G(I)      X(I+1)    -1.0
  ND
 
- XN G(N)      X(N-1)    -1.0           X(I)      2.0
+ XN G(N)      X(N-1)    -1.0           X(N)      2.0
 
 BOUNDS
 

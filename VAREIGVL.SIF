@@ -23,13 +23,13 @@ NAME          VAREIGVL
 
 *   SIF input: Ph. Toint, Dec 1989.
 *              correction by Ph. Shott, January, 1995
-*              and Nick Gould, December, 2019.
+*              and Nick Gould, December, 2019, May 2024
 
 *   classification OUR2-AN-V-0
 
 *   Number of variables -1 (variable)
 
-*IE N                   9              $-PARAMETER
+*IE N                   19             $-PARAMETER
 *IE N                   49             $-PARAMETER     original value
 *IE N                   99             $-PARAMETER
 *IE N                   499            $-PARAMETER
@@ -68,6 +68,8 @@ VARIABLES
  DO I         1                        N
  X  X(I)
  ND
+
+    MU
 
 GROUPS
 
@@ -152,6 +154,7 @@ BOUNDS
 START POINT
 
  V  VAREIGVL  'DEFAULT' 1.0
+    VAREIGVL  MU        0.0
 
 ELEMENT TYPE
 

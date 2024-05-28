@@ -13,7 +13,7 @@ NAME          DMN15332
 *   Source: Data from Aaron Parsons, I14: Hard X-ray Nanoprobe,
 *     Diamond Light Source, Harwell, Oxfordshire, England, EU.
 
-*   SIF input: Nick Gould and Tyrone Rees, Feb 2016
+*   SIF input: Nick Gould and Tyrone Rees, Feb 2016, corrected May 2024
 
 *   classification NOR2-MN-66-4643
 
@@ -9571,7 +9571,7 @@ TEMPORARIES
 
 GLOBALS
 
- A  PIINV               0.25E0 / ATAN( 1.0E0 )
+ A  PIINV               0.25D0 / ATAN( 1.0D0 )
 
 INDIVIDUALS
 
@@ -9584,7 +9584,7 @@ INDIVIDUALS
 
  G  WEIGHT              PIINV * RATIO
  G  WIDTH               WOPI / DENOM -
- G+                     2.0E0 * WOPI * RATIO ** 2
+ G+                     2.0D0 * WOPI * RATIO ** 2
 
  H  WEIGHT    WIDTH     PIINV / DENOM
  H+                     - 2.0D+0 * PIINV * RATIO ** 2

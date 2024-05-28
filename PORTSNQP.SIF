@@ -33,6 +33,7 @@ NAME          PORTSNQP
 *IE N                   10000
  IE N                   100000
 *IE N                   1000000
+ IE N                   10
 
 *   The number of block-variables.
 

@@ -29,6 +29,7 @@ NAME          LIPPERT2
 *   following a suggestion by Gil Strang
 
 *   SIF input: Nick Gould, September 2006
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification LQR2-MN-V-V
 
@@ -144,8 +145,8 @@ START POINT
  OD I
 
  RE ALPHA               0.0
- DO J         0                        NX
- DO I         1                        NY
+ DO J         0                        NY
+ DO I         1                        NX
  ZV LIPPERT2  V(I,J)                   ALPHA
  OD I
  R+ ALPHA     ALPHA                    DX/2

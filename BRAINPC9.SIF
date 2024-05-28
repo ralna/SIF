@@ -20,6 +20,7 @@ NAME          BRAINPC9
 *   private communication, 1994.
 
 *   SIF input: Ph. Toint, Oct 1994.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification SOR2-MY-6907-6900
 
@@ -3614,6 +3615,8 @@ CONSTANTS
 
 BOUNDS
 
+ FR BRAINPC9  'DEFAULT'
+
 *   Model parameters are positive
 
  DO I         1                        NP
@@ -3624,8 +3627,6 @@ BOUNDS
  XX BRAINPC9  X(2,0)    0.0
 
 START POINT
-
- FR BRAINPC9  'DEFAULT'
 
  DO I         1                        NS
  DO T         1                        NT

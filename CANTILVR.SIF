@@ -14,6 +14,7 @@ NAME          CANTILVR
 *   an example in a talk by W.K. Zhang and C. Fleury, LLN, 1994.
 
 *   SIF input: Ph. Toint, November 1994
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification LOR2-MN-5-1
 
@@ -86,7 +87,7 @@ INDIVIDUALS
  T  INVCUBE
  F                      1.0 / XX**3
  G  XX                  -3.0 / XX**4
- H  XX        XX        12.0 / xx**5
+ H  XX        XX        12.0 / XX**5
 
 ENDATA
 

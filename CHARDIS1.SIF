@@ -10,6 +10,7 @@ NAME          CHARDIS1
 *   Distribution of charges on a round plate (2D)
 
 *   SIF input: R. Felkel, Jun 1999.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification OQR2-AY-V-V
 
@@ -162,12 +163,6 @@ GROUP USES
  IA I+        I         1
  DO J         I+                       NP1 
  XT O(I,J)    REZIP
- OD J
- OD I
-
- DO I         1                        NP1
- IA I+        I         1
- DO J         I+                       NP1 
  XE O(I,J)    X(I,J)                   Y(I,J)   
  OD J
  OD I

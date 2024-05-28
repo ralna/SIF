@@ -21,6 +21,7 @@ NAME          MANCINONE
 *   SIF input: Ph. Toint, Dec 1989.
 *              correction by Ph. Shott, January, 1995.
 *              Nick Gould (nonlinear equation version), Jan 2019
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification NOR2-AN-V-V
 
@@ -145,8 +146,8 @@ START POINT
  RE CA                  1.0
 
  DO K         1                        ALPHA
- RM SA        SA                       SIJ
- RM CA        CA                       CIJ
+ R* SA        SA                       SIJ
+ R* CA        CA                       CIJ
  OD K
 
  R+ SCA       SA                       CA

@@ -10,8 +10,8 @@ NAME          QC
 *   Source: Quality Control problem 104 from
 *   Betty Schultz and Ben Reiser.
 
-
 *   SIF input: Andrew Conn, August 1992.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification OLR2-MY-9-4
 
@@ -441,21 +441,16 @@ ENDATA
 
 ELEMENTS      QC   
 
-TEMPORARIES
-
- R  ZERO
-
 INDIVIDUALS
 
 *   Element type 2PROD
 
  T  2PROD
- A  ZERO                0.0
  F                      V1*V2
  G  V1                  V2
  G  V2                  V1
- H  V1        V1        ZERO
- H  V2        V2        ZERO
+ H  V1        V1        0.0
+ H  V2        V2        0.0
  H  V1        V2        1.0
 
 *   Element type I2PROD
@@ -463,12 +458,11 @@ INDIVIDUALS
  T  I2PROD
  R  U1        V1        1.0
  R  U2        V2        -1.0           V3        -1.0
- A  ZERO                0.0
  F                      U1 * U2
  G  U1                  U2
  G  U2                  U1
- H  U1        U1        ZERO
- H  U2        U2        ZERO
+ H  U1        U1        0.0
+ H  U2        U2        0.0
  H  U1        U2        1.0
 
 *   Element type I3PROD
@@ -481,12 +475,12 @@ INDIVIDUALS
  G  U1                  U2 * (1.0 + U3)
  G  U2                  U1 * (1.0 + U3)
  G  U3                  U1 * U2
- H  U1        U1        ZERO
+ H  U1        U1        0.0
  H  U1        U2        1.0 + U3
  H  U1        U3        U2
- H  U2        U2        ZERO
+ H  U2        U2        0.0
  H  U2        U3        U1
- H  U3        U3        ZERO
+ H  U3        U3        0.0
 
 *   Element type 3PRODI
 
@@ -499,12 +493,12 @@ INDIVIDUALS
  G  U1                  U2 * (1.0 + U3)
  G  U2                  U1 * (1.0 + U3)
  G  U3                  U1 * U2
- H  U1        U1        ZERO
+ H  U1        U1        0.0
  H  U1        U2        1.0 + U3
  H  U1        U3        U2
- H  U2        U2        ZERO
+ H  U2        U2        0.0
  H  U2        U3        U1
- H  U3        U3        ZERO
+ H  U3        U3        0.0
 
 
 

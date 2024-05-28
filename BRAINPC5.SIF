@@ -22,6 +22,7 @@ NAME          BRAINPC5
 *   SIF input: Ph. Toint, Oct 1994.
 
 *   classification SOR2-MY-6907-6900
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   Number of states
 
@@ -3614,6 +3615,8 @@ CONSTANTS
 
 BOUNDS
 
+ FR BRAINPC5  'DEFAULT'
+
 *   Model parameters are positive
 
  DO I         1                        NP
@@ -3624,8 +3627,6 @@ BOUNDS
  XX BRAINPC5  X(2,0)    0.0
 
 START POINT
-
- FR BRAINPC5  'DEFAULT'
 
  DO I         1                        NS
  DO T         1                        NT

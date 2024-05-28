@@ -13,7 +13,7 @@ NAME          DIAGIQE
 
 *   Source: simple test for GALAHAD gltr/glrt
 
-*   SIF input: Nick Gould, Feb 2019
+*   SIF input: Nick Gould, Feb 2019, corrected May 2024
 
 *   classification QBR2-AN-V-0
 
@@ -54,6 +54,10 @@ BOUNDS
  LO BOUNDS    'DEFAULT' -100000.0
  UP BOUNDS    'DEFAULT' 1000000.0
 
+START POINT
+
+ XV DIAGIQE   'DEFAULT' 1.0
+
 HESSIAN
 
  DO I         1                        N
@@ -61,10 +65,6 @@ HESSIAN
  R+ H         RI                       SHIFT
  Z  X(I)      X(I)                     H
  ND
-
-START POINT
-
- XV DIAGIQE   'DEFAULT' 1.0
 
 OBJECT BOUND
 

@@ -15,6 +15,7 @@ NAME          YORKNET
 *   SIF input: B. Ulanicki, Water Software Systems,De Montfort University,
 *              The Gateway, Leicester LE1 9BH, UK.
 *              e-mail: bul@uk.ac.dmu * Tel no.0533 577070
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification SOR2-AY-312-256
 
@@ -301,22 +302,22 @@ NAME          YORKNET
 
 *TREATMENT WORKS COST PER TIME STEP
 
- RM CTW1,1    BCTW1                     ST1
- RM CTW1,2    BCTW1                     ST2
- RM CTW1,3    BCTW1                     ST3
- RM CTW1,4    BCTW1                     ST4
- RM CTW1,5    BCTW1                     ST5
- RM CTW1,6    BCTW1                     ST6
- RM CTW1,7    BCTW1                     ST7
- RM CTW1,8    BCTW1                     ST8
- RM CTW2,1    BCTW2                     ST1
- RM CTW2,2    BCTW2                     ST2
- RM CTW2,3    BCTW2                     ST3
- RM CTW2,4    BCTW2                     ST4
- RM CTW2,5    BCTW2                     ST5
- RM CTW2,6    BCTW2                     ST6
- RM CTW2,7    BCTW2                     ST7
- RM CTW2,8    BCTW2                     ST8
+ R* CTW1,1    BCTW1                    ST1
+ R* CTW1,2    BCTW1                    ST2
+ R* CTW1,3    BCTW1                    ST3
+ R* CTW1,4    BCTW1                    ST4
+ R* CTW1,5    BCTW1                    ST5
+ R* CTW1,6    BCTW1                    ST6
+ R* CTW1,7    BCTW1                    ST7
+ R* CTW1,8    BCTW1                    ST8
+ R* CTW2,1    BCTW2                    ST1
+ R* CTW2,2    BCTW2                    ST2
+ R* CTW2,3    BCTW2                    ST3
+ R* CTW2,4    BCTW2                    ST4
+ R* CTW2,5    BCTW2                    ST5
+ R* CTW2,6    BCTW2                    ST6
+ R* CTW2,7    BCTW2                    ST7
+ R* CTW2,8    BCTW2                    ST8
 
 *INITIAL VALUES OF FLOW AT SOURCE
 
@@ -545,7 +546,7 @@ BOUNDS
 
 START POINT
 
- XM YORKNET   'DEFAULT'  0.0
+ X  YORKNET   'DEFAULT'  0.0
  DO I         1                        NSTEP
  DO J         E_RES+1                  NND
  XV YORKNET   h(J,I)     0.0

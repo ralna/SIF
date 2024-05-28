@@ -19,6 +19,7 @@ NAME          MANCINO
 
 *   SIF input: Ph. Toint, Dec 1989.
 *              correction by Ph. Shott, January, 1995.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification SUR2-AN-V-0
 
@@ -143,8 +144,8 @@ START POINT
  RE CA                  1.0
 
  DO K         1                        ALPHA
- RM SA        SA                       SIJ
- RM CA        CA                       CIJ
+ R* SA        SA                       SIJ
+ R* CA        CA                       CIJ
  OD K
 
  R+ SCA       SA                       CA

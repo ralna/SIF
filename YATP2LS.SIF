@@ -36,6 +36,7 @@ NAME          YATP2LS
 *IE N                   100            $-PARAMETER n = 10200
 *IE N                   200            $-PARAMETER n = 40400
  IE N                   350            $-PARAMETER n = 123200
+ IE N                   2              $-PARAMETER n = 8
 
  RE A                   1.0
 

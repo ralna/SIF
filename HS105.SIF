@@ -14,6 +14,7 @@ NAME          HS105
 *   Verlag, Heidelberg, 1981.
 
 *   SIF input: Nick Gould, August 1991.
+*   bug correction (line 351) Ph. Toint, May 2024
 
 *   classification OLR2-AY-8-1
 
@@ -347,7 +348,7 @@ INDIVIDUALS
 *   Element type CI
 
  T  CI
- R  V1        X1        -1.0           X1        -1.0
+ R  V1        X1        -1.0           X2        -1.0
  R  V2        X8        1.0
  R  V3        X5        1.0
  A  R                   ( 1.0D+0 + V1 ) / V2

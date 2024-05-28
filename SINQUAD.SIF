@@ -26,6 +26,7 @@ NAME          SINQUAD
 *IE N                   1000           $-PARAMETER
  IE N                   5000           $-PARAMETER
 *IE N                   10000          $-PARAMETER
+ IE N                   5              $-PARAMETER     original value
 
 *   other parameter definitions
 

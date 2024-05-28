@@ -11,6 +11,7 @@ NAME          DEGENQP
 *   with a large number of constraints
 
 *   SIF input: Nick Gould, February 2000
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification QLR2-AN-V-V
 
@@ -20,6 +21,7 @@ NAME          DEGENQP
 *IE N                   20             $-PARAMETER     original value
  IE N                   50             $-PARAMETER
 *IE N                   100            $-PARAMETER
+ IE N                   10
 
 *   Other useful parameters
 
@@ -44,17 +46,17 @@ GROUPS
 
  DO I         1                        N
  DI I         2
- IE I+1       I         1
+ IA I+1       I         1
  XE E(I)      X(I)      1.0            X(I+1)    -1.0
  ND
 
  DO I         1                        N
- IE I+1       I         1
+ IA I+1       I         1
  DO J         I+1                      N
- IE J+1       J         1
+ IA J+1       J         1
  DO K         J+1                      N
  XG C(I,J,K)  X(I)      1.0            X(J)      1.0
- XG C(I,J,K)  X(K)      0.0
+ XG C(I,J,K)  X(K)      1.0
  ND
 
 CONSTANTS

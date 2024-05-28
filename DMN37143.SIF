@@ -10,11 +10,10 @@ NAME          DMN37143
 *   Diamond powder diffraction data fitting problem (37,14) given as an
 *   inconsistent set of nonlinear equations using 3-parameter Lorentzians
 
-
 *   Source: Data from Aaron Parsons, I14: Hard X-ray Nanoprobe,
 *     Diamond Light Source, Harwell, Oxfordshire, England, EU.
 
-*   SIF input: Nick Gould and Tyrone Rees, Feb 2016
+*   SIF input: Nick Gould and Tyrone Rees, Feb 2016, corrected May 2024
 
 *   classification NOR2-MN-99-4643
 
@@ -9717,7 +9716,7 @@ TEMPORARIES
 
 GLOBALS
 
- A  PIINV               0.25E0 / ATAN( 1.0E0 )
+ A  PIINV               0.25D0 / ATAN( 1.0D0 )
 
 INDIVIDUALS
 

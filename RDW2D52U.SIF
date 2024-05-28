@@ -25,6 +25,7 @@ NAME          RDW2D52U
 *    SIAM J. Sci. Comp. (to appear) 2009
 
 *   SIF input: Nick Gould, May 2009
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification QLR2-AN-V-V
 
@@ -418,6 +419,7 @@ INDIVIDUALS
  G  U2                  C2
  G  U3                  C3
  G  U4                  C4
+ H  U1        U1        0.0
 
  T  B
  A  C1                  -1.0
@@ -429,6 +431,7 @@ INDIVIDUALS
  G  U2                  C2
  G  U3                  C3
  G  U4                  C4
+ H  U1        U1        0.0
 
  T  C
  A  C1                  -1.0
@@ -440,6 +443,7 @@ INDIVIDUALS
  G  U2                  C2
  G  U3                  C3
  G  U4                  C4
+ H  U1        U1        0.0
 
  T  D
  A  C1                  -2.0
@@ -451,6 +455,7 @@ INDIVIDUALS
  G  U2                  C2
  G  U3                  C3
  G  U4                  C4
+ H  U1        U1        0.0
 
  T  P
  A  C1                  4.0
@@ -462,6 +467,7 @@ INDIVIDUALS
  G  F2                  C2
  G  F3                  C3
  G  F4                  C4
+ H  F1        F1        0.0
 
  T  Q
  A  C1                  2.0
@@ -473,6 +479,7 @@ INDIVIDUALS
  G  F2                  C2
  G  F3                  C3
  G  F4                  C4
+ H  F1        F1        0.0
 
  T  R
  A  C1                  2.0
@@ -484,6 +491,7 @@ INDIVIDUALS
  G  F2                  C2
  G  F3                  C3
  G  F4                  C4
+ H  F1        F1        0.0
 
  T  S
  A  C1                  1.0
@@ -495,5 +503,6 @@ INDIVIDUALS
  G  F2                  C2
  G  F3                  C3
  G  F4                  C4
+ H  F1        F1        0.0
 
 ENDATA

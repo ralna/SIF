@@ -45,9 +45,9 @@ VARIABLES
 GROUPS
 
  DO I         1                        N
- XN S(I)      'SCALE'   - 1.0
+ XN S(I)      'SCALE'   -1.0
  XN S(I)      X(I)      1.0
- XN Q(0)      X(I)      - 1.0
+ XN Q(0)      X(I)      -1.0
  XN Q(1)      X(I)      1.0
  ND
 

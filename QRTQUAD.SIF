@@ -16,6 +16,7 @@ NAME          QRTQUAD
 
 *   SIF input: Ph. Toint, June 1992.
 *              minor correction by Ph. Shott, Jan 1995.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification OBR2-MN-V-0
 
@@ -56,7 +57,7 @@ CONSTANTS
 BOUNDS
 
  XR QRTQUAD   'DEFAULT'
- DO I         1                        M
+ DO I         1                        N
  XL QRTQUAD   X(I)       0.0
  XU QRTQUAD   X(I)       10.0
  OD I

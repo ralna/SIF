@@ -15,7 +15,7 @@ NAME          HS70
 *   Lectures Notes in Economics and Mathematical Systems 187, Springer
 *   Verlag, Heidelberg, 1981.
 
-*   SIF input: Nick Gould, August 1991.
+*   SIF input: Nick Gould, August 1991, modified May 2024
 
 *   classification SQR2-MN-4-1
 
@@ -223,7 +223,7 @@ TEMPORARIES
 
 GLOBALS
 
- A  C4                  SQRT( 1.0 / 6.2832 )
+ A  C4                  SQRT( 1.0D+0 / 6.2832D+0 )
 
 INDIVIDUALS
 

@@ -28,6 +28,7 @@ NAME          DRUGDIS
 *   Optimal Control Applications and Methods 13, pp. 43-55, 1992.
 
 *   SIF input: Ph. Toint, Nov 1993.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification  LOR2-MN-V-V
 
@@ -138,7 +139,7 @@ BOUNDS
 START POINT
 
  R- DP        PFINAL                   PSTART
- RD DP/NI     DP                       RNI
+ R/ DP/NI     DP                       RNI
 
  DO I         0                        NI-1
  RI RI        I

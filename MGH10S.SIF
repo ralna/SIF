@@ -22,6 +22,7 @@ NAME          MGH10S
 *     New York, NY: Academic Press, pp. 465-486.
 
 *   SIF input: Nick Gould and Tyrone Rees, Oct 2015
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification NOR2-MN-3-16
 
@@ -56,22 +57,22 @@ NAME          MGH10S
  RE X15                 1.20E+02
  RE X16                 1.25E+02
 
- RE Y1                  3.478+04
- RE Y2                  2.861+04
- RE Y3                  2.365+04
- RE Y4                  1.963+04
- RE Y5                  1.637+04
- RE Y6                  1.372+04
- RE Y7                  1.154+04
- RE Y8                  9.744+03
- RE Y9                  8.261+03
- RE Y10                 7.030+03
- RE Y11                 6.005+03
- RE Y12                 5.147+03
- RE Y13                 4.427+03
- RE Y14                 3.820+03
- RE Y15                 3.307+03
- RE Y16                 2.872+03
+ RE Y1                  3.478E+04
+ RE Y2                  2.861E+04
+ RE Y3                  2.365E+04
+ RE Y4                  1.963E+04
+ RE Y5                  1.637E+04
+ RE Y6                  1.372E+04
+ RE Y7                  1.154E+04
+ RE Y8                  9.744E+03
+ RE Y9                  8.261E+03
+ RE Y10                 7.030E+03
+ RE Y11                 6.005E+03
+ RE Y12                 5.147E+03
+ RE Y13                 4.427E+03
+ RE Y14                 3.820E+03
+ RE Y15                 3.307E+03
+ RE Y16                 2.872E+03
 
 VARIABLES
 

@@ -40,13 +40,13 @@ NAME          MINSURFO
  RE ONE                 1.0
  IA NX+1      NX        1
  IA NY+1      NY        1
- RI NX+1      NX+1
- RI NY+1      NY+1
+ RI RNX+1     NX+1
+ RI RNY+1     NY+1
 
 *  Grid spacing and area of triangle
 
- RD HX        NX+1      1.0
- RD HY        NY+1      1.0
+ RD HX        RNX+1     1.0
+ RD HY        RNY+1     1.0
  R* AREA      HX                       HY    
  RM AREA      AREA      0.5
  RD 1/AREA    AREA      1.0 

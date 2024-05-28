@@ -14,7 +14,7 @@ NAME          DMN15103
 *   Source: Data from Aaron Parsons, I14: Hard X-ray Nanoprobe,
 *     Diamond Light Source, Harwell, Oxfordshire, England, EU.
 
-*   SIF input: Nick Gould and Tyrone Rees, Feb 2016
+*   SIF input: Nick Gould and Tyrone Rees, Feb 2016, corrected May 2024
 
 *   classification NOR2-MN-99-4643
 
@@ -9714,7 +9714,7 @@ TEMPORARIES
 
 GLOBALS
 
- A  PIINV               0.25E0 / ATAN( 1.0E0 )
+ A  PIINV               0.25D0 / ATAN( 1.0D0 )
 
 INDIVIDUALS
 

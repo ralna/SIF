@@ -23,6 +23,7 @@ NAME          OBSTCLAE
 *   See also More 1989 (Problem A, Starting point E)
 
 *   SIF input: Ph. Toint, Dec 1989.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification QBR2-AY-V-0
 
@@ -136,7 +137,7 @@ START POINT
 *   All variables not on the boundary are set to 1.0
 *   (Starting point E)
 
- XV OBSAE161  'DEFAULT' 1.0
+ XV OBSTCLAE  'DEFAULT' 1.0
 
 *   Start from the boundary values on the lower and upper edges
 

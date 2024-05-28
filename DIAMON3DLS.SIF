@@ -15,6 +15,7 @@ NAME          DIAMON3DLS
 
 *   SIF input: Nick Gould and Tyrone Rees, Feb 2016
 *   Least-squares version of DIAMON3D.SIF, Nick Gould, Jan 2020.
+*   corrected May 2024
 
 *   classification SUR2-MN-99-0
 
@@ -9613,7 +9614,7 @@ TEMPORARIES
 
 GLOBALS
 
- A  PIINV               0.25E0 / ATAN( 1.0E0 )
+ A  PIINV               0.25D0 / ATAN( 1.0D0 )
 
 INDIVIDUALS
 
@@ -9626,8 +9627,8 @@ INDIVIDUALS
 
  G  WEIGHT              PIINV * RATIO
  G  WIDTH               PIINV * WEIGHT / DENOM -
- G+                     2.0E0 * PIINV * WEIGHT * RATIO ** 2
- G  POSIT               - 2.0E0 * PIINV * WEIGHT * WIDTH
+ G+                     2.0D0 * PIINV * WEIGHT * RATIO ** 2
+ G  POSIT               - 2.0D0 * PIINV * WEIGHT * WIDTH
  G+                       * PMX / DENOM ** 2
 
  H  WEIGHT    WIDTH     PIINV / DENOM -
@@ -9635,15 +9636,15 @@ INDIVIDUALS
  H  WIDTH     WIDTH     - 6.0D+0 * PIINV * WEIGHT
  H+                       * WIDTH / DENOM ** 2
  H+                     + 8.0D+0 * PIINV * WEIGHT * RATIO ** 3
- H  WEIGHT    POSIT     - 2.0E0 * PIINV * WIDTH
+ H  WEIGHT    POSIT     - 2.0D0 * PIINV * WIDTH
  H+                       * PMX / DENOM ** 2
- H  WIDTH     POSIT     - 2.0E0 * PIINV * WEIGHT
+ H  WIDTH     POSIT     - 2.0D0 * PIINV * WEIGHT
  H+                       * PMX / DENOM ** 2
- H+                      + 8.0E0 * PIINV * WEIGHT * PMX
+ H+                      + 8.0D0 * PIINV * WEIGHT * PMX
  H+                        * ( WIDTH ** 2 ) / ( DENOM ** 3 )
- H  POSIT     POSIT     - 2.0E0 * PIINV * WEIGHT * WIDTH
+ H  POSIT     POSIT     - 2.0D0 * PIINV * WEIGHT * WIDTH
  H+                       / DENOM ** 2
- H+                      + 8.0E0 * PIINV * WEIGHT * WIDTH
+ H+                      + 8.0D0 * PIINV * WEIGHT * WIDTH
  H+                       * ( PMX ** 2 ) / ( DENOM ** 3 )
 
 ENDATA

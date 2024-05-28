@@ -12,6 +12,7 @@ NAME          PDE2
 *   See: http://plato.asu.edu/ftp/barrier/
 
 *   SIF input: Nick Gould, April 25th 2012
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification LLR2-AN-V-V
 
@@ -120,7 +121,7 @@ RHS
  R* JH        RJ                       H
  RA JH-1      JH        -1.0
  R* YD        RJ                       JH-1
- RM YD        YD                       P
+ R* YD        YD                       P
  RA YD        YD        3.0 
  R* YD        YD                       H
  RM -YD       YD        -1.0

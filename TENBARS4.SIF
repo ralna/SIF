@@ -36,6 +36,7 @@ NAME          TENBARS4
 *   and Zienkiwewicz, eds.), Wiley, 1984.
 
 *   SIF input: Ph. Toint, August 1990.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification LOR2-MY-18-9
 
@@ -98,7 +99,7 @@ GROUPS
 
 *   Strain condition
 
- G  STRAIN    U4        1.0            U8       1.0
+ G  STRAIN    U4        1.0            U8        1.0
 
 CONSTANTS
 

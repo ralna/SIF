@@ -18,6 +18,7 @@ NAME          HEART6LS
 *   June 1983, revised May 1985.
 
 *   SIF input: A.R. Conn, May 1993, modified by Ph. Toint, March 1994.
+*              correction by S. Gratton & Ph. Toint, May 2024
 
 *   classification SUR2-MN-6-0
 
@@ -434,7 +435,7 @@ INDIVIDUALS
  A  THREE               3.0
  A  SIX                 6.0
  A  DFSQ                Y**2 - THREE*Z**2
- A  DIFF                ALPHA - x
+ A  DIFF                ALPHA - X
  F                      DIFF*Y*DFSQ
  G  X                   -Y*DFSQ
  G  Y                   DIFF*(DFSQ + TWO*Y**2)

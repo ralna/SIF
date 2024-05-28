@@ -14,6 +14,7 @@ NAME          HS24
 *   Verlag, Heidelberg, 1981.
 
 *   SIF input: A.R. Conn, April 1990
+*              modified Nick Gould, May 2024
 
 *   classification OLR2-AN-2-3
 
@@ -91,7 +92,7 @@ TEMPORARIES
 INDIVIDUALS
 
  T  OBJ
- A  RT3X27              1.0 / ( 27.0 * SQRT( 3.0 ) )
+ A  RT3X27              1.0D0 / ( 27.0D0 * SQRT( 3.0D0 ) )
  A  V2SQ                V2 * V2
  A  V2CB                V2SQ * V2
  A  X1M3                V1 - 3.0

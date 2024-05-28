@@ -14,7 +14,8 @@ NAME          DMN37143LS
 *     Diamond Light Source, Harwell, Oxfordshire, England, EU.
 
 *   SIF input: Nick Gould and Tyrone Rees, Feb 2016
-*   Least-squares version of DMN37143.SIF, Nick Gould, Jan 2020.
+*   Least-squares version of DMN37143.SIF, Nick Gould, Jan 2020. 
+*   corrected May 2024
 
 *   classification SUR2-MN-99-0
 
@@ -9723,7 +9724,7 @@ TEMPORARIES
 
 GLOBALS
 
- A  PIINV               0.25E0 / ATAN( 1.0E0 )
+ A  PIINV               0.25D0 / ATAN( 1.0D0 )
 
 INDIVIDUALS
 
