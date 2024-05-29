@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          SINQUAD
+NAME          SINQUAD2
 
 *   Problem :
 *   *********
@@ -14,7 +14,7 @@ NAME          SINQUAD
 *   N. Gould, private communication.
 
 *   SIF input: N. Gould, Dec 1989.
-*              incorrectly decoded version (see SINQUAD2 for correction)
+*   modifield version of SINQUAD (formulation corrected) May 2024
 
 *   classification OUR2-AY-V-0
 
@@ -99,13 +99,14 @@ GROUP USES
 
  T  G1        L4
 
- DO I         2                        NM1
+ DO I         2                        N
+ XT G(I)      L2
  XE G(I)      E(I)                     E(1)      -1.0
- XE G(I)      S(I)
  ND
 
- XT G(N)      L2
- XE G(N)      E(N)                     E(1)      -1.0
+ DO I         2                        NM1
+ XE G(I)      S(I)
+ ND
 
 OBJECT BOUND
 
@@ -122,7 +123,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      SINQUAD
+ELEMENTS      SINQUAD2
 
 TEMPORARIES
 
@@ -149,7 +150,7 @@ ENDATA
 * ROUTINE           *
 *********************
 
-GROUPS        SINQUAD
+GROUPS        SINQUAD2
 
 INDIVIDUALS
 

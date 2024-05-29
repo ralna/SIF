@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          CHARDIS0
+NAME          CHARDIS02
 
 *   Problem :
 *   *********
@@ -10,7 +10,8 @@ NAME          CHARDIS0
 *   Distribution of (equal)charges on [-R,R]x[-R,R] (2D)
 
 *   SIF input: R. Felkel, Jun 1999.
-*              incorrectly decoded version (see CHARDIS0 for correction)
+*              correction by S. Gratton & Ph. Toint, May 2024
+*   modifield version of CHARDIS0 (formulation corrected)
 
 *   classification OBR2-AY-V-V
 
@@ -132,6 +133,7 @@ GROUP USES
  DO I         1                        NP1
  IA I+        I         1
  DO J         I+                       NP1 
+ XT O(I,J)    REZIP
  XE O(I,J)    X(I,J)                   Y(I,J)   
  OD J
  OD I
@@ -143,7 +145,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      CHARDIS0
+ELEMENTS      CHARDIS02
 
 INDIVIDUALS
 
@@ -158,7 +160,7 @@ INDIVIDUALS
 ENDATA
 
 
-GROUPS        CHARDIS0
+GROUPS        CHARDIS02
 
 INDIVIDUALS
 

@@ -2,25 +2,25 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          CHARDIS0
+NAME          CHARDIS12
 
 *   Problem :
 *   *********
 
-*   Distribution of (equal)charges on [-R,R]x[-R,R] (2D)
+*   Distribution of charges on a round plate (2D)
 
 *   SIF input: R. Felkel, Jun 1999.
-*              incorrectly decoded version (see CHARDIS0 for correction)
+*              correction by S. Gratton & Ph. Toint, May 2024
+*   modifield version of CHARDIS1 (formulation corrected)
 
-*   classification OBR2-AY-V-V
+*   classification OQR2-AY-V-V
 
 *   Number of positive (or negative) charges -> Number of variables 2*NP1
 
 *IE NP1                 5              $-PARAMETER
-*IE NP1                 9              $-PARAMETER
-*IE NP1                 20             $-PARAMETER
-*IE NP1                 30             $-PARAMETER
-*IE NP1                 50             $-PARAMETER     original value
+*IE NP1                 8              $-PARAMETER
+*IE NP1                 20             $-PARAMETER     original value
+*IE NP1                 50             $-PARAMETER
 *IE NP1                 100            $-PARAMETER
 *IE NP1                 200            $-PARAMETER
 *IE NP1                 500            $-PARAMETER
@@ -30,9 +30,12 @@ NAME          CHARDIS0
 
 *   Other useful parameters
 
- RE R                   10.0
- RE R-                  -10.0
+ RE R                   1.0
 
+*   Some additional definitions
+
+ R* R2        R                        R
+ 
 * Some stuff
 
  IA N         NP1       -1
@@ -69,37 +72,56 @@ GROUPS
  DO I         1                        NP1
  IA I+        I         1
  DO J         I+                       NP1                        
- XN O(I,J)    'SCALE'   0.01
+ XN O(I,J)
  OD J
+ OD I
+
+*   Constraints
+
+ DO I         2                        NP1
+ XL RES(I)
+ OD I
+
+CONSTANTS
+
+ DO I         2                        NP1
+ Z  CHARDIS1  RES(I)                   R2
  OD I
 
 BOUNDS
 
- DO I         1                        NP1
- ZL CHARDIS0  X(I)                     R-
- ZU CHARDIS0  X(I)                     R
- ZL CHARDIS0  Y(I)                     R-
- ZU CHARDIS0  Y(I)                     R
+ DO I         2                        NP1
+ XR CHARDIS1  X(I)
+ XR CHARDIS1  Y(I)
  OD I
+
+ ZX CHARDIS1  X1                       R
+ XX CHARDIS1  Y1        0.0
 
 START POINT
 
- DO I         1                        NP1
- RI RealI-    I
+ DO I         2                        NP1
+ IA I-        I         -1
+ RI RealI-    I-
  R- RealNP1-I NP1Real                  RealI- 
  R* PHII-     2PIqN                    RealI-
  R* RI-       RqN                      RealNP1-I
- R( XSTT      COS                      PHII-
- R( YSTT      SIN                      PHII-
- R* XST       XSTT                     RI-
- R* YST       YSTT                     RI-
- RM XS        XST       0.5
- RM YS        YST       0.5
- ZV CHARDIS0  X(I)                     XS
- ZV CHARDIS0  Y(I)                     YS        
+ R( XST       COS                      PHII-
+ R( YST       SIN                      PHII-
+ R* XS        XST                      RI-
+ R* YS        YST                      RI-
+ ZV CHARDIS1  X(I)                     XS
+ ZV CHARDIS1  Y(I)                     YS        
  OD I
 
+ ZV CHARDIS1  X1                       R
+ XV CHARDIS1  Y1        0.0
+
 ELEMENT TYPE
+
+*   Square
+
+ EV SQR       V1
 
 *   Square of Difference
 
@@ -121,6 +143,15 @@ ELEMENT USES
  OD J
  OD I
 
+*   Constraints
+
+ DO I         2                        NP1
+ XT RX(I)     SQR
+ ZV RX(I)     V1                       X(I)
+ XT RY(I)     SQR
+ ZV RY(I)     V1                       Y(I)
+ OD I
+
 GROUP TYPE
 
  GV REZIP     ALPHA
@@ -132,8 +163,16 @@ GROUP USES
  DO I         1                        NP1
  IA I+        I         1
  DO J         I+                       NP1 
+ XT O(I,J)    REZIP
  XE O(I,J)    X(I,J)                   Y(I,J)   
  OD J
+ OD I
+
+*   Constraints
+
+ DO I         2                        NP1
+ XE RES(I)    RX(I)     1.0
+ XE RES(I)    RY(I)     1.0
  OD I
 
 ENDATA          
@@ -143,9 +182,14 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      CHARDIS0
+ELEMENTS      CHARDIS12
 
 INDIVIDUALS
+
+ T  SQR
+ F                      V1 * V1
+ G  V1                  V1 + V1
+ H  V1        V1        2.0
 
  T  DIFSQR
  F                      (V1-V2)*(V1-V2)
@@ -158,7 +202,7 @@ INDIVIDUALS
 ENDATA
 
 
-GROUPS        CHARDIS0
+GROUPS        CHARDIS12
 
 INDIVIDUALS
 

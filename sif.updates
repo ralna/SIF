@@ -259,7 +259,9 @@ Additions:
 23/Jan/23: LRA9A.SIF     LRCOVTYPE.SIF  LRIJCNN1.SIF  LRW1A.SIF 
            LRW8A.SIF
 21/Nov/23: NYSTROM5C.SIF ORTHRDS2C.SIF
-25/May/24: HS105BUG.SIF (old, buggy HS105.ISF renamed)
+25/May/24: HS105BUG.SIF (old, buggy HS105.SIF renamed)
+29/May/24  CHARDIS02.SIF CHARDIS12.SIF  SISSER2.SIF   SINQUAD2.SIF
+           (old, buggy CHARDIS0, CHARDIS1, SISSER, SINQUAD.SIF corrected)
 
 Corrections to problem statement:
 
@@ -331,6 +333,8 @@ Corrections to problem statement:
            RDW2D52F.SIF   RDW2D52U.SIF   SINQUAD.SIF    TENBARS4.SIF
            TESTXSC.SIF    TWIRIBG1.SIF   TWIRIMD1.SIF   VAREIGVL.SIF
            YATP2LS.SIF    YORKNET.SIF  
+29/May/24: DIAGPQE.SIF    DIAGPQB.SIF    DIAGNQT.SIF    DIAGNQE.SIF
+           DIAGNQB.SIF    DIAGPQT.SIF    DIAGQ.SIF
 
 Changes to default sizes:
 

@@ -51,6 +51,10 @@ BOUNDS
  LO BOUNDS    'DEFAULT' -100000.0
  UP BOUNDS    'DEFAULT' 1000000.0
 
+START POINT
+
+ XV DIAGPQE   'DEFAULT' 1.0
+
 HESSIAN
 
  DO I         1                        N
@@ -58,10 +62,6 @@ HESSIAN
  R+ H         RI                       SHIFT
  Z  X(I)      X(I)                     H
  ND
-
-START POINT
-
- XV DIAGPQE   'DEFAULT' 1.0
 
 OBJECT BOUND
 

@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          SISSER
+NAME          SISSER2
 
 *   Problem :
 *   *********
@@ -18,7 +18,7 @@ NAME          SISSER
 *   See also Buckley#216 (p. 91)
 
 *   SIF input: Ph. Toint, Dec 1989.
-*              incorrectly decoded version (see SISSER2 for correction)
+*   modifield version of SISSER (formulation corrected) May 2024
 
 *   classification OUR2-AN-2-0
 
@@ -62,14 +62,12 @@ ELEMENT USES
 GROUP TYPE
 
  GV L2        GVAR
- GV ML2       GVAR
 
 GROUP USES
 
  T  'DEFAULT' L2
 
  E  G1        E1
- T  G2        ML2
  E  G2        E2
  E  G3        E3
 
@@ -90,7 +88,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      SISSER
+ELEMENTS      SISSER2
 
 INDIVIDUALS
 
@@ -113,7 +111,7 @@ ENDATA
 * ROUTINE           *
 *********************
 
-GROUPS        SISSER
+GROUPS        SISSER2
 
 INDIVIDUALS
 
@@ -121,10 +119,5 @@ INDIVIDUALS
  F                      GVAR * GVAR
  G                      GVAR + GVAR
  H                      2.0
-
- T  ML2
- F                      - GVAR * GVAR
- G                      - GVAR - GVAR
- H                      - 2.0
 
 ENDATA
