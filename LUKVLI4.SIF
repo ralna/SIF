@@ -17,6 +17,7 @@ NAME          LUKVLI4
 *   Equality constraints changed to inequalities
 
 *   SIF input: Nick Gould, April 2001
+*              incorrectly decoded version (see LUKVLE4C for correction)
 
 *   classification OOR2-AY-V-V
 
@@ -60,9 +61,14 @@ GROUPS
  XN F(I)      X(2I+2)   1.0
  ND
 
- DO K         1                        N-2
+ DO K         1                        N/2-1
  IA K+1       K         1
- XL C(K)      X(K+1)    6.0
+ XN C(K)      X(K+1)    6.0
+ ND
+
+ DO K         N/2                      N-2
+ IA K+1       K         1
+ XE C(K)      X(K+1)    6.0
  ND
 
 CONSTANTS

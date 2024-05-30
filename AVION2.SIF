@@ -6,9 +6,7 @@ NAME          AVION2
 
 *   Problem :
 *   *********
-*
 
-*
 *   Dassault France avion (airplane design) problem
 
 *   SIF input:  A. R. Conn, June 1993.
@@ -477,68 +475,68 @@ INDIVIDUALS
  F                      Y * Z
  G  Y                   Z
  G  Z                   Y
- H  Y         Z         1.0
+ H  Y         Z         1.0D0
 
  T  QD/SQ
  A  QD                  W - X - Y * Z
  A  SQ                  Z**2
- A  RSQ                 1.0 / SQ
+ A  RSQ                 1.0D0 / SQ
  A  QDOSQ               QD / SQ
  F                      QDOSQ
  G  W                   RSQ
  G  X                   -RSQ
- G  Y                   -1.0 / Z
- G  Z                   -Y / SQ - 2.0 * QDOSQ / Z
- H  W         Z         -2.0 / (SQ*Z)
- H  X         Z         2.0 / (SQ*Z)
+ G  Y                   -1.0D0 / Z
+ G  Z                   -Y / SQ - 2.0D0 * QDOSQ / Z
+ H  W         Z         -2.0D0 / (SQ*Z)
+ H  X         Z         2.0D0 / (SQ*Z)
  H  Y         Z         RSQ
- H  Z         Z         (4.0 * Y) / (SQ*Z) + 6.0 * QDOSQ / SQ
+ H  Z         Z         (4.0D0 * Y) / (SQ*Z) + 6.0D0 * QDOSQ / SQ
 
  T  12
  F                      Y / Z
  G  Y                   1.0 / Z
  G  Z                   -Y / Z**2
- H  Y         Z         -1.0 / Z**2
- H  Z         Z         (2.0 * Y) / Z**3
+ H  Y         Z         -1.0D0 / Z**2
+ H  Z         Z         (2.0D0 * Y) / Z**3
 
  T  12/1
  A  ZSQ                 Z**2
  A  YSQ                 Y**2
  F                      (X * YSQ) / Z
  G  X                   YSQ / Z
- G  Y                   (2.0 * X * Y) / Z
+ G  Y                   (2.0D0 * X * Y) / Z
  G  Z                   -(X * YSQ) / ZSQ
- H  X         Y         (2.0 * Y) / Z
+ H  X         Y         (2.0D0 * Y) / Z
  H  X         Z         -YSQ / ZSQ
- H  Y         Y         (2.0 * X) / Z
- H  Y         Z         -(2.0 * X * Y) / ZSQ
- H  Z         Z         (2.0 * X * YSQ) / (ZSQ * Z)
+ H  Y         Y         (2.0D0 * X) / Z
+ H  Y         Z         -(2.0D0 * X * Y) / ZSQ
+ H  Z         Z         (2.0D0 * X * YSQ) / (ZSQ * Z)
 
  T  SQ
  F                      Z * Z
- G  Z                   2.0 * Z
- H  Z         Z         2.0
+ G  Z                   2.0D0 * Z
+ H  Z         Z         2.0D0
 
  T  QT
  F                      Y / Z
  G  Y                   1.0 / Z
  G  Z                   -Y / Z**2
- H  Y         Z         -1.0 / Z**2
- H  Z         Z         (2.0 * Y) / Z**3
+ H  Y         Z         -1.0D0 / Z**2
+ H  Z         Z         (2.0D0 * Y) / Z**3
 
  T  1/LIN
- A  LIN                 Z + 20.0
+ A  LIN                 Z + 20.0D0
  F                      Y / LIN
  G  Y                   1.0 / LIN
  G  Z                   -Y / LIN**2
- H  Y         Z         -1.0 / LIN**2
- H  Z         Z         (2.0 * Y) / LIN**3
+ H  Y         Z         -1.0D0 / LIN**2
+ H  Z         Z         (2.0D0 * Y) / LIN**3
 
  T  SQRT
  A  RTZ                 SQRT(Z)
  F                      RTZ
- G  Z                   0.5 / RTZ
- H  Z         Z         -0.25 / ( Z*RTZ )
+ G  Z                   0.5D0 / RTZ
+ H  Z         Z         -0.25D0 / ( Z*RTZ )
 
  T  SURD
  A  RTX                 SQRT(X)
@@ -546,77 +544,80 @@ INDIVIDUALS
  A  XRTX                X * SQRT(X)
  A  ZRTZ                Z * SQRT(Z)
  F                      XRTX * Y / RTZ
- G  X                   1.5 *RTX * Y / RTZ
+ G  X                   1.5D0 *RTX * Y / RTZ
  G  Y                   XRTX / RTZ
- G  Z                   -(0.5 * XRTX * Y) / ZRTZ
- H  X         X         0.75 * Y / (RTZ * RTX)
- H  X         Y         1.5 *RTX / RTZ
- H  X         Z         -(0.75 * RTX  * Y) / ZRTZ
- H  Y         Z         -(0.5 * XRTX) / ZRTZ
- H  Z         Z         (0.75 * XRTX * Y) / (ZRTZ * Z)
+ G  Z                   -(0.5D0 * XRTX * Y) / ZRTZ
+ H  X         X         0.75D0 * Y / (RTZ * RTX)
+ H  X         Y         1.5D0 *RTX / RTZ
+ H  X         Z         -(0.75D0 * RTX  * Y) / ZRTZ
+ H  Y         Z         -(0.5D0 * XRTX) / ZRTZ
+ H  Z         Z         (0.75D0 * XRTX * Y) / (ZRTZ * Z)
 
  T  SQPRD
  F                      Y**2 * Z
- G  Y                   2.0 * Y * Z
+ G  Y                   2.0D0 * Y * Z
  G  Z                   Y**2
- H  Y         Y         2.0 * Z
- H  Y         Z         2.0 * Y
+ H  Y         Y         2.0D0 * Z
+ H  Y         Z         2.0D0 * Y
 
  T  CB/SQQD
  A  YCB                 Y**3
  A  CB                  W - X * YCB
- A  TMZY                3.0 - Z * Y
+ A  TMZY                3.0D0 - Z * Y
  A  SQQD                Y**2 * TMZY
- A  DYSQQD              3.0 * Y * (2.0 - Z * Y)
+ A  DYSQQD              3.0D0 * Y * (2.0D0 - Z * Y)
  F                      CB / SQQD
- G  W                   1.0 / SQQD
+ G  W                   1.0D0 / SQQD
  G  X                   -YCB / SQQD
- G  Y                   -3.0 * X * Y**2 / SQQD -
+ G  Y                   -3.0D0 * X * Y**2 / SQQD -
  G+                     (CB * DYSQQD) / (SQQD*SQQD)
  G  Z                   (YCB *CB) / SQQD**2
  H  W         Y         -DYSQQD / SQQD**2
  H  W         Z         YCB / SQQD**2
- H  X         Y         -3.0 *(1.0 - (TMZY - 1.0) / TMZY) / TMZY
+ H  X         Y         -3.0D0 *(1.0D0 - (TMZY - 1.0D0)
+ H+                      / TMZY) / TMZY
  H  X         Z         -(YCB**2 *CB) / SQQD**2
- H  Y         Y         -6.0 * X * Y / SQQD +
- H+                     (3.0 * X * Y**2 * DYSQQD) / SQQD**2 +
- H+                     (2.0 * CB * DYSQQD**2) / SQQD**3 -
- H+                     (6.0 * CB * (1.0 - Z * Y)) / SQQD**2
- H  Y         Z         -(3.0 * X * Y) / TMZY**2 -
- H+                     (6.0 * Y**4 * (TMZY - 1.0) * CB) /
- H+                     SQQD**3 + 3.0 * CB * Y**2 / SQQD**2
- H  Z         Z         2.0 * (YCB**2 *CB) / SQQD**3
+ H  Y         Y         -6.0D0 * X * Y / SQQD +
+ H+                     (3.0D0 * X * Y**2 * DYSQQD) / SQQD**2 +
+ H+                     (2.0D0 * CB * DYSQQD**2) / SQQD**3 -
+ H+                     (6.0D0 * CB * (1.0 - Z * Y)) / SQQD**2
+ H  Y         Z         -(3.0D0 * X * Y) / TMZY**2 -
+ H+                     (6.0D0 * Y**4 * (TMZY - 1.0D0) * CB) /
+ H+                     SQQD**3 + 3.0D0 * CB * Y**2 / SQQD**2
+ H  Z         Z         2.0D0 * (YCB**2 *CB) / SQQD**3
 
  T  SREL
- A  SRLIN               15.0 + 0.15 * V
+ A  SRLIN               15.0D0 + 0.15D0 * V
  A  SRPD                W * X
- A  SRQD                50.0 * Y * Z
+ A  SRQD                50.0D0 * Y * Z
  A  SRQT                SRPD / SRQD
  A  SRRT                SQRT(SRQT)
- A  SRSUM               15.0 + 0.3 * V
+ A  SRSUM               15.0D0 + 0.3D0 * V
  A  SRVLN               V *  SRLIN
- F                      V * SRLIN * (SRQT * SRRT + 8.0)
- G  V                   SRSUM *  (SRQT * SRRT + 8.0)
- G  W                   1.5 * ( SRVLN * SRRT * X / SRQD )
- G  X                   1.5 * ( SRVLN * SRRT * W / SRQD )
- G  Y                   -1.5 * SRVLN * SRRT * SRQT / Y
- G  Z                   -1.5 * SRVLN * SRRT * SRQT / Z
- H  V         V         0.3 *  (SRQT * SRRT + 8.0)
- H  V         W         1.5 * ( SRSUM * SRRT * X / SRQD )
- H  V         X         1.5 * ( SRSUM * SRRT * W / SRQD )
- H  V         Y         -1.5 * SRSUM * SRRT * SRQT / Y
- H  V         Z         -1.5 * SRSUM * SRRT * SRQT / Z
- H  W         W         (0.75 * SRVLN * X**2) / (SRQD**2 * SRRT)
- H  W         X         SRVLN * ((0.75 * SRPD) / (SRQD**2 *
- H+                     SRRT) + (1.5 * SRRT) / SRQD )
- H  W         Y         -(SRVLN * 2.25 * SRRT*SRQT) / (W * Y)
- H  W         Z         -(SRVLN * 2.25 * SRRT*SRQT) / (W * Z)
- H  X         X         (SRVLN * 0.75 * W * W) / (SRRT * SRQD**2)
- H  X         Y         -(SRVLN * 2.25 * SRRT*SRQT) / (X * Y)
- H  X         Z         -(SRVLN * 2.25 * SRRT*SRQT) / (X * Z)
- H  Y         Y         (SRVLN * 3.75 * SRRT * SRQT) / Y**2
- H  Y         Z         (SRVLN * 2.25 * SRRT*SRQT) / (Y * Z)
- H  Z         Z         (SRVLN * 3.75 * SRRT * SRQT) / Z**2
+ F                      V * SRLIN * (SRQT * SRRT + 8.0D0)
+ G  V                   SRSUM *  (SRQT * SRRT + 8.0D0)
+ G  W                   1.5D0 * ( SRVLN * SRRT * X / SRQD )
+ G  X                   1.5D0 * ( SRVLN * SRRT * W / SRQD )
+ G  Y                   -1.5D0 * SRVLN * SRRT * SRQT / Y
+ G  Z                   -1.5D0 * SRVLN * SRRT * SRQT / Z
+ H  V         V         0.3D0 *  (SRQT * SRRT + 8.0)
+ H  V         W         1.5D0 * ( SRSUM * SRRT * X / SRQD )
+ H  V         X         1.5D0 * ( SRSUM * SRRT * W / SRQD )
+ H  V         Y         -1.5D0 * SRSUM * SRRT * SRQT / Y
+ H  V         Z         -1.5D0 * SRSUM * SRRT * SRQT / Z
+ H  W         W         (0.75D0 * SRVLN * X**2) /
+ H+                     (SRQD**2 * SRRT)
+ H  W         X         SRVLN * ((0.75D0 * SRPD) / (SRQD**2 *
+ H+                     SRRT) + (1.5D0 * SRRT) / SRQD )
+ H  W         Y         -(SRVLN * 2.25D0 * SRRT*SRQT) / (W * Y)
+ H  W         Z         -(SRVLN * 2.25D0 * SRRT*SRQT) / (W * Z)
+ H  X         X         (SRVLN * 0.75D0 * W * W) /
+ H+                     (SRRT * SRQD**2)
+ H  X         Y         -(SRVLN * 2.25D0 * SRRT*SRQT) / (X * Y)
+ H  X         Z         -(SRVLN * 2.25D0 * SRRT*SRQT) / (X * Z)
+ H  Y         Y         (SRVLN * 3.75D0 * SRRT * SRQT) / Y**2
+ H  Y         Z         (SRVLN * 2.25D0 * SRRT*SRQT) / (Y * Z)
+ H  Z         Z         (SRVLN * 3.75D0 * SRRT * SRQT) / Z**2
 
 ENDATA
 
@@ -630,5 +631,5 @@ INDIVIDUALS
  T  SQUARE
  F                      ALPHA * ALPHA
  G                      ALPHA + ALPHA
- H                      2.0
+ H                      2.0D0
 ENDATA

@@ -23,11 +23,13 @@ NAME          ARGLALE
 *   N is the number of free variables
 *   M is the number of equations ( M.ge.N)
 
+*IE N                   4              $-PARAMETER
 *IE N                   10             $-PARAMETER
 *IE N                   50             $-PARAMETER 
 *IE N                   100            $-PARAMETER
  IE N                   200            $-PARAMETER
 
+*IE M                   6              $-PARAMETER .ge. N
 *IE M                   20             $-PARAMETER .ge. N
 *IE M                   100            $-PARAMETER .ge. N
 *IE M                   200            $-PARAMETER .ge. N
