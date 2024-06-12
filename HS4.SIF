@@ -79,8 +79,8 @@ INDIVIDUALS
  T  CUBE
 
  F                      GVAR * GVAR * GVAR
- G                      3.0 * GVAR * GVAR
- H                      6.0 * GVAR
+ G                      3.0D0 * GVAR * GVAR
+ H                      6.0D0 * GVAR
 
 ENDATA
 
