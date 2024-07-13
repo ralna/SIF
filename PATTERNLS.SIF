@@ -1,0 +1,161 @@
+***************************
+* SET UP THE INITIAL DATA *
+***************************
+
+NAME          PATTERNLS
+
+*   Problem :
+*   *********
+*   A nonlinear suystem arising from pattern formation.
+*   This is a least-squares variant of PATTERNNE
+
+*   Source: 
+*   D.J. Hill, J.J. Bramurger and D.J.B. Lloyd,
+*   "Approximate localised dihedral patterns near a Turing instability",
+*   Nonlinearity, vol. 36(5), pp. 2567-, 2023.
+
+*   See also SIAM NEWS 57(5) June 2024
+
+*   SIF input: Nick Gould, July 2024
+
+*   classification NQR2-AN-V-V
+
+*   m is the order of dihedral symmetry
+
+*IE m                   2              $-PARAMETER     original value
+*IE m                   3              $-PARAMETER
+*IE m                   4              $-PARAMETER
+*IE m                   5              $-PARAMETER
+ IE m                   6              $-PARAMETER
+
+ RI M         m
+
+*   N is the order of series expansion
+
+*IE N                   10             $-PARAMETER     original value
+*IE N                   100            $-PARAMETER
+ IE N                   1000           $-PARAMETER
+
+*   Define useful parameters
+
+ IE 0                   0
+ IE 1                   1
+ IE 2                   2
+ RE 2.0                 2.0
+ RE 3.0                 3.0
+
+* approximation of pi
+
+ RF PI/4      ARCTAN    1.0
+ RM PI        PI/4      4.0
+ R/ PI/3      PI                       3.0
+ R* MPI/3     M                        PI/3
+
+VARIABLES
+
+ DO n         0                        N
+ X  a(n)
+ ND
+
+GROUPS
+
+ DO n         0                        N
+ XN c(n)      a(n)      -1.0
+ ND
+
+BOUNDS
+
+ FR PATTERNLS 'DEFAULT'
+
+START POINT
+
+ XV PATTERNLS 'DEFAULT' 1.0
+
+ELEMENT TYPE
+
+ EV PROD      U
+ EV PROD      V
+
+ELEMENT USES
+
+ XT 'DEFAULT' PROD
+
+ DO i         0                        N
+ DO j         0                        N
+ ZV E(i,j)    U                        a(i)
+ ZV E(i,j)    V                        a(j)
+ ND
+
+GROUP TYPE
+
+ GV L2        GVAR
+
+GROUP USES
+
+ T  'DEFAULT' L2
+
+ DO n         0                        N
+ I- N-n       N                        n
+
+ DO j         1                        N-n
+ I+ n+j       n                        j
+ I- n-j       n                        j
+ RI rn-j      n-j
+ R* arg       MPI/3                    rn-j
+ RF carg      COS                      arg
+ R* 2carg     2.0                      carg
+ ZE c(n)      E(j,n+j)                 2carg
+ OD j
+
+ DO j         0                        n
+ I* 2j        2                        j
+ I- n-j       n                        j
+ I- n-2j      n                        2j
+ RI rn-2j     n-2j
+ R* arg       MPI/3                    rn-2j
+ RF carg      COS                      arg
+ ZE c(n)      E(j,n-j)                 carg
+ OD j
+
+ ND
+
+OBJECT BOUND
+
+*   Solution
+
+*LO SOLTN               0.0
+
+ENDATA
+
+***********************
+* SET UP THE FUNCTION *
+* AND RANGE ROUTINES  *
+***********************
+
+ELEMENTS      PATTERNLS
+
+INDIVIDUALS
+
+ T  PROD
+ F                      U * V
+ G  U                   V
+ G  V                   U
+ H  U         V         1.0
+
+ENDATA
+
+*********************
+* SET UP THE GROUPS *
+* ROUTINE           *
+*********************
+
+GROUPS        PATTERNLS
+
+INDIVIDUALS
+
+ T  L2
+ F                      GVAR * GVAR
+ G                      GVAR + GVAR
+ H                      2.0
+
+ENDATA
