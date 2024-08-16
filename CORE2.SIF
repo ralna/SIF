@@ -936,7 +936,7 @@ INDIVIDUALS
  I  XGE0      H         2.0D+0
  E  XGE0      H         - 2.0D+0
 
- F                      X * DABS(X)
+ F                      X * ABS(X)
  G  X                   G
  H  X         X         H
 
