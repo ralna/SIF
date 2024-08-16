@@ -7967,23 +7967,23 @@ C
 C        CODE FOR INCREMENT NOT EQUAL TO 1
 C
       IX = 1
-      DMAX = DABS(DX(1))
+      DMAX = ABS(DX(1))
       IX = IX + INCX
       DO 10 I = 2,N
-         IF(DABS(DX(IX)).LE.DMAX) GO TO 5
+         IF(ABS(DX(IX)).LE.DMAX) GO TO 5
          IDAMX0 = I
-         DMAX = DABS(DX(IX))
+         DMAX = ABS(DX(IX))
    5     IX = IX + INCX
   10  CONTINUE
       RETURN
 C
 C        CODE FOR INCREMENT EQUAL TO 1
 C
-  20  DMAX = DABS(DX(1))
+  20  DMAX = ABS(DX(1))
       DO 30 I = 2,N
-         IF(DABS(DX(I)).LE.DMAX) GO TO 30
+         IF(ABS(DX(I)).LE.DMAX) GO TO 30
          IDAMX0 = I
-         DMAX = DABS(DX(I))
+         DMAX = ABS(DX(I))
   30  CONTINUE
       RETURN
       END
