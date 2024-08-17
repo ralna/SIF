@@ -10689,7 +10689,7 @@ C
 C     
 C     Derivatives of the inclusive value
 C     
-            DO 1200 NOEUD = 1,NNOEUD-1
+            DO 1200 NOEUD = 1,NNOEUD - 1
                IF (DISP(OBS,NOEUD)) THEN
 C     
 C     Equation (6) of Daly
@@ -10759,7 +10759,7 @@ C
                      L1IJ(NOEUD) = ZERO
                      L2IJ(NOEUD) = ZERO
  2020             CONTINUE
-                  DO 2030 NOEUD=1,NNOEUD-1
+                  DO 2030 NOEUD=1,NNOEUD - 1
                      IF (DISP(OBS,NOEUD)) THEN
                         IF (I .EQ. THETA(NOEUD)) THEN
                            VIJ(NOEUD) = DERLOG(NOEUD,J)

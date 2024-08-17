@@ -3684,10 +3684,11 @@ ENDATA
 *	EXTERNAL FUNCTIONS  *
 *****************************
 
-      DOUBLE PRECISION FUNCTION FVAL( kLa   , CO3g0 , CO3l0 , QIN   ,
+      FUNCTION FVAL( kLa   , CO3g0 , CO3l0 , QIN   ,
      *                                CO3IN , VOLGAS, VOLLIQ, H     ,
      *                                S01   , S02   ,
      *                                TIME  , ID )
+      DOUBLE PRECISION FVAL
       INTEGER           ID
       DOUBLE PRECISION  kLa   , CO3g0 , CO3l0 , QIN   , CO3IN , VOLGAS,
      *                  VOLLIQ, H     , S01   , S02   , TIME
