@@ -597,16 +597,11 @@ HIE1372D   QLR2-RN-      637-      525
 HIELOW     OUR2-MN-        3-        0
 HIER13     QLR2-RN-     2020-     3313
 HIER133A   QLR2-RN-     2197-     3549
-HIER133B   QLR2-RN-     2197-     3549
-HIER133C   QLR2-RN-     2197-     3549
 HIER133D   QLR2-RN-     2197-     3549
 HIER133E   QLR2-RN-     2197-     3549
 HIER16     QLR2-RN-     3564-     5484
 HIER163A   QLR2-RN-     4096-     5376
-HIER163B   QLR2-RN-     4096-     5376
-HIER163C   QLR2-RN-     4096-     5376
 HIER163D   QLR2-RN-     4096-     5376
-HIER163E   QLR2-RN-     4096-     5376
 HILBERTA   QUR2-AN-        V-        0
 HILBERTB   QUR2-AN-        V-        0
 HIMMELBA   NLR2-AN-        2-        2
@@ -1371,8 +1366,6 @@ SYNTHES2   OOR2-AN-       11-       14
 SYNTHES3   OOR2-AN-       17-       19
 TABLE1     QLR2-RN-     1584-      510
 TABLE3     QLR2-RN-     4992-     2464
-TABLE4     QLR2-RN-     4992-     2464
-TABLE5     QLR2-RN-     4992-     2464
 TABLE6     QLR2-RN-     1584-      510
 TABLE7     QLR2-RN-      624-       17
 TABLE8     QLR2-RN-     1271-       72
