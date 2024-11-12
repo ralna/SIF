@@ -338,6 +338,7 @@ Corrections to problem statement:
            YATP2LS.SIF    YORKNET.SIF  
 29/May/24: DIAGPQE.SIF    DIAGPQB.SIF    DIAGNQT.SIF    DIAGNQE.SIF
            DIAGNQB.SIF    DIAGPQT.SIF    DIAGQ.SIF
+12/Nov/24: EXTROSNBNE.SIF
 
 Changes to default sizes:
 
@@ -370,6 +371,7 @@ Corrections to classification:
            PALMER5BNE.SIF PALMER5ENE.SIF PALMER6ANE.SIF PALMER6ENE.SIF
            PALMER7ANE.SIF PALMER7ENE.SIF PALMER8ANE.SIF PALMER8ENE.SIF
            SPECANNE.SIF   WEEDSNE.SIF    YFITNE.SIF 
+12/Nov/24: EIGENA.SIF     JUDGEB.SIF
 
 Corrections to citations or comments:
 

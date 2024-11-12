@@ -302,7 +302,7 @@ CVXQP1     QLR2-AN-        V-        V
 CVXQP2     QLR2-AN-        V-        V
 CVXQP3     QLR2-AN-        V-        V
 CYCLIC3    NOR2-AN-        V-        0
-CYCLIC3LS  NOR2-AN-        V-        0
+CYCLIC3LS  SUR2-AN-        V-        0
 CYCLOOCF   NQR2-MN-        V-        V
 CYCLOOCFLS SUR2-MN-        V-        0
 CYCLOOCT   NQR2-MN-        V-        V
@@ -435,7 +435,7 @@ EG3        OOR2-AY-        V-        V
 EGGCRATE   SUR2-MN-        4-        0
 EGGCRATEB  SBR2-MN-        4-        0
 EGGCRATENE NOR2-MN-        4-        2
-EIGENA     NBR2-AN-        V-        V
+EIGENA     NOR2-AN-        V-        V
 EIGENA2    QQR2-AN-        V-        V
 EIGENACO   SQR2-AN-        V-        V
 EIGENALS   SUR2-AN-        V-        0
@@ -793,7 +793,7 @@ JNLBRNG2   QBR2-AY-        V-        0
 JNLBRNGA   QBR2-AY-        V-        0
 JNLBRNGB   QBR2-AY-        V-        0
 JUDGE      SUR2-MN-        2-        0
-JUDGEB     SUR2-MN-        2-        0
+JUDGEB     SBR2-MN-        2-        0
 JUDGENE    NOR2-MN-        2-       20
 JUNKTURN   QQR2-MN-        V-        V
 KIRBY2     NOR2-MN-        5-      151

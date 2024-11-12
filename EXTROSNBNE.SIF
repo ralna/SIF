@@ -43,7 +43,7 @@ VARIABLES
 
 GROUPS
 
- N  SQ1       X1        1.0
+ E  SQ1       X1        1.0
 
  DO I         2                        N
  XE SQ(I)     X(I)      1.0
