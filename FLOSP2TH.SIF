@@ -45,7 +45,7 @@ NAME          FLOSP2TH
 *   Define the Rayleigh number. NB: This determines the difficulty 
 *   of the problem.
   
- RE RA                  1.0D+7         $-PARAMETER Rayleigh number
+ RE RA                  1.0E+7         $-PARAMETER Rayleigh number
 
 *   Set pi.
 
