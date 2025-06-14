@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          LUKVLI2 
+NAME          LUKVLE2C
 
 *   Problem :
 *   *********
@@ -14,10 +14,8 @@ NAME          LUKVLI2
 *   Technical Report 767, Inst. Computer Science, Academy of Sciences
 *   of the Czech Republic, 182 07 Prague, Czech Republic, 1999
 
-*   Equality constraints changed to inequalities
-
 *   SIF input: Nick Gould, April 2001
-*              incorrectly decoded version (see LUKVLI2C for correction)
+*   modifield version of LUKVLE2 (formulation corrected) June 2025
 
 *   classification OOR2-AY-V-V
 
@@ -73,9 +71,9 @@ GROUPS
  DO K         6                        N-2
  IA K+1       K         1
  IA K-5       K         -5
- XL C(K)      X(K)      2.0
+ XE G(K)      X(K)      2.0
  DO I         K-5                      K+1
- XL C(K)      X(I)      1.0
+ XE G(K)      X(I)      1.0
  ND
 
 CONSTANTS
@@ -87,7 +85,7 @@ CONSTANTS
  ND
 
  DO K         6                        N-2
- X  RHS       C(K)      -1.0
+ X  RHS       G(K)      -1.0
  ND
 
 BOUNDS
@@ -98,12 +96,12 @@ START POINT
 
  DO I         1                        N
  DI I         2
- XV LUKVLI1   X(I)      -2.0
+ XV LUKVLE1   X(I)      -2.0
  ND
 
  DO I         2                        N
  DI I         2
- XV LUKVLI1   X(I)      1.0
+ XV LUKVLE1   X(I)      1.0
  ND
 
 ELEMENT TYPE
@@ -153,18 +151,18 @@ GROUP USES
  DO K         6                        N-2
  IA K+1       K         1
  IA K-5       K         -5
- XE C(K)      U(K)      5.0
+ XE G(K)      U(K)      5.0
  DO I         K-5                      K+1
- XE C(K)      S(I)      1.0
+ XE G(K)      S(I)      1.0
  ND
 
 OBJECT BOUND
 
- LO LUKVLI2             0.0
+ LO LUKVLE2C            0.0
 
 *   Solution
 
-*LO SOLTN               2.39390E+04
+*LO SOLTN               2.61332E+04
 
 ENDATA
 
@@ -173,7 +171,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      LUKVLI2
+ELEMENTS      LUKVLE2C
 
 INDIVIDUALS
 
@@ -194,7 +192,7 @@ ENDATA
 * ROUTINE           *
 *********************
 
-GROUPS        LUKVLI2 
+GROUPS        LUKVLE2C
 
 INDIVIDUALS
 

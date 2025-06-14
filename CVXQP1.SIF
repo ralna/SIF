@@ -22,7 +22,7 @@ NAME          CVXQP1
  IE N                   10000          $-PARAMETER
 *IE N                   100000         $-PARAMETER
  IE N                   20000          $-PARAMETER
- IE N                   100            $-PARAMETER
+*IE N                   100            $-PARAMETER
 
 *  Other useful values.
 

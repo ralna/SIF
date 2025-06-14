@@ -265,6 +265,8 @@ Additions:
 30/May/24: LUKVLE4C.SIF  LUKVLI4C.SIF (buggy LUKVLE4C, LUKVLI4C.SIF corrected)
 01/Jun/24: 10FOLDTRLS.SIF
 13/Jul/24: PATTERNLS.SIF PATTERNNE.SIF 
+14/Jun/25: LUKVLE2C.SIF   LUKVLI2C.SIF   LUKVLE4C.SIF   LUKVLI4C.SIF
+           (replacements for buggy LUKVLE2.SIF, etc)
 
 Corrections to problem statement:
 
