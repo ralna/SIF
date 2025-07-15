@@ -267,6 +267,7 @@ Additions:
 13/Jul/24: PATTERNLS.SIF PATTERNNE.SIF 
 14/Jun/25: LUKVLE2C.SIF   LUKVLI2C.SIF   LUKVLE4C.SIF   LUKVLI4C.SIF
            (replacements for buggy LUKVLE2.SIF, etc)
+15/Jul/25: QUADCOPTER.SIF
 
 Corrections to problem statement:
 

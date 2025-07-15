@@ -1,0 +1,242 @@
+***************************
+* SET UP THE INITIAL DATA *
+***************************
+
+NAME          QUADCOPTER
+
+*   Problem :
+*   *********
+
+*   A convex quadratic program from model predictive control
+
+*   Source: an example from the OSQP documention. See
+
+*     https://osqp.org/docs/examples/mpc.html
+
+*   SIF input: Nick Gould, July 2025
+
+*   classification QLR2-AN-V-V
+
+*   The number of state variables per block
+
+ IE NX                  12
+
+*   The number of inputs/control per block
+
+ IE NU                  4
+
+*   The number of blocks (prediction horizon)
+
+*IE N                   2              $-PARAMETER
+ IE N                   10             $-PARAMETER    original value
+*IE N                   50             $-PARAMETER
+ IE N                   100            $-PARAMETER
+ IE N                   1000           $-PARAMETER
+ IE N                   10000          $-PARAMETER
+
+*  Other useful values
+
+ IE 0                   0
+ IE 1                   1
+ IE 2                   2
+ IE 3                   3
+ IE 4                   4
+ IE 5                   5
+ IE 6                   6
+ IE 7                   7
+ IE 8                   8
+ IE 9                   9
+ IE 10                  10
+ IE 11                  11
+ IE 12                  12
+ RE ONE                 1.0
+ RE -ONE                -1.0
+ RE SIX                 6.0
+ IA N-1       N         -1
+
+*  approximation of pi
+
+ RF PI/4      ARCTAN    1.0
+ RM PI        PI/4      4.0
+ R/ PI/6      PI                       SIX
+ RM -PI/6     PI/6      -1.0
+
+*  initial state
+
+ DO I         1                        NX
+ AE XI(I)               0.0
+ ND
+
+*  initial value of u
+
+ RE U0                  10.5916
+
+*  bounds on u
+
+ RE UMIN                9.6
+ RE UMAX                13.0
+
+*  u bound differences
+          
+ R- ULOWER    UMIN                     U0
+ R- UUPPER    UMAX                     U0
+
+VARIABLES
+
+ DO J         0                        N
+ DO I         1                        NX
+ X  X(I,J)
+ ND
+
+ DO J         0                        N-1
+ DO I         1                        NU
+ X  U(I,J)
+ OD I
+ ND
+
+GROUPS
+
+*  objective function
+
+ DO J         0                        N
+ DO I         1                        NX
+ XN OX(I,J)   X(I,J)    1.0
+ ND
+
+ DO J         0                        N-1
+ DO I         1                        NU
+ XN OU(I,J)   U(I,J)    1.0
+ ND
+
+*  linear constraints
+
+ DO K         0                        N-1
+ IA K+1       K                        1
+ XE R(1,K)    X(1,K+1)  1.0            X(1,K)    1.0   
+ XE R(1,K)    X(7,K)    0.1            
+ XE R(2,K)    X(2,K+1)  1.0            X(2,K)    1.0   
+ XE R(2,K)    X(8,K)    0.1            
+ XE R(3,K)    X(3,K+1)  1.0            X(3,K)    1.0   
+ XE R(3,K)    X(9,K)    0.1            
+ XE R(4,K)    X(4,K+1)  1.0            X(4,K)    1.0   
+ XE R(4,K)    X(1,K)    0.0488         X(7,K)    0.0016
+ XE R(4,K)    X(10,K)   0.0992         
+ XE R(5,K)    X(5,K+1)  1.0            X(5,K)    1.0   
+ XE R(5,K)    X(2,K)    -0.0488        X(8,K)    -0.0016
+ XE R(5,K)    X(11,K)   0.0992         
+ XE R(6,K)    X(6,K+1)  1.0            X(6,K)    1.0   
+ XE R(6,K)    X(12,K)   0.0992         
+ XE R(7,K)    X(7,K+1)  1.0            X(7,K)    1.0   
+ XE R(8,K)    X(8,K+1)  1.0            X(8,K)    1.0   
+ XE R(9,K)    X(9,K+1)  1.0            X(9,K)    1.0   
+ XE R(10,K)   X(10,K+1) 1.0            X(10,K)   0.9846
+ XE R(10,K)   X(1,K)    0.9734         X(7,K)    0.0488
+ XE R(11,K)   X(11,K+1) 1.0            X(11,K)   0.9846
+ XE R(11,K)   X(2,K)    -0.9734        X(8,K)    -0.0488
+ XE R(12,K)   X(12,K+1) 1.0            X(12,K)   0.9846
+
+ XE R(1,K)    U(2,K)    -0.0726        U(4,K)    0.0726
+ XE R(2,K)    U(1,K)    -0.0726        U(3,K)    0.0726
+ XE R(3,K)    U(1,K)    -0.0152        U(2,K)    0.0152
+ XE R(3,K)    U(3,K)    -0.0152        U(4,K)    0.0152
+ XE R(4,K)    U(2,K)    -0.0006        U(4,K)    0.0006
+ XE R(5,K)    U(1,K)    0.0006         U(3,K)    -0.0006
+ XE R(6,K)    U(1,K)    0.0106         U(2,K)    0.0106
+ XE R(6,K)    U(3,K)    0.0106         U(4,K)    0.0106
+ XE R(7,K)    U(2,K)    -1.4512        U(4,K)    1.4512
+ XE R(8,K)    U(1,K)    -1.4512        U(3,K)    1.4512
+ XE R(9,K)    U(1,K)    -0.3049        U(2,K)    0.3049
+ XE R(9,K)    U(3,K)    -0.3049        U(4,K)    0.3049
+ XE R(10,K)   U(2,K)    -0.0236        U(4,K)    0.0236
+ XE R(11,K)   U(1,K)    0.0236         U(3,K)    -0.0236
+ XE R(12,K)   U(1,K)    0.2107         U(2,K)    0.2107
+ XE R(12,K)   U(3,K)    0.2107         U(4,K)    0.2107
+ ND
+
+CONSTANTS
+
+ DO J         0                        N
+ Z  QUADCOP   OX(3,J)                  ONE
+ ND
+
+BOUNDS
+
+ FR QUADCOP   'DEFAULT'
+
+ DO I         1                        NX
+ ZX QUADCOP   X(I,0)                   XI(I)
+ ND
+
+ DO J         1                        N
+ ZL QUADCOP   X(1,J)                   -PI/6
+ ZU QUADCOP   X(1,J)                   PI/6
+ ZL QUADCOP   X(2,J)                   -PI/6
+ ZU QUADCOP   X(2,J)                   PI/6
+ ZL QUADCOP   X(5,J)                   -ONE
+ ND
+
+ DO J         0                        N-1
+ DO I         1                        NU
+ ZL QUADCOP   U(I,J)                   ULOWER
+ ZU QUADCOP   U(I,J)                   UUPPER
+ OD I
+ ND
+
+
+GROUP TYPE
+
+ GV SSQR      ALPHA
+ GP SSQR      S
+
+GROUP USES
+
+ DO J         0                        N
+ XT OX(1,J)   SSQR
+ XP OX(1,J)   S         0.0
+ XT OX(2,J)   SSQR
+ XP OX(2,J)   S         0.0
+ XT OX(3,J)   SSQR
+ XP OX(3,J)   S         20.0
+ XT OX(4,J)   SSQR
+ XP OX(4,J)   S         20.0
+ XT OX(5,J)   SSQR
+ XP OX(5,J)   S         20.0
+ XT OX(6,J)   SSQR
+ XP OX(6,J)   S         20.0
+ XT OX(7,J)   SSQR
+ XP OX(7,J)   S         0.0
+ XT OX(8,J)   SSQR
+ XP OX(8,J)   S         0.0
+ XT OX(9,J)   SSQR
+ XP OX(9,J)   S         0.0
+ XT OX(10,J)  SSQR
+ XP OX(10,J)  S         10.0
+ XT OX(11,J)  SSQR
+ XP OX(11,J)  S         10.0
+ XT OX(12,J)  SSQR
+ XP OX(12,J)  S         10.0
+ ND
+
+ DO J         0                        N-1
+ DO I         1                        NU
+ XT OU(I,J)   SSQR
+ XP OU(I,J)   S         0.2
+ ND
+
+ENDATA
+
+*********************
+* SET UP THE GROUPS *
+* ROUTINE           *
+*********************
+
+GROUPS        QUADCOPTER
+
+INDIVIDUALS
+
+ T  SSQR
+ F                      S * ALPHA * ALPHA
+ G                      2.0 * S * ALPHA 
+ H                      2.0 * S
+
+ENDATA

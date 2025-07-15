@@ -34,7 +34,8 @@ NAME          TRIDIA
 *IE N                   500            $-PARAMETER
 *IE N                   1000           $-PARAMETER
  IE N                   5000           $-PARAMETER
-*IE N                   10000          $-PARAMETER
+ IE N                   10000          $-PARAMETER
+*IE N                   100000         $-PARAMETER
 
 *   TRIDIA problem parameters (see Buckley#40)
 
