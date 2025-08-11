@@ -912,6 +912,7 @@ LUKVLE16   OQR2-AY-        V-        V
 LUKVLE17   OQR2-AY-        V-        V
 LUKVLE18   OQR2-AY-        V-        V
 LUKVLE2    OOR2-AY-        V-        V
+LUKVLE2C   OOR2-AY-        V-        V
 LUKVLE3    OOR2-AY-        V-        V
 LUKVLE4    OOR2-AY-        V-        V
 LUKVLE4C   OOR2-AY-        V-        V
@@ -931,6 +932,7 @@ LUKVLI16   OQR2-AY-        V-        V
 LUKVLI17   OQR2-AY-        V-        V
 LUKVLI18   OQR2-AY-        V-        V
 LUKVLI2    OOR2-AY-        V-        V
+LUKVLI2C   OOR2-AY-        V-        V
 LUKVLI3    OOR2-AY-        V-        V
 LUKVLI4    OOR2-AY-        V-        V
 LUKVLI4C   OOR2-AY-        V-        V
@@ -1262,6 +1264,7 @@ QR3D       NQR2-AN-        V-        V
 QR3DBD     NQR2-AN-        V-        V
 QR3DLS     SBR2-AN-        V-        V
 QRTQUAD    OBR2-MN-        V-        0
+QUADCOPTER QLR2-AN-        V-        V
 QUARTC     OUR2-AN-        V-        0
 QUDLIN     QBR2-AN-        V-        V
 RAT42      NOR2-MN-        3-        9
