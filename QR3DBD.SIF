@@ -21,6 +21,7 @@ NAME          QR3DBD
 *   Ph. Toint, private communication.
 
 *   SIF input: Ph. Toint, Nov 1993
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification  NQR2-AN-V-V
 
@@ -118,7 +119,7 @@ CONSTANTS
 
  DO I         1                        M
  X  QR3DBD    O(I,I)    1.0
- OD J
+ OD I
 
 *   Factorization constraints
 

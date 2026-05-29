@@ -11,6 +11,7 @@ NAME          MINPERM
 
 *   SIF input: N. Gould and Ph. Toint, December 1990.
 *              minor correction by Ph. Shott, Jan 1995.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LQR2-AN-V-V
 
@@ -40,15 +41,15 @@ NAME          MINPERM
 
  DO I         1                        N
  I- N-I+1     N+1                      I
- IA I-1       I         - 1
+ IA I-1       I         -1
  RI R2**N     2**N
  AA S(N-I+1)  R2**N     0.1
  AA T(I-1)    R2**N     0.1
  I* 2**N      2**N                     2
  ND
 
- IA N-1       N         - 1
- IA 2**N-1    2**N      - 1
+ IA N-1       N         -1
+ IA 2**N-1    2**N      -1
 
 VARIABLES
 
@@ -59,7 +60,7 @@ VARIABLES
  IR K1        RK1
  IM K2        K1        2
  IA K1        K1        1
- IA K2        K2        - 1
+ IA K2        K2        -1
 
  DO K         K1                       K2
  X  P(K)
@@ -85,10 +86,10 @@ GROUPS
  IR K1        RK1
  IM K2        K1        2
  IA K1        K1        1
- IA K2        K2        - 1
+ IA K2        K2        -1
 
  DO K         K1                       K2
- XE PE(K)     P(K)      - 1.0
+ XE PE(K)     P(K)      -1.0
  ND
 
 *   Doubly stochastic matrix constraints
@@ -131,7 +132,7 @@ ELEMENT USES
  IR K1        RK1
  IM K2        K1        2
  IA K1        K1        1
- IA K2        K2        - 1
+ IA K2        K2        -1
 
  DO K         K1                       K2
 
@@ -160,7 +161,7 @@ ELEMENT USES
 
  I= I1        0
  I= I2        1
- IA ID-2      ID        - 2
+ IA ID-2      ID        -2
 
  DO I         1                        ID-2
  I= I1        ID
@@ -203,7 +204,7 @@ GROUP USES
  IR K1        RK1
  IM K2        K1        2
  IA K1        K1        1
- IA K2        K2        - 1
+ IA K2        K2        -1
 
  DO K         K1                       K2
 

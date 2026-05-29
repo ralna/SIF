@@ -32,6 +32,7 @@ NAME          MARINE
 *   Argonne National Labs Technical Report ANL/MCS-246 (2000)
 
 *   SIF input: Nick Gould, November 2000
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AN-V-V
 
@@ -353,7 +354,7 @@ VARIABLES
  DO I         1                        NE-1
  X  M(I)
  X  G(I)
- OD J
+ OD I
  X  M(NE)
 
 *  The collocation approximation u is defined by the parameters V and W
@@ -497,7 +498,7 @@ BOUNDS
  DO I         1                        NE-1
  XL MARINE    M(I)      0.0
  XL MARINE    G(I)      0.0
- OD J
+ ND
  XL MARINE    M(NE)     0.0
 
 START POINT

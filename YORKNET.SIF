@@ -16,6 +16,7 @@ NAME          YORKNET
 *              The Gateway, Leicester LE1 9BH, UK.
 *              e-mail: bul@uk.ac.dmu * Tel no.0533 577070
 *              correction by S. Gratton & Ph. Toint, May 2024
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SOR2-AY-312-256
 
@@ -716,7 +717,7 @@ INDIVIDUALS
 *XSQ - (x)**2  ************
 
  T  XSQ
- F  XSQ                 X * X
+ F                      X * X
  G  X                   X + X
  H  X         X         2.0
 
@@ -733,7 +734,7 @@ INDIVIDUALS
  T  XMYZSQ
  R  IVX       X         1.0            Y         -1.0
  R  IVZ       Z         1.0
- F  XMYZSQ              IVX * IVZ**2
+ F                      IVX * IVZ**2
  G  IVX                 IVZ**2
  G  IVZ                 2.0 * IVX * IVZ
  H  IVX       IVZ       2.0 * IVZ

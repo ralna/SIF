@@ -16,6 +16,7 @@ NAME          STRTCHDV
 *             benchmarks/go_benchmark_functions
 
 *   SIF input: Nick Gould, Jan 2020
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SUR2-MN-V-0
 
@@ -121,7 +122,6 @@ TEMPORARIES
  R  AX1X1
  R  AX1X2
  R  AX2X2
- R  S
  R  Z
  R  ZY
  R  ZYY

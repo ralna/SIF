@@ -12,6 +12,7 @@ NAME          PDE1
 
 *   SIF input: Nick Gould, April 25th 2012
 *              correction by S. Gratton & Ph. Toint, May 2024
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LLR2-AN-V-V
 
@@ -70,27 +71,27 @@ GROUPS
  XG A(I,J)    T         1.0
  ZG A(I,J)    X(I,J)                   H
  XL B(I,J)    T         -1.0
- ZG B(I,J)    X(I,J)                   H
+ ZL B(I,J)    X(I,J)                   H
  ND
 
  DO I         1                        N
  XG C(I,0)    T         1.0
  ZG C(I,0)    X(I,0)                   SQRTAH
  XL D(I,0)    T         -1.0
- ZG D(I,0)    X(I,0)                   SQRTAH
+ ZL D(I,0)    X(I,0)                   SQRTAH
  XG C(I,N1)   T         1.0
  ZG C(I,N1)   X(I,N1)                  SQRTAH
  XL D(I,N1)   T         -1.0
- ZG D(I,N1)   X(I,N1)                  SQRTAH
+ ZL D(I,N1)   X(I,N1)                  SQRTAH
 
  XG E(0,I)    T         1.0
  ZG E(0,I)    X(0,I)                   SQRTAH
  XL F(0,I)    T         -1.0
- ZG F(0,I)    X(0,I)                   SQRTAH
+ ZL F(0,I)    X(0,I)                   SQRTAH
  XG E(N1,I)   T         1.0
  ZG E(N1,I)   X(N1,I)                  SQRTAH
  XL F(N1,I)   T         -1.0
- ZG F(N1,I)   X(N1,I)                  SQRTAH
+ ZL F(N1,I)   X(N1,I)                  SQRTAH
  ND
 
 RHS

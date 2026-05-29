@@ -23,6 +23,7 @@ NAME          AIRPORT
 *   SIF input : Rodrigo de Barros Nabholz & Maria Aparecida Diniz Ehrhardt
 *               November 1994, DMA - IMECC- UNICAMP
 *   Adaptation for CUTE: Ph. Toint, November 1994.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SQR2-MN-84-42
 
@@ -190,7 +191,7 @@ CONSTANTS
 
  DO I         1                        N
 
- ZN AIRPORT   CONS(I)                  R(I)
+ ZL AIRPORT   CONS(I)                  R(I)
 
  ND
 
@@ -251,11 +252,11 @@ GROUP USES
 
 OBJECT BOUND
 
- LO AIRPORT            0.0
+ LO AIRPORT             0.0
 
 *   Solution
 
-*LO SOLTN              47952.695811
+*LO SOLTN               47952.695811
 
 ENDATA
 

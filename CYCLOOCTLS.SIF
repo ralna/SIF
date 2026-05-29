@@ -28,6 +28,7 @@ NAME          CYCLOOCTLS
 *    J. Chem. Phys. 132-234115 (2010)
 
 *   SIF input: Nick Gould, Feb 2020.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   This is a least-squares version of CYCLOOCT.SIF
 
@@ -79,7 +80,7 @@ CONSTANTS
  DO I         1                        P
  Z  CYCLOOCT  A(I)                     C2
  Z  CYCLOOCT  B(I)                     SC2
- OD i
+ OD I
 
 BOUNDS
 

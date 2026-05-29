@@ -15,6 +15,7 @@ NAME          SCOSINE
 *   N. Gould, private communication.
 
 *   SIF input: N. Gould, Nov 1997
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OUR2-AN-V-0
 
@@ -60,7 +61,7 @@ GROUPS
  IA I+1       I         1
  AM MULT      SCALE(I+1)-0.5
  ZN G(I)      X(I+1)                   MULT
- OD
+ ND
 
 BOUNDS
 

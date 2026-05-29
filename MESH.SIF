@@ -19,6 +19,7 @@ NAME          MESH
 *           D-24943 FLENSBURG, GERMANY
 
 *   SIF input: Prof. Dr. Michael Kraetzschmar
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AY-41-48
 
@@ -180,7 +181,7 @@ ELEMENT TYPE
  IV diffsq    dif
  EV laenge    lp1x                     lp1y
  EV laenge    lp2x                     lp2y
- EV laenge    llaenge
+ EV laenge    llaeng
  IV laenge    lp1p2x                   lp1p2y
  IV laenge    ll
  EV vekprod   vp1x                     vp1y
@@ -218,42 +219,42 @@ ELEMENT USES
  ZV laeng1    lp1y                     y1  
  ZV laeng1    lp2x                     x5  
  ZV laeng1    lp2y                     y5  
- ZV laeng1    llaenge                  l1  
+ ZV laeng1    llaeng                   l1  
  ZV laeng2    lp1x                     x5  
  ZV laeng2    lp1y                     y5  
  ZV laeng2    lp2x                     x2  
  ZV laeng2    lp2y                     y2  
- ZV laeng2    llaenge                  l2  
+ ZV laeng2    llaeng                   l2  
  ZV laeng3    lp1x                     x2  
  ZV laeng3    lp1y                     y2  
  ZV laeng3    lp2x                     x1  
  ZV laeng3    lp2y                     y1  
- ZV laeng3    llaenge                  l3  
+ ZV laeng3    llaeng                   l3  
  ZV laeng4    lp1x                     x5  
  ZV laeng4    lp1y                     y5  
  ZV laeng4    lp2x                     x3  
  ZV laeng4    lp2y                     y3  
- ZV laeng4    llaenge                  l4  
+ ZV laeng4    llaeng                   l4  
  ZV laeng5    lp1x                     x3  
  ZV laeng5    lp1y                     y3  
  ZV laeng5    lp2x                     x2  
  ZV laeng5    lp2y                     y2  
- ZV laeng5    llaenge                  l5  
+ ZV laeng5    llaeng                   l5  
  ZV laeng6    lp1x                     x5  
  ZV laeng6    lp1y                     y5  
  ZV laeng6    lp2x                     x4  
  ZV laeng6    lp2y                     y4  
- ZV laeng6    llaenge                  l6  
+ ZV laeng6    llaeng                   l6  
  ZV laeng7    lp1x                     x4  
  ZV laeng7    lp1y                     y4  
  ZV laeng7    lp2x                     x3  
  ZV laeng7    lp2y                     y3  
- ZV laeng7    llaenge                  l7  
+ ZV laeng7    llaeng                   l7  
  ZV laeng8    lp1x                     x1  
  ZV laeng8    lp1y                     y1  
  ZV laeng8    lp2x                     x4  
  ZV laeng8    lp2y                     y4  
- ZV laeng8    llaenge                  l8  
+ ZV laeng8    llaeng                   l8  
 
  DO i         1                        nd
  XT sal(i)    sklprod
@@ -408,7 +409,7 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN              5.9213448D-4
+*LO SOLTN               5.9213448D-4
 
 ENDATA
 
@@ -439,7 +440,7 @@ INDIVIDUALS
  T  laenge
  R  lp1p2x    lp1x      1.0            lp2x      -1.0
  R  lp1p2y    lp1y      1.0            lp2y      -1.0
- R  ll        llaenge   1.0
+ R  ll        llaeng    1.0
  F                      ll * ll
  F+                     - lp1p2x * lp1p2x - lp1p2y * lp1p2y
  G  ll                  ll + ll

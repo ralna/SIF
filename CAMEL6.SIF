@@ -13,6 +13,7 @@ NAME          CAMEL6
 *   North Holland, 1975.
 
 *   SIF input: A.R. Conn May 1995
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OBR2-AN-2-0
 
@@ -72,7 +73,7 @@ ELEMENT USES
 GROUP USES
 
  E  OBJ       E1        4.0            E2        -2.1
- E  OBJ       E3        0.333333333333 E4
+ E  OBJ       E3        0.3333333333   E4
  E  OBJ       E5        -4.0           E6        4.0
 
 OBJECT BOUND

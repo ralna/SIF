@@ -15,6 +15,7 @@ NAME          HS54
 
 *   Betts problem 11.7, JOTA 21, 1977, pp.137-174.
 *   SIF input: A.R. Conn, April 1990 and Nick Gould, October 1990
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OLR2-AN-6-1
 
@@ -69,11 +70,11 @@ CONSTANTS
 BOUNDS
 
  UP HS54      X1        2.0D+4
- LO HS54      X2        - 1.0D+1
+ LO HS54      X2        -1.0D+1
  UP HS54      X2        1.0D+1
  UP HS54      X3        1.0D+7
  UP HS54      X4        2.0D+1
- LO HS54      X5        - 1.0D+0
+ LO HS54      X5        -1.0D+0
  UP HS54      X5        1.0D+0
  UP HS54      X6        2.0D+8
 

@@ -16,6 +16,7 @@ NAME          ELEC
 *   Argonne National Labs Technical Report ANL/MCS-246 (2000)
 
 *   SIF input: Nick Gould, November 2000
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AN-V-V
 
@@ -172,9 +173,6 @@ ELEMENTS      ELEC
 
 TEMPORARIES
 
- R  DIFFX
- R  DIFFY
- R  DIFFZ
  R  SS
  R  ROOTSS
 

@@ -13,6 +13,7 @@ NAME          SYNTHES1
 *    programs", Mathematical Programming 36, pp. 307-339, 1986.
 
 *   SIF input: S. Leyffer, October 1997
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AN-6-6
 
@@ -96,9 +97,6 @@ ENDATA
 ***********************
 
 ELEMENTS      SYNTHES1
-
- EV LOGXP1    X
- EV LOGDIFF   X                        Y
 
 TEMPORARIES
 

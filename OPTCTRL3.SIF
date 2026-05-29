@@ -35,6 +35,7 @@ NAME          OPTCTRL3
 *     mu = infinity    549.999986      2049.977124
 
 *   SIF input: Nick Gould, June 1990 and T. Plantenga December 1992.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QQR2-AN-V-V
 
@@ -141,8 +142,8 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN               549.999986  (T=10)
-*LO SOLTN              2049.977124  (T=40)
+*LO SOLTN                549.999986    $ (T=10)
+*LO SOLTN               2049.977124    $ (T=40)
 
 ENDATA
 

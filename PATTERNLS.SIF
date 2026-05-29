@@ -17,6 +17,7 @@ NAME          PATTERNLS
 *   See also SIAM NEWS 57(5) June 2024
 
 *   SIF input: Nick Gould, July 2024
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NQR2-AN-V-V
 
@@ -102,7 +103,7 @@ GROUP USES
  I- n-j       n                        j
  RI rn-j      n-j
  R* arg       MPI/3                    rn-j
- RF carg      COS                      arg
+ R( carg      COS                      arg
  R* 2carg     2.0                      carg
  ZE c(n)      E(j,n+j)                 2carg
  OD j
@@ -113,7 +114,7 @@ GROUP USES
  I- n-2j      n                        2j
  RI rn-2j     n-2j
  R* arg       MPI/3                    rn-2j
- RF carg      COS                      arg
+ R( carg      COS                      arg
  ZE c(n)      E(j,n-j)                 carg
  OD j
 

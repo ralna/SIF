@@ -30,6 +30,7 @@ NAME          HVYCRASH
 *   Survey of foreign papers (Part 11),  Orbital Craft, Moscow, 1976.
 
 *   SIF input: Ph. Toint, February 1994.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LOR2-AN-V-V
 
@@ -198,10 +199,10 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN             -0.21850
-*LO SOLTN(100)        3.26705331D-8
-*LO SOLTN(500)        2.36171208D-8
-*LO SOLTN(1000)       8.48265630D-8
+*LO SOLTN               -0.21850
+*LO SOLTN(100)          3.26705331D-8
+*LO SOLTN(500)          2.36171208D-8
+*LO SOLTN(1000)         8.48265630D-8
 *LO SOLTN(3000)       
 
 ENDATA

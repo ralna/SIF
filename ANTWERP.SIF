@@ -203,6 +203,7 @@ NAME          ANTWERP
 *   The problem appears to be very ill-conditioned.
 *
 *   SIF input: Ph. Toint, Apr 2006.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SLR2-RN-27-8-0-3-24-0-2-0-8-0-0-0
 
@@ -210,47 +211,47 @@ NAME          ANTWERP
 
 *   Number of households according to their sizes
 
- RE M3                        23844.0
- RE M4                        16323.0
- RE M5                         6613.0
- RE M6                         2535.0
- RE M7                         1109.0
- RE M8                         1667.0
+ RE M3                       23844.0
+ RE M4                       16323.0
+ RE M5                        6613.0
+ RE M6                        2535.0
+ RE M7                        1109.0
+ RE M8                        1667.0
 
 *  Number of F-households according the number of children
 
- RE M1F                       16405.0
- RE M2F                       13647.0
- RE M3F                        9895.0
+ RE M1F                      16405.0
+ RE M2F                      13647.0
+ RE M3F                       9895.0
 
 *  Number of M-households according the number of children
 
- RE M1M                        4041.0
- RE M2M                        1634.0
- RE M3M                         637.0
+ RE M1M                       4041.0
+ RE M2M                       1634.0
+ RE M3M                        637.0
 
 *  Number of W-households according the number of children
 
 
- RE M1W                       10966.0
- RE M2W                        4566.0
- RE M3W                        1921.0
+ RE M1W                      10966.0
+ RE M2W                       4566.0
+ RE M3W                       1921.0
 
 *  Number of children and adults in households of type F and N
 
- RE N0                        15866.0
- RE N1                        59832.0
- RE N2                        61929.0
- RE N3                        32321.0
- RE N4                        73650.0
+ RE N0                       15866.0
+ RE N1                       59832.0
+ RE N2                       61929.0
+ RE N3                       32321.0
+ RE N4                       73650.0
 
 *  Number of individuals in F-households
 
- RE NINF                     180055.0
+ RE NINF                    180055.0
 
 *  Number of individuals in N-households
 
- RE NINN                      47677.0
+ RE NINN                     47677.0
 
 *  Initial total number of households of type F
 

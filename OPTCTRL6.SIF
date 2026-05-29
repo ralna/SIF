@@ -24,6 +24,7 @@ NAME          OPTCTRL6
 
 *   SIF input: Nick Gould, June 1990.
 *              modified by T. Plantagena, December 1992.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QQR2-AN-V-V
 
@@ -132,7 +133,7 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN              2048.00  (T=40)
+*LO SOLTN               2048.00        $ (T=40)
 
 ENDATA
 

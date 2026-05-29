@@ -12,6 +12,7 @@ NAME          QC
 
 *   SIF input: Andrew Conn, August 1992.
 *              correction by S. Gratton & Ph. Toint, May 2024
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OLR2-MY-9-4
 
@@ -510,6 +511,7 @@ GROUPS        QC
 TEMPORARIES
 
  L  ARG0
+ R  ABST
  R  SMALL
  R  LARGE
  R  FF
@@ -525,16 +527,16 @@ INDIVIDUALS
 
  T  LOG
 
- A  T                   ABS( T )
+ A  ABST                ABS( T )
  A  SMALL               1.0D-10
  A  LARGE               1.0D+10
- A  ARG0                T .LE. SMALL
+ A  ARG0                ABST .LE. SMALL
  I  ARG0      FF        P * LOG( SMALL)
- E  ARG0      FF        P * LOG( T )
+ E  ARG0      FF        P * LOG( ABST )
  I  ARG0      GG        P * LARGE
- E  ARG0      GG        P / T
+ E  ARG0      GG        P / ABST
  I  ARG0      HH        - P * LARGE ** 2
- E  ARG0      HH        - P / T ** 2
+ E  ARG0      HH        - P / ABST ** 2
 
  F                      FF
  G                      GG

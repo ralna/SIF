@@ -15,6 +15,7 @@ NAME          S277-280
 *   Springer Verlag, Berlin, 1987.
 
 *   SIF input: Ph. Toint, May 1990.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LLR2-AN-V-V
 
@@ -108,10 +109,10 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN(4)           5.076190464
-*LO SOLTN(6)           7.83853
-*LO SOLTN(8)           10.6059
-*LO SOLTN(10)          13.3754
+*LO SOLTN(4)            5.076190464
+*LO SOLTN(6)            7.83853
+*LO SOLTN(8)            10.6059
+*LO SOLTN(10)           13.3754
 
 ENDATA
 

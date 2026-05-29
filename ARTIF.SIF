@@ -10,11 +10,12 @@ NAME          ARTIF
 
 *   Source:
 *   K.M. Irani, M.P. Kamat, C.J. Ribbens, H.F.Walker and L.T. Watson,
-*   "Experiments with conjugate gradient algoritms for homotopy curve
+*   "Experiments with conjugate gradient algorithms for homotopy curve
 *    tracking" ,
 *   SIAM Journal on Optimization, May 1991, pp. 222-251, 1991.
 
 *   SIF input: Ph. Toint, May 1990.
+*   Updated to improve automatic differentiation, Pim Heeman, May 2026.
 
 *   classification NOR2-AN-V-V
 
@@ -68,7 +69,7 @@ START POINT
 ELEMENT TYPE
 
  EV TRIG      X
- EP TRIG      PAR
+ EP TRIG      PAR                      THAT
 
 ELEMENT USES
 
@@ -78,6 +79,7 @@ ELEMENT USES
  RI RI        I
  ZV E(I)      X                        X(I)
  ZP E(I)      PAR                      RI
+ XP E(I)      THAT      100.0
  ND
 
 GROUP USES
@@ -108,7 +110,6 @@ TEMPORARIES
  R  DSDX
  R  D2SDX2
  R  D
- R  THAT
  M  ATAN
  M  SIN
  M  COS
@@ -120,7 +121,6 @@ INDIVIDUALS
 
  T  TRIG
 
- A  THAT                100.0
  A  FACT                MOD( PAR, THAT )
  A  S                   SIN( FACT * X )
  A  DSDX                FACT * COS( FACT * X )

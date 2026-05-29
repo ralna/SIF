@@ -10,6 +10,7 @@ NAME          MODEL
 *   ?? One of Andy's ??
  
 *   SIF input: A. Conn (presumably), 1992.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LLR2-AN-1557-38
  
@@ -499,8 +500,10 @@ BOUNDS
 *XU MODEL     S(4,12,2) 10.0
 *XU MODEL     S(4,14,2) 10.0
  
+ DO K         1                        T
  XU MODEL     O(3,12,K) 3.0
  XU MODEL     B(12,3,K) 3.0
+ OD K
  
  DO K         1                        M
  DO J         1                        NALT

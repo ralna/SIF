@@ -27,6 +27,7 @@ NAME          BLOCKQP1
 *         0 <= z_j <= 2         (j=1,b)
 
 *   SIF input: Nick Gould, June 1994
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QLR2-AN-V-V
 
@@ -82,7 +83,7 @@ CONSTANTS
  ZE BLOCKQP1  E(I)                     RB
  ND
 
- ZE BLOCKQP1  I                        RB+1
+ ZG BLOCKQP1  I                        RB+1
 
 BOUNDS
 

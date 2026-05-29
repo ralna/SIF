@@ -20,6 +20,7 @@ NAME          RAT43
 *     New York, NY:  Marcel Dekker, pp. 62 and 88.
 
 *   SIF input: Nick Gould and Tyrone Rees, Oct 2015
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NOR2-MN-4-15
 
@@ -151,7 +152,6 @@ ELEMENTS      RAT43
 
 TEMPORARIES
 
- R  E
  R  V2MV3X
  R  V4INV
  R  V4INVP

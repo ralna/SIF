@@ -19,6 +19,7 @@ NAME          PALMER7ENE
 
 *   SIF input: Nick Gould, 1992.
 *   Bound-constrained nonlinear equations version: Nick Gould, June 2019.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NOR2-RN-8-13
 
@@ -143,7 +144,7 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN              1.48003482D-04
+*LO SOLTN               1.48003482D-4
 
 ENDATA
 

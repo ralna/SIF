@@ -18,6 +18,7 @@ NAME          DEVGLA2B
 *             benchmarks/go_benchmark_functions
 
 *   SIF input: Nick Gould, Jan 2020
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SBR2-MN-5-0
 
@@ -150,7 +151,6 @@ ENDATA
 ELEMENTS      DEVGLA2B
 
 TEMPORARIES
- R  A
  R  X2T
  R  F2
  R  F2X2

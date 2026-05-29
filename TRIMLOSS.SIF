@@ -21,6 +21,7 @@ NAME          TRIMLOSS
 *   Finland, Jan. 1996.
 
 *   SIF input: S. Leyffer, November 1997
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LOR2-AN-142-75
 
@@ -283,7 +284,7 @@ GROUPS
  DO K         1                        KKI
  AI TEMP      K
  ZL NLN17(I)  Z(I,J,K)                 TEMP
- OD L
+ OD K
  OD J
  OD I
 
@@ -374,8 +375,6 @@ ENDATA
 ***********************
 
 ELEMENTS      TRIMLOSS 
-
- EV SQRTXY    X                        Y
 
 TEMPORARIES
 

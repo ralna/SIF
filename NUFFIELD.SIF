@@ -61,6 +61,7 @@ NAME          NUFFIELD
 *   1- and 2-D trapezoidal rules to approximate integrals
 
 *   SIF input: Nick Gould, February 2001
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LQR2-AN-V-V
 
@@ -70,11 +71,11 @@ NAME          NUFFIELD
 
 *   Number of nodes in each direction
 
-*IE N                   10            $-PARAMETER
-*IE N                   20            $-PARAMETER
-*IE N                   30            $-PARAMETER
- IE N                   40            $-PARAMETER
-*IE N                   100           $-PARAMETER
+*IE N                   10             $-PARAMETER
+*IE N                   20             $-PARAMETER
+*IE N                   30             $-PARAMETER
+ IE N                   40             $-PARAMETER
+*IE N                   100            $-PARAMETER
 
 *   Other useful parameters
 

@@ -21,6 +21,7 @@ NAME          LAUNCH
 
 *   SIF input: P. Driscoll, Virginia Tech., April 1993,
 *              corrected and simplified by Ph. L. Toint, May 1993.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-MY-25-28
 
@@ -615,7 +616,7 @@ INDIVIDUALS
  A  VA2                 EA * ( EA - 1.0 ) * VA ** ( EA - 2.0 )
  A  EB                  -1.5935
  A  VB0                 VB ** EB
- A  VB1                 EB * VB ** ( EB - 1. 0)
+ A  VB1                 EB * VB ** ( EB - 1.0 )
  A  VB2                 EB * ( EB - 1.0 ) * VB ** ( EB - 2.0 )
  A  EC                  0.2363
  A  VC0                 VC ** EC

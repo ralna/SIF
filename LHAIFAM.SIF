@@ -7,13 +7,14 @@ NAME          LHAIFAM
 *   Problem :
 *   *********
 
-*  Truss Topology Design (t49-150)
+*   Truss Topology Design (t49-150)
 
-*  Source: M. Tsibulevsky, Optimization Laboratory,
-*          Faculty of Industrial Engineering, Technion,
-*          Haifa, 32000, Israel.
+*   Source: M. Tsibulevsky, Optimization Laboratory,
+*           Faculty of Industrial Engineering, Technion,
+*           Haifa, 32000, Israel.
 
-*  SIF input: Conn, Gould and Toint, May, 1992
+*   SIF input: Conn, Gould and Toint, May, 1992
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OQR2-AN-99-150
 
@@ -6926,7 +6927,7 @@ GROUP USES
 
 OBJECT BOUND
 
- LO LHAIFAM            0.0
+ LO LHAIFAM             0.0
 
 *   Solution
 

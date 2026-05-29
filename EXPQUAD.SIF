@@ -11,6 +11,7 @@ NAME          EXPQUAD
 
 *   SIF input: Ph. Toint, 1992.
 *              minor correction by Ph. Shott, Jan 1995.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OBR2-AN-V-V
 
@@ -41,7 +42,7 @@ GROUPS
 
  DO I         1                        N
  RI RI        I
- RM C         RI         - 10.0
+ RM C         RI         -10.0
  ZN OBJ       X(I)                     C
  ND
 

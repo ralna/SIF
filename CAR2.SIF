@@ -77,6 +77,7 @@ NAME          CAR2
 *   SIF input: Thomas Felici, Universite de Nancy, France, 
 *              October 1993, with modifications to compute derivatives
 *              by Nick Gould
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LOR1-RN-V-V
 
@@ -136,7 +137,7 @@ VARIABLES
  ND 
  DO J         1                        NQ        
  X  Q(J)      
- OD 
+ ND 
  
 GROUPS
  

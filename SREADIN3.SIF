@@ -12,6 +12,7 @@ NAME          SREADIN3
 *   This problem arises in tide modelling.
 
 *   SIF input: Nick Gould, July 1991.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-MN-V-V
 
@@ -28,7 +29,7 @@ NAME          SREADIN3
 
 *    Other useful constants
 
- RE PI                  3.141592653589
+ RE PI                  3.1415926535
  RM 2PI       PI        2.0
 
 *RE 1/A                 12.96

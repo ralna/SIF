@@ -14,6 +14,7 @@ NAME          COSINE
 *   N. Gould, private communication.
 
 *   SIF input: N. Gould, Jan 1996
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OUR2-AN-V-0
 
@@ -44,7 +45,7 @@ GROUPS
  DO I         1                        N-1
  IA I+1       I         1
  XN G(I)      X(I+1)    -0.5
- OD
+ ND
 
 BOUNDS
 

@@ -17,6 +17,7 @@ NAME          DIXMAANJ
 *   See also Buckley#221 (p. 49)
 *   SIF input: Ph. Toint, Dec 1989.
 *              correction by Ph. Shott, January 1995.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OUR2-AN-V-0
 
@@ -179,7 +180,7 @@ GROUP USES
 
 OBJECT BOUND
 
- LO DIXMANJ            0.0
+ LO DIXMANJ             0.0
 
 *   Solution
 

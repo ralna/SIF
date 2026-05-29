@@ -19,6 +19,7 @@ NAME          ODNAMUR
 *   Report 93/7, Dept of Maths, FUNDP, Namur, Belgium, EC.
 
 *   SIF input: M. Bierlaire and Ph. Toint, Jan 1993.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QBR2-RN-11130-0
 
@@ -226005,7 +226006,7 @@ GROUP TYPE
 
 GROUP USES
 
-    'DEFAULT' SQUARE
+ T  'DEFAULT' SQUARE
 
 ENDATA
 

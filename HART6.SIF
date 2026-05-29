@@ -14,6 +14,7 @@ NAME          HART6
 *   Paper 9, page 163.
 
 *   SIF input: A.R. Conn May 1995
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OBR2-AN-6-0
 
@@ -155,9 +156,9 @@ GROUP USES
  XT OBJ(I)    NEXP
  DO J         1                        NN
  ZE OBJ(I)    E(I,J)                   A(I,J)
- OD
+ OD J
  ZP OBJ(I)    CI                       C(I)
- OD
+ OD I
 
 OBJECT BOUND
 

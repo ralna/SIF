@@ -32,6 +32,7 @@ NAME          LOADBAL
 *   Computer networks and ISDN systems, vol. 25, pp. 1335-1348, 1993.
 
 *   SIF input: Masha Sosonkina, Virginia Tech., 1995.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OLR2-MN-31-31
 
@@ -55,7 +56,6 @@ NAME          LOADBAL
 * FI = SUM(arrival rate for a node)
 
  RE FI                  514.0
- R  CIJE
  RM 0.2*FI    FI        0.2
  RM 0.0125*FI FI        0.0125 
  RM 0.05*FI   FI        0.05

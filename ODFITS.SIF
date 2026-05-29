@@ -38,6 +38,7 @@ NAME          ODFITS
 *   M. Bierlaire, private communication, 1991.
 
 *   SIF input: Ph Toint, Dec 1991.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OLR2-MN-10-6
 
@@ -263,7 +264,7 @@ OBJECT BOUND
 
 *   Solution
 
-*LO ODFITS             -2380.026775
+*LO ODFITS              -2380.026775
 
 ENDATA
 

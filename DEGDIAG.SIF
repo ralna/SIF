@@ -11,6 +11,7 @@ NAME          DEGDIAG
 *   with a tri-diagonal Hessian
 
 *   SIF input: Nick Gould, August 2011
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QBR2-AN-V-0
 
@@ -37,7 +38,7 @@ GROUPS
 
 BOUNDS
 
- RI RN        I
+ RI RN        N
  RA RN        RN        1.0
  DO I         0                        N
  RI RI        I

@@ -13,6 +13,7 @@ NAME          JIMACK
 
 *   SIF input: Nick Gould, September 1991.
 *     SAVEs removed December 3rd 2014
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OUR2-AN-3549-0
 
@@ -272,17 +273,12 @@ INDIVIDUALS
  A  J                   INT( RJ )
  A  K                   INT( RK )
 
- A  RI                  DBLE( I )
- A  RJ                  DBLE( J )
- A  RK                  DBLE( K )
-
  A  DZ                  DELTA / RM
  A  DELZ                HALFW * DELTA / RM
 
 *   corners of the element.
 
  A  IINT                IEINT( I, J, K, EPS, DELTA,
- A+                            RI, RJ, RK,
  A+                            DELX, DELY, DELZ, DX, DY, DZ,
  A+                            AXLLL, AXLLU, AXLUL, AXLUU,
  A+                            AXULL, AXULU, AXUUL, AXUUU,
@@ -627,7 +623,7 @@ INDIVIDUALS
 
 ENDATA
 
-      INTEGER FUNCTION IEINT( I, J, K, EPS, DELTA, RI, RJ, RK,
+      INTEGER FUNCTION IEINT( I, J, K, EPS, DELTA,
      *                        DELX, DELY, DELZ, DX, DY, DZ,
      *                        AXLLL, AXLLU, AXLUL, AXLUU,
      *                        AXULL, AXULU, AXUUL, AXUUU,
@@ -639,7 +635,7 @@ ENDATA
      *                        INTHXX, INTHXY, INTHXZ,
      *                        INTHYY, INTHYZ, INTHZZ )
       INTEGER          I, J, K
-      DOUBLE PRECISION EPS, DELTA, RI, RJ, RK,
+      DOUBLE PRECISION EPS, DELTA,
      *                 DELX, DELY, DELZ, DX, DY, DZ,
      *                 AXLLL, AXLLU, AXLUL, AXLUU,
      *                 AXULL, AXULU, AXUUL, AXUUU,

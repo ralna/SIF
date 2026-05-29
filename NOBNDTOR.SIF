@@ -28,6 +28,7 @@ NAME          NOBNDTOR
 *   Argonne National Laboratory MCS-P60-0289, 1989.
 
 *   SIF input: Ph. Toint, Dec 1989.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   A variant of TORSION1 in which some of the variables are
 *   unconstrained.
@@ -305,8 +306,8 @@ GROUP USES
 
  DO I         2                        P-1
  DO J         2                        P-1
- XE G(I,J)    A(I,J)   0.25            B(I,J)    0.25
- XE G(I,J)    C(I,J)   0.25            D(I,J)    0.25
+ XE G(I,J)    A(I,J)    0.25           B(I,J)    0.25
+ XE G(I,J)    C(I,J)    0.25           D(I,J)    0.25
  ND
 
 OBJECT BOUND

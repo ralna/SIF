@@ -19,6 +19,7 @@ NAME          RAT43LS
 *     New York, NY:  Marcel Dekker, pp. 62 and 88.
 
 *   SIF input: Nick Gould and Tyrone Rees, Oct 2015
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SUR2-MN-4-0
 
@@ -158,7 +159,6 @@ ELEMENTS      RAT43LS
 
 TEMPORARIES
 
- R  E
  R  V2MV3X
  R  V4INV
  R  V4INVP

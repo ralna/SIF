@@ -14,14 +14,15 @@ NAME          PFIT2
 
 *   SIF input: Ph. Toint, Nov 1993.
 *              Lower bound on H added, Nov 2002.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification  NOR2-AN-3-3
 
 *   Problem data
 
- RE CF                  -26.6666666666
- RE CG                  -60.4444444444
- RE CH                  -71.1111111111
+ RE CF                  -26.66666666
+ RE CG                  -60.44444444
+ RE CH                  -71.11111111
 
 VARIABLES
 

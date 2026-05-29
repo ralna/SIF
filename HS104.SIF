@@ -14,6 +14,7 @@ NAME          HS104
 *   Verlag, Heidelberg, 1981.
 
 *   SIF input: Nick Gould, August 1991.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AN-8-5
 
@@ -67,7 +68,7 @@ START POINT
     HS104SOL  X1        6.465114       X2        2.232709
     HS104SOL  X3        0.6673975      X4        0.5957564
     HS104SOL  X5        5.932676       X6        5.527235
-    HS104SOL  X7        1.0 13322      X8        0.4006682
+    HS104SOL  X7        1.013322       X8        0.4006682
 
 ELEMENT TYPE
 

@@ -21,6 +21,7 @@ NAME          GRIDNETI
 
 *   SIF input: Ph. Toint, May 1990.
 *              minor correction by Ph. Shott, Jan 1995.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification ONR2-AY-V-V
 
@@ -62,7 +63,7 @@ NAME          GRIDNETI
  R* CLN10     LN10                     C
  R* BETA      CLN10                    1/L-1
  RM A/100     A         0.01
- RM SMALLA    A/100     0.0008333333333
+ RM SMALLA    A/100     0.0008333333
 
 VARIABLES
 

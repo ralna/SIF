@@ -13,6 +13,7 @@ NAME          SYNTHES3
 *    programs", Mathematical Programming 36, pp. 307-339, 1986.
 
 *   SIF input: S. Leyffer, October 1997
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AN-17-19
 
@@ -180,11 +181,6 @@ ENDATA
 ***********************
 
 ELEMENTS      SYNTHES3
-
- EV LOGSUM    X                        Y
- EV LOGXP1    X
- EV EXPA      X
- EP EXPA      A
 
 TEMPORARIES
 

@@ -30,6 +30,7 @@ NAME          BLOCKQP5
 *   (cf BLOCKQP3.SIF where the constraint 0 <= z_j <= 2)
 
 *   SIF input: Nick Gould, June 1994
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QLR2-AN-V-V
 
@@ -86,7 +87,7 @@ CONSTANTS
  ZE BLOCKQP5  E(I)                     RB
  ND
 
- ZE BLOCKQP5  I                        RB+1
+ ZG BLOCKQP5  I                        RB+1
 
 BOUNDS
 

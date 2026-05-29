@@ -22,6 +22,7 @@ NAME          PORTSNQP
 *         0 <= x_i   (i=1,n)
 
 *   SIF input: Nick Gould, June 2001
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QLR2-AN-V-1
 
@@ -69,7 +70,7 @@ CONSTANTS
  RM 2I        RI        2.0
  R- 2I-N      2I                       RN
  R/ C         2I-N                     RN
- ZE PORTSNQP  O(I)                     C
+ ZN PORTSNQP  O(I)                     C
  ND
 
  XE PORTSNQP  E         1.0

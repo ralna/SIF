@@ -33,29 +33,30 @@ NAME          RDW2D52F
 
 *   SIF input: Nick Gould, May 2009
 *              correction by S. Gratton & Ph. Toint, May 2024
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QLR2-AN-V-V
 
 *   Number of nodes in each direction (a power of 2)
 
-*IE N                   2             $-PARAMETER
-*IE N                   4             $-PARAMETER
-*IE N                   8             $-PARAMETER
-*IE N                   16            $-PARAMETER
-*IE N                   32            $-PARAMETER
-*IE N                   64            $-PARAMETER
-*IE N                   128           $-PARAMETER
- IE N                   256           $-PARAMETER
-*IE N                   512           $-PARAMETER
-*IE N                   1024          $-PARAMETER
-*IE N                   2048          $-PARAMETER
-*IE N                   4096          $-PARAMETER
-*IE N                   8192          $-PARAMETER
-*IE N                   16384         $-PARAMETER
+*IE N                   2              $-PARAMETER
+*IE N                   4              $-PARAMETER
+*IE N                   8              $-PARAMETER
+*IE N                   16             $-PARAMETER
+*IE N                   32             $-PARAMETER
+*IE N                   64             $-PARAMETER
+*IE N                   128            $-PARAMETER
+ IE N                   256            $-PARAMETER
+*IE N                   512            $-PARAMETER
+*IE N                   1024           $-PARAMETER
+*IE N                   2048           $-PARAMETER
+*IE N                   4096           $-PARAMETER
+*IE N                   8192           $-PARAMETER
+*IE N                   16384          $-PARAMETER
 
 *   Regularisation
 
- RE BETA                0.005         $-PARAMETER
+ RE BETA                0.005          $-PARAMETER
 
 *   Other useful parameters
 

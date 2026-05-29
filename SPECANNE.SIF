@@ -13,6 +13,7 @@ NAME          SPECANNE
 
 *   SIF input: Michael Ferris, July 1993
 *   Bound-constrained nonlinear equations version: Nick Gould, June 2019.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NOR2-AN-V-V
 
@@ -123,7 +124,7 @@ BOUNDS
  DO j         1                        N
  ZL SPECAN    X(p,j)                   LOWER(p,j)
  ZU SPECAN    X(p,j)                   UPPER(p,j)
- OD I
+ OD j
  OD p
 
 START POINT
@@ -139,7 +140,7 @@ START POINT
  DO p         1                        K
  DO j         1                        N
  ZV SPECAN    X(p,j)                   START(p,j)
- OD I
+ OD j
  OD p
 
 ELEMENT TYPE

@@ -15,6 +15,7 @@ NAME          SINQUAD2
 
 *   SIF input: N. Gould, Dec 1989.
 *   modifield version of SINQUAD (formulation corrected) May 2024
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OUR2-AY-V-0
 
@@ -50,7 +51,7 @@ GROUPS
 
  DO I         2                        N
  XN G(I)
- OD
+ ND
 
 CONSTANTS
 

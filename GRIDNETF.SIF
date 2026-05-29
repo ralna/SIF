@@ -19,6 +19,7 @@ NAME          GRIDNETF
 *   Hessian being tridiagonal.
 *   The number of variables is N = 2*NS*(NS-1), where NS = 2*L+2.
 *   SIF input: Ph. Toint, March 1990.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification ONR2-AN-V-V
 
@@ -73,7 +74,7 @@ VARIABLES
 *   node on the right; the second corresponds to that to the node
 *   above.
 
- IE N         0
+ IE N                   0
 
  DO I         1                        NS-1
 

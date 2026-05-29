@@ -29,6 +29,7 @@ NAME          TFI1
 *   EJOR, vol. 36, pp. 92-100, 1988.
 
 *   SIF input: Ph. Toint, April 1992.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QOR2-AN-3-V
 
@@ -127,7 +128,7 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN              5.3346872D+00
+*LO SOLTN               5.3346872D+0
 
 ENDATA
 

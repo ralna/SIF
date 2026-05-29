@@ -22,6 +22,7 @@ NAME          QR3DLS
 *   Ph. Toint, private communication.
 
 *   SIF input: Ph. Toint, March 1994.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification  SBR2-AN-V-V
 
@@ -110,7 +111,7 @@ CONSTANTS
 
  DO I         1                        M
  X  QR3DLS    O(I,I)    1.0
- OD J
+ OD I
 
 *   Factorization constraints
 

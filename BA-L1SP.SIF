@@ -11,6 +11,7 @@ NAME          BA-L1SP
 *   bundle adjustment subproblem
 
 *   SIF input: Nick Gould, Nov 2016
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NOR2-MN-57-12
 
@@ -182,11 +183,11 @@ GROUPS
 CONSTANTS
 
  X  BA-L1SP   C1        9.020224572
- X  BA-L1SP   C2        -11.194618482
+ X  BA-L1SP   C2        -11.19461848
  X  BA-L1SP   C3        1.83322914
  X  BA-L1SP   C4        -5.254740578
  X  BA-L1SP   C5        4.332320525
- X  BA-L1SP   C6        -6.9705186587
+ X  BA-L1SP   C6        -6.970518658
  X  BA-L1SP   C7        .5632735813
  X  BA-L1SP   C8        220.0023398
  X  BA-L1SP   C9        3.969211949

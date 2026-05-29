@@ -13,6 +13,7 @@ NAME          GPP
 *   Hans Mittelmann, private communication.
 
 *   SIF input: N. Gould, Jan 1998
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AY-V-V
 
@@ -49,13 +50,13 @@ GROUPS
  IA I+1       I         1
  XG INEQ1(I)  X(I)      1.0            X(I+1)    1.0
  XL INEQ2(I)
- OD
+ ND
 
 RHS
 
  DO I         1                        N-1
  X  GPP       INEQ2(I)  20.0
- OD
+ ND
 
 BOUNDS
 

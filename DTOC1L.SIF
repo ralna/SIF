@@ -28,6 +28,7 @@ NAME          DTOC1L
 *   Cornell University, 1992.
 
 *   SIF input: Ph. Toint, August 1993
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OLR2-AN-V-V
 
@@ -94,8 +95,8 @@ NAME          DTOC1L
  I- I-J       I                        J
  RI RI-J      I-J
  A* B(I,J)    RI-J                     1/RXY
- OD J
  OD I
+ OD J
 
 VARIABLES
 

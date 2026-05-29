@@ -18,6 +18,7 @@ NAME          BROWNAL
 
 *   See also Buckley#79
 *   SIF input: Ph. Toint, Dec 1989.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SUR2-AN-V-0
 
@@ -50,7 +51,7 @@ GROUPS
 
  DO J         1                        I-1
  XN G(I)      X(J)      1.0
- OD I
+ OD J
 
  XN G(I)      X(I)      2.0
 

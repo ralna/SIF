@@ -13,6 +13,7 @@ NAME          LOGROS
 *   Ph. Toint, private communication, 1991.
 
 *   SDIF input: Ph. Toint, June 1993.
+*   Updated to improve automatic differentiation, Pim Heeman, May 2026.
 
 *   classification OBR2-AN-2-0
 
@@ -65,20 +66,20 @@ ELEMENTS      LOGROS
 TEMPORARIES
 
  R  W
- R  P
+ I  P
  R  T
- R  S
- R  PM1
- R  PM2
+ I  S
+ I  PM1
+ I  PM2
 
 INDIVIDUALS
 
  T  ROS
  A  W                   10000.0
- A  P                   2.0
+ A  P                   2
  A  T                   Y - X * X
- A  PM1                 P - 1.0
- A  PM2                 P - 2.0
+ A  PM1                 P - 1
+ A  PM2                 P - 2
  A  S                   P * PM1
  F                      W * T ** P + ( 1.0 - X ) ** 2
  G  X                   - 2.0 * P * W * X * T ** PM1

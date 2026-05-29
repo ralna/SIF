@@ -18,6 +18,7 @@ NAME          READING1
 *   University of Reading, UK.
 
 *   SIF input: Nick Gould, July 1991.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-MN-V-V
 
@@ -31,7 +32,7 @@ NAME          READING1
  IE N                   2000           $-PARAMETER
 *IE N                   5000           $-PARAMETER
 
- RE PI                  3.141592653589
+ RE PI                  3.1415926535
  RM 2PI       PI        2.0
 
 *RE 1/A                 12.96

@@ -15,6 +15,7 @@ NAME          CB3
 *   JOTA, vol.48, pp.493-523, 1986
 
 *   SIF input: Ph. Toint, April 1992.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LOR2-AN-3-3
 
@@ -69,9 +70,9 @@ ELEMENT USES
 
 GROUP USES
 
- E  C1        X1FR      - 1.0          X2SQ      - 1.0
- E  C2        SSQ1      - 1.0          SSQ2      - 1.0
- E  C3        EEX       - 2.0
+ E  C1        X1FR      -1.0           X2SQ      -1.0
+ E  C2        SSQ1      -1.0           SSQ2      -1.0
+ E  C3        EEX       -2.0
 
 OBJECT BOUND
 

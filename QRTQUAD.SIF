@@ -17,6 +17,7 @@ NAME          QRTQUAD
 *   SIF input: Ph. Toint, June 1992.
 *              minor correction by Ph. Shott, Jan 1995.
 *              correction by S. Gratton & Ph. Toint, May 2024
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OBR2-MN-V-0
 
@@ -48,7 +49,7 @@ GROUPS
 
  DO I         1                        N
  RI RI        I
- RM C         RI         - 10.0
+ RM C         RI         -10.0
  ZN OBJ       X(I)                     C
  ND
 

@@ -13,6 +13,7 @@ NAME          BOX
 *   N. Gould, private communication.
 
 *   SIF input: N. Gould, Jan 2009
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OUR2-AN-V-0
 
@@ -49,7 +50,7 @@ GROUPS
  XN C(I)      X(I)       1.0           X(N/2)     1.0
  XN D         X(I)      -0.5
  XN Q(I)      X(I)       1.0
- OD
+ ND
 
 BOUNDS
 

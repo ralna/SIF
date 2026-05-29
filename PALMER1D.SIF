@@ -18,6 +18,7 @@ NAME          PALMER1D
 *   M. Palmer, Edinburgh, private communication.
 
 *   SIF input: Nick Gould, 1990.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QUR2-RN-7-0
 
@@ -172,7 +173,7 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN              0.652673985
+*LO SOLTN               0.652673985
 
 ENDATA
 

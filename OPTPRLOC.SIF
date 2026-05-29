@@ -16,6 +16,7 @@ NAME          OPTPRLOC
 *    programs", Mathematical Programming 36, pp. 307-339, 1986.
 
 *   SIF input: S. Leyffer, October 1997
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QQR2-AN-30-30
 
@@ -440,8 +441,8 @@ BOUNDS
 
 ELEMENT TYPE
 
- EV XMBS      X                          
- EP XMBS      B                          
+ EV XMBS      X                        $ element is (X - B)^2
+ EP XMBS      B                        $ where B is a parameter
 
 ELEMENT USES
 
@@ -483,9 +484,6 @@ ENDATA
 ***********************
 
 ELEMENTS      OPTPRLOC
-
- EV XMBS      X                            $ element is (X - B)^2
- EP XMBS      B                            $ where B is a parameter
 
 INDIVIDUALS
 

@@ -15,6 +15,7 @@ NAME          ARGLBLE
 
 *   See also Buckley#93 (with different N and M)
 *   SIF input: Ph. Toint, Dec 1989.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NLR2-AN-V-V
 
@@ -71,8 +72,8 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN(10)          4.6341D+00
-*LO SOLTN(50)          24.6268657
-*LO SOLTN(100)         49.6259352
+*LO SOLTN(10)           4.6341D+00
+*LO SOLTN(50)           24.6268657
+*LO SOLTN(100)          49.6259352
 
 ENDATA

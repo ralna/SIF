@@ -17,6 +17,7 @@ NAME          HS100LNP
 *   at the solution) or changed to equalities (if active).
 
 *   SIF input: Ph. Toint, April 1991 and T. Plantenga, October 1992.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AN-7-2
 
@@ -35,7 +36,7 @@ GROUPS
  N  O2        X2        1.0
  N  O2        'SCALE'   0.2
  N  O4        X4        1.0
- N  O4        'SCALE'   0.33333333333
+ N  O4        'SCALE'   0.3333333333 
  N  O5        X6        -10.0          X7        -8.0
 
  E  C1        X3        -1.0           X5        -5.0
@@ -43,10 +44,10 @@ GROUPS
 
 CONSTANTS
 
- X HS100LNP   O1        10.0
- X HS100LNP   O2        12.0
- X HS100LNP   O4        11.0
- X HS100LNP   C1        -127.0
+ X  HS100LNP  O1        10.0
+ X  HS100LNP  O2        12.0
+ X  HS100LNP  O4        11.0
+ X  HS100LNP  C1        -127.0
 
 BOUNDS
 

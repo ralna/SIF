@@ -15,6 +15,7 @@ NAME          MINMAXRB
 *   Mathematical Programming, vol.20, p. 49-62, 1981.
 
 *   SIF input: Ph. Toint, April 1992.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LQR2-AN-3-4
 
@@ -28,15 +29,15 @@ GROUPS
 
  XN OBJ       U         1.0
 
- XG C1        U         1.0            X2        - 10.0
+ XG C1        U         1.0            X2        -10.0
  XG C2        U         1.0            X2        10.0
  XG C3        U         1.0            X1        1.0
- XG C4        U         1.0            X1        - 1.0
+ XG C4        U         1.0            X1        -1.0
 
 CONSTANTS
 
  X  MINMAXRB  C3        1.0
- X  MINMAXRB  C4        - 1.0
+ X  MINMAXRB  C4        -1.0
 
 BOUNDS
 

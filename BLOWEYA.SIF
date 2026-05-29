@@ -28,7 +28,7 @@ NAME          BLOWEYA
 
 *   The function v(s) is chosen to be 
 
-      0  a  b   c  d   1
+*     0  a  b   c  d   1
 *  1  ----         ----
 *         \       /
 *          \     /
@@ -56,6 +56,7 @@ NAME          BLOWEYA
 *   European Journal of Applied Mathematics (3) pp 147-179, 1992.
 
 *   SIF input: Nick Gould, August 1996
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QLR2-MN-V-V
 
@@ -211,7 +212,7 @@ GROUPS
  
 CONSTANTS
 
- ZE BLOWEYA   INT       0.2            INT
+ ZE BLOWEYA   INT                      INT
 
 BOUNDS
 

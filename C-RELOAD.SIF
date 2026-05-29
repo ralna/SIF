@@ -12,6 +12,7 @@ NAME          C-RELOAD
 *   (2nd data set implemented here)
 *
 *   SIF input: S. Leyffer, November 1997
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LOR2-MN-342-284
 
@@ -298,7 +299,7 @@ GROUPS
 
  DO S         1                        T
  XE CPOW(S)
- OD I
+ OD S
 
  DO I         1                        N
  DO S         1                        T
@@ -320,7 +321,7 @@ CONSTANTS
 
  DO S         1                        T
  X  C-RELOAD  CPOW(S)   1.0
- OD I
+ OD S
 
 * compute rhs for inequality (7)
  AE TEMP                0.0
@@ -448,7 +449,7 @@ ELEMENT USES
  ZV P(I,S)    V1                       KINF(I,S)
  ZV P(I,S)    V2                       PHI(I,S)
  OD S
- OD II
+ OD I
  
 GROUP USES
 
@@ -485,7 +486,7 @@ GROUP USES
  DO I         1                        N
  ZE CPOW(S)   P(I,S)                   V(I)
  OD I
- OD I
+ OD S
 
  DO I         1                        N
  DO S         1                        T
@@ -505,11 +506,6 @@ ENDATA
 ***********************
 
 ELEMENTS      C-RELOAD
-
- EV 2PROD     V1                       V2
-
- EV 3PROD     V1                       V2
- EV 3PROD     V3
 
 INDIVIDUALS
 

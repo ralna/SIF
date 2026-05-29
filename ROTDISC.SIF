@@ -30,6 +30,7 @@ NAME          ROTDISC
 
 *   SIF input : E. Loute and Ph. L. Toint, April 1993
 *              minor correction by Ph. Shott, Jan 1995.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LQR2-RN-905-1081
 
@@ -188,7 +189,7 @@ GROUPS
  R* aux4      aux3                     pirho
  R* coef1     aux4                     ech3
  RM -coef1    coef1     -1.0
- ZE WEIGHT    w(k)                     -coef1
+ ZN WEIGHT    w(k)                     -coef1
  R= rk-1sq    rk2
  R= rk        rk+1
  R= rk2       rk+1sq

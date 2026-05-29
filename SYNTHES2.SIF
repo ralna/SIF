@@ -13,6 +13,7 @@ NAME          SYNTHES2
 *    programs", Mathematical Programming 36, pp. 307-339, 1986.
 
 *   SIF input: S. Leyffer, October 1997
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AN-11-14
 
@@ -137,10 +138,6 @@ ENDATA
 ***********************
 
 ELEMENTS      SYNTHES2
-
- EV LOGSUM    X                        Y
- EV EXPA      X
- EP EXPA      A
 
 TEMPORARIES
 

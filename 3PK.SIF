@@ -17,6 +17,7 @@ NAME          3PK
 *   Transportation Research B, 29, 1, 47--60, 1995.
 
 *   SIF input: Ph. Toint, Dec 1989, Corrected July 1993.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SBR2-MN-30-0
 
@@ -651,7 +652,7 @@ GROUP TYPE
 
 GROUP USES
 
-    'DEFAULT' SQUARE
+ T  'DEFAULT' SQUARE
 
 ENDATA
 

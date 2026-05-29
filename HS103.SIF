@@ -14,6 +14,7 @@ NAME          HS103
 *   Verlag, Heidelberg, 1981.
 
 *   SIF input: N. Gould, December 1989.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AN-7-5
 
@@ -154,7 +155,7 @@ ELEMENT USES
  P  E3C2      P2        0.5
  P  E3C2      P3        -2.0
  P  E3C2      P4        -1.0
- P  E3C2      P5        0.33333333333
+ P  E3C2      P5        0.3333333333
 
  T  E1C3      5PR
  V  E1C3      V1                       X1
@@ -166,7 +167,7 @@ ELEMENT USES
  P  E1C3      P2        -1.5
  P  E1C3      P3        1.0
  P  E1C3      P4        -1.0
- P  E1C3      P5        0.33333333333
+ P  E1C3      P5        0.3333333333
 
  T  E2C3      5PR
  V  E2C3      V1                       X2
@@ -225,7 +226,7 @@ ELEMENT USES
  P  E2C4      P2        2.0
  P  E2C4      P3        1.0
  P  E2C4      P4        0.3333333333
- P  E2C4      P5        -0.6666666666
+ P  E2C4      P5        -0.666666666
  P  E2C4      P6        0.25
 
  T  E3C4      5PR

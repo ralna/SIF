@@ -17,6 +17,7 @@ NAME          HEART8
 
 *   SIF input: A.R. Conn, May 1993.
 *              correction by Ph. Shott, January, 1995.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NOR2-MN-8-8
 
@@ -93,14 +94,14 @@ GROUPS
 
 CONSTANTS
 
- Z HEART8     G1                       sum_Mx
- Z HEART8     G2                       sum_My
- Z HEART8     G3                       sum_A
- Z HEART8     G4                       sum_B
- Z HEART8     G5                       sum_C
- Z HEART8     G6                       sum_D
- Z HEART8     G7                       sum_E
- Z HEART8     G8                       sum_F
+ Z  HEART8    G1                       sum_Mx
+ Z  HEART8    G2                       sum_My
+ Z  HEART8    G3                       sum_A
+ Z  HEART8    G4                       sum_B
+ Z  HEART8    G5                       sum_C
+ Z  HEART8    G6                       sum_D
+ Z  HEART8    G7                       sum_E
+ Z  HEART8    G8                       sum_F
 
 BOUNDS
 

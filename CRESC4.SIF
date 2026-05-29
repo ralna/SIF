@@ -39,6 +39,7 @@ NAME          CRESC4
 *   a >= 1, 0 <= t <= 2 * pi, r2 >= 0 , 0 <= d <= 1.
 
 *   SIF input: Ph. Toint, June 1993.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-MY-6-8
 
@@ -396,7 +397,6 @@ TEMPORARIES
  M  SQRT
  M  SIN
  M  COS
- M  ACOS
  M  ACOS
 
 INDIVIDUALS

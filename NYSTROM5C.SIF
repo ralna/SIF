@@ -37,6 +37,7 @@ NAME          NYSTROM5C
 
 *   SIF input: Ph. Toint, March 1991.
 *   Correction, November 2023.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NOR2-RY-18-20
 
@@ -49,23 +50,23 @@ VARIABLES
  X  A(I)
  X  B(I)
  X  AL(I)
- IA I-1       I          -1
+ IA I-1       I         -1
  DO J         1                        I-1
  X  BE(I,J)
  ND
 
 GROUPS
 
- E  3A        A1         1.0           A2        1.0
- E  3A        A3         1.0           A4        1.0
+ E  3A        A1        1.0            A2        1.0
+ E  3A        A3        1.0            A4        1.0
  E  3B
  E  3C
  E  3D
  E  4A
  E  4B
  E  4C
- E  5A        B1         1.0           B2        1.0
- E  5A        B3         1.0           B4        1.0
+ E  5A        B1        1.0            B2        1.0
+ E  5A        B3        1.0            B4        1.0
  E  5B
  E  5C
  E  5D
@@ -81,37 +82,37 @@ GROUPS
 
 CONSTANTS
 
- X  NYSTROM5  3A         0.5
- X  NYSTROM5  3B         0.1666666667
- X  NYSTROM5  3C         0.0833333333
- X  NYSTROM5  3D         0.05
- X  NYSTROM5  4A         0.0416666667
- X  NYSTROM5  4B         0.025
- X  NYSTROM5  4C         0.0083333333
- X  NYSTROM5  5A         1.0
- X  NYSTROM5  5B         0.5
- X  NYSTROM5  5C         0.3333333333
- X  NYSTROM5  5D         0.25
- X  NYSTROM5  5E         0.2
- X  NYSTROM5  6A         0.1666666667
- X  NYSTROM5  6B         0.125
- X  NYSTROM5  6C         0.1
- X  NYSTROM5  7          0.05
- X  NYSTROM5  8A         0.0416666667
- X  NYSTROM5  8B         0.0333333333
- X  NYSTROM5  9          0.0083333333
+ X  NYSTROM5  3A        0.5
+ X  NYSTROM5  3B        0.166666666
+ X  NYSTROM5  3C        0.083333333
+ X  NYSTROM5  3D        0.05
+ X  NYSTROM5  4A        0.041666666
+ X  NYSTROM5  4B        0.025
+ X  NYSTROM5  4C        0.008333333
+ X  NYSTROM5  5A        1.0
+ X  NYSTROM5  5B        0.5
+ X  NYSTROM5  5C        0.333333333
+ X  NYSTROM5  5D        0.25
+ X  NYSTROM5  5E        0.2
+ X  NYSTROM5  6A        0.166666666
+ X  NYSTROM5  6B        0.125
+ X  NYSTROM5  6C        0.1
+ X  NYSTROM5  7         0.05
+ X  NYSTROM5  8A        0.041666666
+ X  NYSTROM5  8B        0.033333333
+ X  NYSTROM5  9         0.008333333
 
 BOUNDS
 
  FR NYSTROM5  'DEFAULT'
- FX NYSTROM5  AL1        0.0
- FX NYSTROM5  AL2        0.2
- FX NYSTROM5  AL4        1.0
+ FX NYSTROM5  AL1       0.0
+ FX NYSTROM5  AL2       0.2
+ FX NYSTROM5  AL4       1.0
 
 START POINT
 
- X  NYSTROM5  AL2        0.2
- X  NYSTROM5  AL4        1.0
+ X  NYSTROM5  AL2       0.2
+ X  NYSTROM5  AL4       1.0
 
 ELEMENT TYPE
 

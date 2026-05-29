@@ -19,6 +19,7 @@ NAME          MINC44
 
 *   SIF input: Ph. Toint, April 1992.
 *              minor correction by Ph. Shott, Jan 1995.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification LQR2-AN-V-V
 
@@ -49,14 +50,14 @@ NAME          MINC44
 
  DO I         1                        N
  I- N-I+1     N+1                      I
- IA I-1       I         - 1
+ IA I-1       I         -1
  RI R2**N     2**N
  AA S(N-I+1)  R2**N     0.1
  AA T(I-1)    R2**N     0.1
  I* 2**N      2**N                     2
  ND
 
- IA 2**N-1    2**N      - 1
+ IA 2**N-1    2**N      -1
 
 VARIABLES
 
@@ -67,7 +68,7 @@ VARIABLES
  IR K1        RK1
  IM K2        K1        2
  IA K1        K1        1
- IA K2        K2        - 1
+ IA K2        K2        -1
 
  DO K         K1                       K2
  X  P(K)
@@ -93,10 +94,10 @@ GROUPS
  IR K1        RK1
  IM K2        K1        2
  IA K1        K1        1
- IA K2        K2        - 1
+ IA K2        K2        -1
 
  DO K         K1                       K2
- XE PE(K)     P(K)      - 1.0
+ XE PE(K)     P(K)      -1.0
  ND
 
 *   Doubly stochastic matrix constraints
@@ -152,7 +153,7 @@ ELEMENT USES
  IR K1        RK1
  IM K2        K1        2
  IA K1        K1        1
- IA K2        K2        - 1
+ IA K2        K2        -1
 
  DO K         K1                       K2
 
@@ -181,7 +182,7 @@ ELEMENT USES
 
  I= I1        0
  I= I2        1
- IA ID-2      ID        - 2
+ IA ID-2      ID        -2
 
  DO I         1                        ID-2
  I= I1        ID
@@ -224,7 +225,7 @@ GROUP USES
  IR K1        RK1
  IM K2        K1        2
  IA K1        K1        1
- IA K2        K2        - 1
+ IA K2        K2        -1
 
  DO K         K1                       K2
 
@@ -242,15 +243,15 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN(2)           1.0
-*LO SOLTN(3)           0.25
-*LO SOLTN(4)           0.11111111
-*LO SOLTN(5)           0.04296835
-*LO SOLTN(6)           0.01695926
-*LO SOLTN(7)           6.62293832D-03
-*LO SOLTN(8)           2.57309338D-03
-*LO SOLTN(9)           9.94617795D-04
-*LO SOLTN(10)          3.83144655D-04
+*LO SOLTN(2)            1.0
+*LO SOLTN(3)            0.25
+*LO SOLTN(4)            0.11111111
+*LO SOLTN(5)            0.04296835
+*LO SOLTN(6)            0.01695926
+*LO SOLTN(7)            6.62293832D-3
+*LO SOLTN(8)            2.57309338D-3
+*LO SOLTN(9)            9.94617795D-4
+*LO SOLTN(10)           3.83144655D-4
 
 ENDATA
 

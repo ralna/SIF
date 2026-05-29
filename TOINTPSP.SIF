@@ -18,6 +18,7 @@ NAME          TOINTPSP
 *   See also Buckley#55 (p.94) (With a slightly lower optimal value?)
 
 *   SIF input: Ph. Toint, Dec 1989.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OUR2-AN-50-0
 
@@ -301,7 +302,7 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN              225.56040942
+*LO SOLTN               225.56040942
 
 ENDATA
 

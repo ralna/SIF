@@ -19,6 +19,7 @@ NAME          VANDERM1
 *   A. Neumaier, private communication, 1991.
 
 *   SIF input: Ph. L. Toint, May 1993.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NOR2-AN-V-V
 
@@ -89,7 +90,7 @@ GROUPS
 CONSTANTS
 
  DO K         1                        N
- ZN VANDERM1  E(K)                     A(K)
+ Z  VANDERM1  E(K)                     A(K)
  OD K
 
 BOUNDS

@@ -17,6 +17,7 @@ NAME          HS25NE
 
 *   SIF input: J-M Collin, Mar 1990.
 *   Bound-constrained nonlinear equations version: Nick Gould, June 2019.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NOR2-AN-3-99
 
@@ -29,7 +30,7 @@ NAME          HS25NE
  IE 1                   1
  IE 99                  99
 
- RE 2/3                 0.66666666666
+ RE 2/3                 0.6666666666 
 
 VARIABLES
 

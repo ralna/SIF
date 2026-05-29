@@ -12,6 +12,7 @@ NAME          SPECAN
 *   for Bound Constrained Nonlinear Least Squares", UMEA TR S-901 87
 
 *   SIF input: Michael Ferris, July 1993
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SBR2-AN-V-0
 
@@ -120,7 +121,7 @@ BOUNDS
  DO j         1                        N
  ZL SPECAN    X(p,j)                   LOWER(p,j)
  ZU SPECAN    X(p,j)                   UPPER(p,j)
- OD I
+ OD j
  OD p
 
 START POINT
@@ -136,7 +137,7 @@ START POINT
  DO p         1                        K
  DO j         1                        N
  ZV SPECAN    X(p,j)                   START(p,j)
- OD I
+ OD j
  OD p
 
 ELEMENT TYPE

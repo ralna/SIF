@@ -18,6 +18,7 @@ NAME          WATER
 *   an exercize for L. Watson course on LANCELOT in the Spring 1993.
 
 *   SIF input: E. P. Smith, Virginia Tech., Spring 1993.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification  ONR2-MN-31-10
 
@@ -156,7 +157,7 @@ GROUP USES
 
 OBJECT BOUND
 
-*LO SOLUTION           1.054938D+04
+*LO SOLUTION            1.054938D+04
 
 ENDATA
 

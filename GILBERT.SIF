@@ -17,6 +17,7 @@ NAME          GILBERT
 *   RR-2127, INRIA (F), 1993.
 
 *   SIF input: Ph. Toint, April 1994
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QQR2-AN-V-1
 
@@ -33,8 +34,7 @@ NAME          GILBERT
 *IE N                   1000           $-PARAMETER
  IE N                   5000           $-PARAMETER
 
-*
-   Constants
+*   Constants
 
  IE 1                   1
 

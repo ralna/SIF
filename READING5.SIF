@@ -18,6 +18,7 @@ NAME          READING5
 *   University of Reading, UK.
 
 *   SIF input: Ph. Toint, Aug 1992
+*   Updated to improve processing, Pim Heeman, May 2026.
  
 *   classification OOR2-MN-V-V
 
@@ -44,7 +45,7 @@ NAME          READING5
  
 *   Constants
  
- RE PI                  3.141592653589
+ RE PI                  3.1415926535
  RM 2PI       PI        2.0
  
  RE A                   0.07716

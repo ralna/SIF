@@ -16,6 +16,7 @@ NAME          HS25
 *   Verlag, Heidelberg, 1981.
 
 *   SIF input: J-M Collin, Mar 1990.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification SBR2-AN-3-0
 
@@ -28,7 +29,7 @@ NAME          HS25
  IE 1                   1
  IE 99                  99
 
- RE 2/3                 0.66666666666
+ RE 2/3                 0.6666666666 
 
 VARIABLES
 

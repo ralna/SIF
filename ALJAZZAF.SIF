@@ -14,6 +14,7 @@ NAME          ALJAZZAF
 *   PhD Thesis, North Carolina State University, Raleigh, 1990.
 
 *   SDIF input: Ph. Toint, May 1990.
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification QQR2-AN-V-V
 
@@ -26,10 +27,10 @@ NAME          ALJAZZAF
 
 *   Upper range of active lower bounds (from 2 to N1)
 
-*IE N1                  2               $-PARAMETER  .lt. N  original value
-*IE N1                  50              $-PARAMETER  .lt. N
- IE N1                  500             $-PARAMETER  .lt. N
-*IE N1                  5000            $-PARAMETER  .lt. N
+*IE N1                  2              $-PARAMETER  .lt. N  original value
+*IE N1                  50             $-PARAMETER  .lt. N
+ IE N1                  500            $-PARAMETER  .lt. N
+*IE N1                  5000           $-PARAMETER  .lt. N
 
 *   Problem parameter A
 

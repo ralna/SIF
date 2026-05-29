@@ -26,6 +26,7 @@ NAME          DTOC2
 *   Cornell University, 1992.
 
 *   SIF input: Ph. Toint, August 1993
+*   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification OOR2-AN-V-V
 
@@ -91,8 +92,8 @@ NAME          DTOC2
  I+ I+J       I                        J
  RI RI+J      I+J
  A* C(I,J)    RI+J                     1/2NY
- OD J
  OD I
+ OD J
 
 VARIABLES
 
@@ -173,7 +174,7 @@ ELEMENT USES
  DO I         1                        NX
  XT SX(T,I)   SINE
  ZV SX(T,I)   ZZ                       X(T,I)
- OD J
+ OD I
 
  OD T
 
