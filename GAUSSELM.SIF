@@ -15,7 +15,10 @@ NAME          GAUSSELM
 
 *   Size of the matrices = n
 
- IE N                   9              $-PARAMETER matrix dimension
+ IE N                   5              $-PARAMETER matrix dimension
+ IE N                   6              $-PARAMETER matrix dimension
+ IE N                   7              $-PARAMETER matrix dimension
+*IE N                   9              $-PARAMETER matrix dimension
 *IE N                   10             $-PARAMETER matrix dimension
 *IE N                   11             $-PARAMETER matrix dimension
 *IE N                   12             $-PARAMETER matrix dimension

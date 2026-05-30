@@ -67,6 +67,7 @@ NAME          BLOWEYC
  IE N                   2000           $-PARAMETER  n = 4002, m = 2002
 *IE N                   4000           $-PARAMETER  n = 8002, m = 4002
 *IE N                   8000           $-PARAMETER  n = 16002, m = 8002
+ IE N                   10             $-PARAMETER  n = 22, m = 12
 
 *  Other useful values
 
