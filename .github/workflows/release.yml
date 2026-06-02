@@ -1,0 +1,58 @@
+name: Build release archives
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        id: version
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          VERSION="${TAG#v}"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare package
+        run: |
+          mkdir -p package
+
+          rsync -a ./ package/ \
+            --exclude package \
+            --exclude .git \
+            --exclude .github
+
+          # Decompress .SIF.bz2 files
+          find package -type f -name '*.SIF.bz2' -exec bzip2 -dk {} \; || true
+
+          # Remove compressed files from package
+          find package -type f -name '*.SIF.bz2' -delete
+
+      - name: Create archives
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+
+          tar \
+            --exclude='*.SIF.bz2' \
+            -czf "sifcollection-${VERSION}.tar.gz" \
+            -C package .
+
+          (
+            cd package
+            zip -rq "../sifcollection-${VERSION}.zip" . -x '*.SIF.bz2'
+          )
+
+      - name: Upload assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            sifcollection-${{ steps.version.outputs.version }}.tar.gz
+            sifcollection-${{ steps.version.outputs.version }}.zip
