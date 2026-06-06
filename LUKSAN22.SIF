@@ -14,6 +14,7 @@ NAME          LUKSAN22
 *     J. Optimization Theory & Applications 89(3) 575-595 (1996)
 
 *   SIF input: Nick Gould, June 2017.
+*              incorrectly decoded version (see LUKSAN22 for correction)
 *   Updated to improve processing, Pim Heeman, May 2026.
 
 *   classification NOR2-AN-V-V
@@ -51,7 +52,7 @@ GROUPS
  XE E(K+1)
  IA K         K         2
  ND
- XE E(K)      X(N)    -10.0
+ XE E(K)      X(N)      0.0
 
 CONSTANTS
 

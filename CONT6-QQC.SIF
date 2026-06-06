@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          CONT6-QQ
+NAME          CONT6-QQC
 
 *   Problem :
 *   *********
@@ -31,9 +31,13 @@ NAME          CONT6-QQ
 *    where the problem is Example 6.
 
 *   SIF input: Nick Gould, September 2000
-*              incorrectly decoded version (see CONT6-QQC for correction)
+*   Modified version of CONT6-QQ (formulation corrected), Pim Heeman, June 2026.
 
 *   classification QQR2-AN-V-V
+
+*   The version CONT6-QQ referenced the wrong loop variable i
+*   in the bc2 constraint that then took the constant value n1
+*   instead.
 
 *   Number of nodes in x direction
 
@@ -108,7 +112,7 @@ GROUPS
 * bc2 {j in 1..n1}: u[0,j] - u[1,j] + h*u[1,j] = 0
 
  DO j         1                        n1
- XE bc2(j)    u(0,n1)   1.0            u(1,n1)   -1.0 
+ XE bc2(j)    u(0,j)    1.0            u(1,j)    -1.0 
  ZE bc2(j)    u(1,j)                   h
  ND
 
@@ -128,25 +132,25 @@ BOUNDS
 
  DO j         0                        n
  DO i         0                        n
- ZU CONT6-QQ  u(i,j)                   ub
+ ZU CONT6-QQC u(i,j)                   ub
  ND
 
  DO j         1                        n1
  DO i         1                        n1
- ZL CONT6-QQ  f(i,j)                   r
- ZU CONT6-QQ  f(i,j)                   d
+ ZL CONT6-QQC f(i,j)                   r
+ ZU CONT6-QQC f(i,j)                   d
  ND
 
 START POINT
 
  DO j         0                        n
  DO i         0                        n
- X  CONT6-QQ  u(i,j)    6.0
+ X  CONT6-QQC u(i,j)    6.0
  ND
 
  DO j         1                        n1
  DO i         1                        n1
- X  CONT6-QQ  f(i,j)    1.5
+ X  CONT6-QQC f(i,j)    1.5
  ND
 
 ELEMENT TYPE
@@ -212,7 +216,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      CONT6-QQ
+ELEMENTS      CONT6-QQC
 
 TEMPORARIES
 

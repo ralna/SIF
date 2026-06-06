@@ -268,6 +268,9 @@ Additions:
 14/Jun/25: LUKVLE2C.SIF   LUKVLI2C.SIF   LUKVLE4C.SIF   LUKVLI4C.SIF
            (replacements for buggy LUKVLE2.SIF, etc)
 15/Jul/25: QUADCOPTER.SIF
+06/Jun/26: CHANNELC.SIF   CONT6-QQC.SIF  LUKSAN22C.SIF  LUKSAN22LC.SIF
+           MOREBVNEC.SIF  QUADCOPTEC.SIF
+           (buggy files corrected)
 
 Corrections to problem statement:
 
@@ -343,6 +346,10 @@ Corrections to problem statement:
            DIAGNQB.SIF    DIAGPQT.SIF    DIAGQ.SIF
 12/Nov/24: EXTROSNBNE.SIF
 09/Dec/24: SROSENBR.SIF (added 2nd, correct, starting point)
+06/Jun/26: AUG2DCQP.SIF   GBRAINLS.SIF   KISSING2.SIF   KTMODEL.SIF
+           NYSTROM5.SIF   ORTHRDS2.SIF   ROBOTARM.SIF   SROSENBRNE.SIF
+           (reverted 28/May/24 changes to NYSTROM5.SIF and ORTHRDS2.SIF;
+            these belong to NYSTROM5C.SIF and ORTHRDS2C.SIF instead)
 
 Changes to default sizes:
 
@@ -477,6 +484,8 @@ Cosmetic changes:
            SYNTHES3.SIF   TFI1.SIF       TFI3.SIF       TOINTGOR.SIF
            TOINTPSP.SIF   TOINTQOR.SIF   TRIMLOSS.SIF   VANDERM1.SIF
            WATER.SIF      YORKNET.SIF
+06/Jun/26: BATCH.SIF      NET4.SIF       SROSENBR.SIF   TRUSPYR1.SIF
+           TRUSPYR2.SIF
 
 Removals:
 

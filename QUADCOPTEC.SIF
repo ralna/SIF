@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          QUADCOPTER
+NAME          QUADCOPTEC
 
 *   Problem :
 *   *********
@@ -14,9 +14,12 @@ NAME          QUADCOPTER
 *     https://osqp.org/docs/examples/mpc.html
 
 *   SIF input: Nick Gould, July 2025
-*              incorrectly decoded version (see QUADCOPTEC for correction)
+*   Modified version of QUADCOPTER (formulation corrected), Pim Heeman, June 2026.
 
 *   classification QLR2-AN-V-V
+
+*   The version QUADCOPTER miscomputes K+1 in the constraints
+*   such that it equals K instead.
 
 *   The number of state variables per block
 
@@ -112,7 +115,7 @@ GROUPS
 *  linear constraints
 
  DO K         0                        N-1
- IA K+1       K         0
+ IA K+1       K         1
  XE R(1,K)    X(1,K+1)  1.0            X(1,K)    1.0   
  XE R(1,K)    X(7,K)    0.1            
  XE R(2,K)    X(2,K+1)  1.0            X(2,K)    1.0   
@@ -231,7 +234,7 @@ ENDATA
 * ROUTINE           *
 *********************
 
-GROUPS        QUADCOPTER
+GROUPS        QUADCOPTEC
 
 INDIVIDUALS
 

@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          MOREBVNE
+NAME          MOREBVNEC
 
 *   Problem :
 *   *********
@@ -18,10 +18,15 @@ NAME          MOREBVNE
 *   See also Buckley#17 (p. 75).
 
 *   SIF input: Ph. Toint, Dec 1989 and Nick Gould, Oct 1992.
-*              incorrectly decoded version (see MOREBVNEC for correction)
+*   Modified version of MOREBVNE (formulation corrected), Pim Heeman, June 2026.
 *   Modification as a set of nonlinear equations: Nick Gould, Oct 2015.
 
 *   classification NOR2-MN-V-V
+
+*   The version MOREBVNE had a reference to I in the last
+*   equality constraint not updated after copying it from the
+*   loop, such that it took the value of N-1 instead of the
+*   correct value of N.
 
 *   The number of variables is N.
 
@@ -62,7 +67,7 @@ GROUPS
  XE G(I)      X(I+1)    -1.0
  ND
 
- XE G(N)      X(N-1)    -1.0           X(N-1)    2.0
+ XE G(N)      X(N-1)    -1.0           X(N)      2.0
 
 BOUNDS
 
@@ -115,7 +120,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      MOREBVNE
+ELEMENTS      MOREBVNEC
 
 TEMPORARIES
 

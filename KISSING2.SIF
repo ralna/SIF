@@ -41,6 +41,7 @@ NAME          KISSING2
 *
 *
 *   SIF input: Nick Gould, September 2000
+*   Updated for corrected formulation (starting point), Pim Heeman, June 2026.
 
 *   classification QQR2-RN-V-V
 
@@ -123,7 +124,25 @@ START POINT
  DO J         2                        n-1
  Z  KISSING2  P(I,J)                   sin
  ND
- Z  KISSING2  P(I,n)                   cos
+ Z  KISSING2  P(m,n)                   cos
+
+* Corrected starting point: the difference is the assignment
+* of P(I,n), which originally was misplaced outside a loop
+* instead of in a loop from 1 to m.
+
+ DO I         1                        m
+ RI RI        I
+ R* 2PIi/m    2PI/m                    RI
+ R( cos       COS                      2PIi/m
+ R( sin       SIN                      2PIi/m
+ R+ cos       cos                      cos
+ R+ sin       sin                      sin
+ Z  KISSING22 P(I,1)                   cos
+ DO J         2                        n-1
+ Z  KISSING22 P(I,J)                   sin
+ OD J
+ Z  KISSING22 P(I,n)                   cos
+ OD I
 
 ELEMENT TYPE 
 

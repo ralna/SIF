@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          CHANNEL
+NAME          CHANNELC
 
 *   Problem :
 *   *********
@@ -22,9 +22,13 @@ NAME          CHANNEL
 *   Argonne National Labs Technical Report ANL/MCS-246 (2000)
 
 *   SIF input: Nick Gould, November 2000
-*              incorrectly decoded version (see CHANNELC for correction)
+*   Modified version of CHANNEL (formulation corrected), Pim Heeman, June 2026.
 
 *   classification NOR2-AN-V-V
+
+*   The version CHANNEL omitted the variable name for the
+*   value of a coefficient in the description of the linear
+*   part of the constraints.
 
 * The order of the differential equation
 
@@ -282,7 +286,7 @@ GROUPS
  DO I         1                        NH-1
  IA I+1       I         1
  DO S         1                        ND
-*XE Y(I+1,S)            -1.0
+ XE Y(I+1,S)  V(I+1,S)  -1.0
 
  IE IND                 0
  RE PROD                1.0
@@ -304,19 +308,19 @@ GROUPS
 
 CONSTANTS
 
-    CHANNEL   OBJ        -1.0
-    CHANNEL   BC3        1.0
-    CHANNEL   BC4        0.0
+    CHANNELC  OBJ        -1.0
+    CHANNELC  BC3        1.0
+    CHANNELC  BC4        0.0
 
 BOUNDS
 
- XR CHANNEL   'DEFAULT'
- XX CHANNEL   V(1,1)     0.0
- XX CHANNEL   V(1,2)     0.0
+ XR CHANNELC  'DEFAULT'
+ XX CHANNELC  V(1,1)     0.0
+ XX CHANNELC  V(1,2)     0.0
 
 START POINT
 
-*X  CHANNEL1  'DEFAULT'  0.0
+*X  CHANNELC1 'DEFAULT'  0.0
 
  DO I         1                        NH
  
@@ -333,7 +337,7 @@ START POINT
  R* V1        T                        DIFF
  R* V1        V1                       DIFF
  A= V(1)      V1
- Z  CHANNEL   V(I,1)                   V1
+ Z  CHANNELC  V(I,1)                   V1
 
 * v[i,2] = 6*t[i]*(1 - t[i])
 
@@ -342,7 +346,7 @@ START POINT
  R* V2        T                        DIFF
  RM V2        V2        6.0
  A= V(2)      V2
- Z  CHANNEL   V(I,2)                   V2
+ Z  CHANNELC  V(I,2)                   V2
 
 * v[i,3] = 6*(1.0 - 2*t[i])
 
@@ -350,19 +354,19 @@ START POINT
  RA DIFF      DIFF      1.0
  RM V3        DIFF      6.0
  A= V(3)      V3
- Z  CHANNEL   V(I,3)                   V3
+ Z  CHANNELC  V(I,3)                   V3
 
 * v[i,4] = -12
 
  RE V4                  -12.0
  A= V(4)      V4
- Z  CHANNEL   V(I,4)                   V4
+ Z  CHANNELC  V(I,4)                   V4
 
 * w[i,j] = 0
 
  DO J         1                        NC
  A= W(J)      zero
- X  CHANNEL   W(I,J)    0.0
+ X  CHANNELC  W(I,J)    0.0
  OD J
 
 * Dc {i in 1..nh,j in 1..nc,s in 1..nd} =
@@ -394,7 +398,7 @@ START POINT
  R* PROD      PROD                     RH
  IA IND       IND       1
  OD K
- Z  CHANNEL   DC(I,J,S)                DCIJS    
+ Z  CHANNELC  DC(I,J,S)                DCIJS    
 
  R/ HPOWER    HPOWER                   H
  IE S                   2
@@ -418,7 +422,7 @@ START POINT
  R* PROD      PROD                     RH
  IA IND       IND       1
  OD K
- Z  CHANNEL   DC(I,J,S)                DCIJS    
+ Z  CHANNELC  DC(I,J,S)                DCIJS    
 
  R/ HPOWER    HPOWER                   H
  IE S                   3
@@ -442,7 +446,7 @@ START POINT
  R* PROD      PROD                     RH
  IA IND       IND       1
  OD K
- Z  CHANNEL   DC(I,J,S)                DCIJS    
+ Z  CHANNELC  DC(I,J,S)                DCIJS    
 
  R/ HPOWER    HPOWER                   H
  IE S                   4
@@ -466,7 +470,7 @@ START POINT
  R* PROD      PROD                     RH
  IA IND       IND       1
  OD K
- Z  CHANNEL   DC(I,J,S)                DCIJS    
+ Z  CHANNELC  DC(I,J,S)                DCIJS    
 
  ND
 
@@ -511,7 +515,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      CHANNEL
+ELEMENTS      CHANNELC
 
 INDIVIDUALS
 

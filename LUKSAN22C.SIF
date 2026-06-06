@@ -2,7 +2,7 @@
 * SET UP THE INITIAL DATA *
 ***************************
 
-NAME          LUKSAN22LS
+NAME          LUKSAN22C
 
 *   Problem :
 *   *********
@@ -14,12 +14,13 @@ NAME          LUKSAN22LS
 *     J. Optimization Theory & Applications 89(3) 575-595 (1996)
 
 *   SIF input: Nick Gould, June 2017.
-*              incorrectly decoded version (see LUKSAN22LC for correction)
+*   Modified version of LUKSAN22 (formulation corrected), Pim Heeman, June 2026.
 *   Updated to improve processing, Pim Heeman, May 2026.
 
-*   least-squares version
+*   classification NOR2-AN-V-V
 
-*   classification SUR2-AN-V-0
+*   The version LUKSAN22 had a numerical value misaligned
+*   such that the first part would get cut off.
 
 *  number of unknowns
 
@@ -45,32 +46,32 @@ VARIABLES
 
 GROUPS
 
- N  E1        X1        1.0
+ E  E1        X1        1.0
  IE K                   2
  DO I         1                        N-2
  IA I+1       I         1
  IA K+1       K         1
- XN E(K)      X(I+1)    -10.0
- XN E(K+1)
+ XE E(K)      X(I+1)    -10.0
+ XE E(K+1)
  IA K         K         2
  ND
- XN E(K)      X(N)      0.0
+ XE E(K)      X(N)      -10.0
 
 CONSTANTS
 
- X  LUKSAN22  E1        1.0
+ X  LUKSAN22C E1        1.0
 
 BOUNDS
 
- FR LUKSAN22  'DEFAULT'
+ FR LUKSAN22C 'DEFAULT'
 
 START POINT
 
  DO I         1                        N
  DI I         2
  IA I+1       I         1
- XV LUKSAN22  X(I)       -1.2
- XV LUKSAN22  X(I+1)     1.0
+ XV LUKSAN22C X(I)       -1.2
+ XV LUKSAN22C X(I+1)     1.0
  ND
 
 ELEMENT TYPE
@@ -103,13 +104,7 @@ ELEMENT USES
  XT E(K)      SQR
  ZV E(K)      X                        X(N-1)
 
-GROUP TYPE
-
- GV L2        GVAR
-
 GROUP USES
-
- XT 'DEFAULT' L2
 
  IE K                   2
  DO I         1                        N-2
@@ -122,7 +117,7 @@ GROUP USES
 
 OBJECT BOUND
 
- LO LUKSAN22             0.0
+ LO LUKSAN22C            0.0
 
 *   Solution
 
@@ -135,7 +130,7 @@ ENDATA
 * AND RANGE ROUTINES  *
 ***********************
 
-ELEMENTS      LUKSAN22LS
+ELEMENTS      LUKSAN22C
 
 TEMPORARIES
 
@@ -162,21 +157,5 @@ INDIVIDUALS
  F                      EXPARG
  G  X                   - 4.0D0 * X * EXPARG
  H  X         X         ( 16.0D0 * X * X - 4.0D0 ) * EXPARG
-
-ENDATA
-
-*********************
-* SET UP THE GROUPS *
-* ROUTINE           *
-*********************
-
-GROUPS        LUKSAN22LS
-
-INDIVIDUALS
-
- T  L2
- F                      GVAR * GVAR
- G                      GVAR + GVAR
- H                      2.0
 
 ENDATA

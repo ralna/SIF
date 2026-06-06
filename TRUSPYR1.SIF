@@ -21,6 +21,7 @@ NAME          TRUSPYR1
 *   G. I. N. Rozvany, ed., Kluwer, 1993, pp. 579-588.
 
 *   SIF input: A. Forsgren, Royal Institute of Technology, December 1993.
+*   Updated to improve processing, Pim Heeman, June 2026.
 
 *   classification LQR2-MN-11-4
 
@@ -222,7 +223,7 @@ OBJECT BOUND
 
 *   Objective function value corresponding to the global minimizer above
 
- LO SOLTN(8)           11.2287408808
+ LO SOLTN(8)            11.228740881
 
 ENDATA
 

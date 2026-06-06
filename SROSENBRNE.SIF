@@ -17,6 +17,7 @@ NAME          SROSENBRNE
 
 *   SIF input: Ph. Toint, Dec 1989.
 *              Nick Gould (nonlinear equation version), Jan 2019
+*              added 2nd (correct) starting point as SROSENBR, Pim Heeman, Jun 2026
 
 *   classification NOR2-AN-V-V
 
@@ -76,7 +77,11 @@ START POINT
  IM 2I        I         2
  IA 2I-1      2I        -1
  X  SROSENBR  X(2I)     1.0
- X  SROSENBR  X(2I-1)  -1.2
+ X  SROSENBR  X(2I-1)   1.2
+* A minus sign to SROSENBR was originally in the wrong field
+* such that it would get cut off, and hence SROSENBR2.
+ X  SROSENBR2 X(2I)     1.0
+ X  SROSENBR2 X(2I-1)   -1.2
  ND
 
 ELEMENT TYPE

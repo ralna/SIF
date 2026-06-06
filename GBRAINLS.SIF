@@ -19,6 +19,7 @@ NAME          GBRAINLS
 *   as conveyed by Angela Mihai (U. Cardiff)
 
 *   SIF input: Nick Gould, June 2017.
+*   Updated for corrected formulation (unified bounds), Pim Heeman, June 2026.
 
 *   classification SUR2-MN-2-0
 
@@ -2255,6 +2256,13 @@ BOUNDS
  FR GBRAIN    'DEFAULT'
  LO FBRAIN    'DEFAULT' -5.0
  UP FBRAIN    'DEFAULT' 5.0
+
+* Corrected bounds: the above bound vectors GBRAIN and
+* FBRAIN meant to be together mismatched in their names.
+
+ FR GBRAIN2   'DEFAULT'
+ LO GBRAIN2   'DEFAULT' -5.0
+ UP GBRAIN2   'DEFAULT' 5.0
 
 START POINT
 

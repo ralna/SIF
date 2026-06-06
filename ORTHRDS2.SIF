@@ -96,8 +96,8 @@ NAME          ORTHRDS2
  ND
 
  DO I         TDP_lo                   TDP_hi
- AE XD(I)                1.1
- AE YD(I)                0.1
+ AE XD(I)                0.0
+ AE YD(I)                0.0
  ND
 
 VARIABLES

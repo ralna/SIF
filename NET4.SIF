@@ -11,6 +11,7 @@ NAME          NET4
 
 *   SIF input: Sybille Schachler, Oxford, August 1992.
 *   Time-dependent version of NET3, Nick Gould, October 2002.
+*   Updated to improve processing, Pim Heeman, June 2026.
 
 *   classification OOI2-RN-66816-75024
 
@@ -595,6 +596,7 @@ GROUPS
  ZE MBE25,(T) PFL46,(T)                -one
  ZE MBE25,(T) SFL223,(T)               one
  ND
+ DO T         1                        1
  ZE MBE26,(T) PFL47,(T)                -one
  ZE MBE26,(T) PFL48,(T)                -one
  ZE MBE26,(T) SFL224,(T)               one
@@ -651,6 +653,7 @@ GROUPS
  ZE MBE50,(T) PFL86,(T)                -one
  ZE MBE50,(T) PFL87,(T)                -one
  ND
+ DO T         1                        1
  ZE MBE51,(T) PFL22,(T)                one
  ZE MBE51,(T) PFL88,(T)                -one
  ZE MBE52,(T) PFL84,(T)                one
@@ -711,6 +714,7 @@ GROUPS
  ZE MBE75,(T) PFL119,(T)               -one
  ZE MBE75,(T) RFL217,(T)               one
  ND
+ DO T         1                        1
  ZE MBE76,(T) PFL2,(T)                 one
  ZE MBE76,(T) PFL3,(T)                 one
  ZE MBE76,(T) PFL8,(T)                 one
@@ -771,6 +775,7 @@ GROUPS
  ZE MBE98,(T) SFL231,(T)               one
  ZE MBE99,(T) PFL29,(T)                one
  ND
+ DO T         1                        1
  ZE MBE100,(T)PFL4,(T)                 one
  ZE MBE100,(T)PFL5,(T)                 one
  ZE MBE100,(T)PFL76,(T)                one
@@ -838,6 +843,7 @@ GROUPS
  ZE MBE124,(T)PFL167,(T)               -one
  ZE MBE125,(T)PFL162,(T)               one
  ND
+ DO T         1                        1
  ZE MBE126,(T)PFL119,(T)               one
  ZE MBE126,(T)PFL168,(T)               -one
  ZE MBE127,(T)PFL27,(T)                one
@@ -893,6 +899,7 @@ GROUPS
  ZE MBE149,(T)CFL214,(T)               one
  ZE MBE150,(T)PFL25,(T)                one
  ND
+ DO T         1                        1
  ZE MBE151,(T)PFL160,(T)               one
  ZE MBE151,(T)PFL184,(T)               -one
  ZE MBE152,(T)PFL107,(T)               one
@@ -948,6 +955,7 @@ GROUPS
  ZE MBE175,(T)PFL176,(T)               one
  ZE MBE175,(T)PFL187,(T)               one
  ND
+ DO T         1                        1
  ZE MBE176,(T)PFL168,(T)               one
  ZE MBE176,(T)CFL215,(T)               -one
  ZE MBE177,(T)PFL195,(T)               -one

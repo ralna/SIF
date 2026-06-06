@@ -15,6 +15,7 @@ NAME          ROBOTARM
 *   Argonne National Labs Technical Report ANL/MCS-246 (2000)
 
 *   SIF input: Nick Gould, December 2000
+*   Updated for corrected formulation (starting point), Pim Heeman, June 2026.
 
 *   classification OOR2-AN-V-V
 
@@ -183,7 +184,7 @@ START POINT
 
  Z  ROBOTARM  STEP                     1/NH
 
- RE RHOI               4.5
+ RE RHOI                .5
  DO I         0                        NH
  RI I         I
  R/ I/NH      I                        NH
@@ -209,20 +210,69 @@ START POINT
  Z  ROBOTARM  PHI(I)                   PHII
 * The derivatives of the length and the angles
     
- X  ROBOTARM  RHO.(I)  0.0
+ X  ROBOTARM  RHO.(I)   0.0
  Z  ROBOTARM  THE.(I)                  THE.I
- X  ROBOTARM  PHI.(I)  0.0
+ X  ROBOTARM  PHI.(I)   0.0
 
 *  The controls
 
- X  ROBOTARM  URHO(I)  0.0
- X  ROBOTARM  UTHE(I)  0.0
- X  ROBOTARM  UPHI(I)  0.0
+ X  ROBOTARM  URHO(I)   0.0
+ X  ROBOTARM  UTHE(I)   0.0
+ X  ROBOTARM  UPHI(I)   0.0
 
 * The moments of inertia
 
  Z  ROBOTARM  ITHE(I)                  ITHEI
  Z  ROBOTARM  IPHI(I)                  IPHII
+
+ ND
+
+* Corrected starting point: the difference is the initial
+* value of RHOI, which was originally misplaced and read as
+* .5 instead of the correct value 4.5.
+
+ Z  ROBOTARM2 STEP                     1/NH
+
+ RE RHOI                4.5
+ DO I         0                        NH
+ RI I         I
+ R/ I/NH      I                        NH
+ R* (I/NH)^2  I/NH                     I/NH
+ R* THEI      2PI/3                    (I/NH)^2
+ R= PHII      PI/4
+ R* THE.I     4PI/3                    I/NH
+ R- T1        L                        RHOI
+ R* T1^2      T1                       T1
+ R* T1^3      T1^2                     T1
+ R* T2^2      RHOI                     RHOI
+ R* T2^3      T2^2                     RHOI
+ R+ IPHII     T1^2                     T2^2
+ R/ IPHII     IPHII                    THREE
+ R( SPHII     SIN                      PHII
+ R* ITHEI     IPHII                    SPHII
+ R* ITHEI     ITHEI                    SPHII
+
+* The length and the angles theta and phi for the robot arm
+
+ Z  ROBOTARM2 RHO(I)                   RHOI
+ Z  ROBOTARM2 THE(I)                   THEI
+ Z  ROBOTARM2 PHI(I)                   PHII
+* The derivatives of the length and the angles
+    
+ X  ROBOTARM2 RHO.(I)   0.0
+ Z  ROBOTARM2 THE.(I)                  THE.I
+ X  ROBOTARM2 PHI.(I)   0.0
+
+*  The controls
+
+ X  ROBOTARM2 URHO(I)   0.0
+ X  ROBOTARM2 UTHE(I)   0.0
+ X  ROBOTARM2 UPHI(I)   0.0
+
+* The moments of inertia
+
+ Z  ROBOTARM2 ITHE(I)                  ITHEI
+ Z  ROBOTARM2 IPHI(I)                  IPHII
 
  ND
 
