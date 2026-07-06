@@ -11,6 +11,7 @@ NAME          FEEDLOC
 *   in a distillation column
 
 *   SIF input: S. Leyffer, October 1997
+*   Updated to improve processing, Pim Heeman, July 2026.
 
 *   classification LOR2-AN-90-259
 
@@ -424,9 +425,6 @@ ENDATA
 ***********************
 
 ELEMENTS      FEEDLOC
-
- EV A2PROD    V1                       V2
- EP A2PROD    A
 
 INDIVIDUALS
 
