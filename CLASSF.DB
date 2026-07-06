@@ -105,7 +105,8 @@ BA-L73     NOR2-MN-    33753-    46122
 BA-L73LS   SUR2-MN-    33753-        0
 BARD       SUR2-AN-        3-        0
 BARDNE     NOR2-AN-        3-       15
-BATCH      OOR2-AN-       46-       73
+BATCH      OOR2-AN-       48-       73
+BATCHC     OOR2-AN-       46-       73
 BDEXP      OBR2-AY-        V-        0
 BDQRTIC    SUR2-AN-        V-        0
 BDQRTICNE  NOR2-AN-        V-        V
