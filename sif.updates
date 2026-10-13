@@ -351,6 +351,7 @@ Corrections to problem statement:
            NYSTROM5.SIF   ORTHRDS2.SIF   ROBOTARM.SIF   SROSENBRNE.SIF
            (reverted 28/May/24 changes to NYSTROM5.SIF and ORTHRDS2.SIF;
             these belong to NYSTROM5C.SIF and ORTHRDS2C.SIF instead)
+13/Oct/26: WATSON.SIF     WATSONNE.SIF   (second derivatives of element MWSQ)
 
 Changes to default sizes:
 

@@ -250,7 +250,7 @@ INDIVIDUALS
  H  V2        V6        - TWOT2 * T6
  H  V2        V7        - TWOT2 * T7
  H  V2        V8        - TWOT2 * T8
- H  V2        V9        - TWOT2 * T8
+ H  V2        V9        - TWOT2 * T9
  H  V2        V10       - TWOT2 * T10
  H  V2        V11       - TWOT2 * T11
  H  V2        V12       - TWOT2 * T12
@@ -260,7 +260,7 @@ INDIVIDUALS
  H  V3        V6        - TWOT3 * T6
  H  V3        V7        - TWOT3 * T7
  H  V3        V8        - TWOT3 * T8
- H  V3        V9        - TWOT3 * T8
+ H  V3        V9        - TWOT3 * T9
  H  V3        V10       - TWOT3 * T10
  H  V3        V11       - TWOT3 * T11
  H  V3        V12       - TWOT3 * T12
@@ -269,7 +269,7 @@ INDIVIDUALS
  H  V4        V6        - TWOT4 * T6
  H  V4        V7        - TWOT4 * T7
  H  V4        V8        - TWOT4 * T8
- H  V4        V9        - TWOT4 * T8
+ H  V4        V9        - TWOT4 * T9
  H  V4        V10       - TWOT4 * T10
  H  V4        V11       - TWOT4 * T11
  H  V4        V12       - TWOT4 * T12
@@ -277,25 +277,25 @@ INDIVIDUALS
  H  V5        V6        - TWOT5 * T6
  H  V5        V7        - TWOT5 * T7
  H  V5        V8        - TWOT5 * T8
- H  V5        V9        - TWOT5 * T8
+ H  V5        V9        - TWOT5 * T9
  H  V5        V10       - TWOT5 * T10
  H  V5        V11       - TWOT5 * T11
  H  V5        V12       - TWOT5 * T12
  H  V6        V6        - TWOT6 * T6
  H  V6        V7        - TWOT6 * T7
  H  V6        V8        - TWOT6 * T8
- H  V6        V9        - TWOT6 * T8
+ H  V6        V9        - TWOT6 * T9
  H  V6        V10       - TWOT6 * T10
  H  V6        V11       - TWOT6 * T11
  H  V6        V12       - TWOT6 * T12
  H  V7        V7        - TWOT7 * T7
  H  V7        V8        - TWOT7 * T8
- H  V7        V9        - TWOT7 * T8
+ H  V7        V9        - TWOT7 * T9
  H  V7        V10       - TWOT7 * T10
  H  V7        V11       - TWOT7 * T11
  H  V7        V12       - TWOT7 * T12
  H  V8        V8        - TWOT8 * T8
- H  V8        V9        - TWOT8 * T8
+ H  V8        V9        - TWOT8 * T9
  H  V8        V10       - TWOT8 * T10
  H  V8        V11       - TWOT8 * T11
  H  V8        V12       - TWOT8 * T12
