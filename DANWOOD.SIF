@@ -8,7 +8,7 @@ NAME          DANWOOD
 *   *********
 
 *   NIST Data fitting problem DANWOOD given as an inconsistent set of
-*   nonlinear equations (incorrect formulation). See DANIWOOS.SIF for
+*   nonlinear equations (incorrect formulation). See DANIWOOD.SIF for
 *   the correct formulation
 
 *   Fit: y  = (b1*x)**b2  +  e
