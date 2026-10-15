@@ -11,7 +11,7 @@ NAME          FMINSURF
 
 *   The problem comes from the discretization of the minimum surface
 *   problem on the unit square with "free boundary conditions"
-*   one must find the minumum surface over the unit square 
+*   one must find the minimum surface over the unit square 
 *   (which is clearly 1.0).  Furthermore, the average distance of the surface
 *   from zero is also minimized.
 
@@ -22,7 +22,7 @@ NAME          FMINSURF
 *   squares are the problem variables,  There are p**2 of them.
 *   Given these heights, the area above a little square is
 *   approximated by the
-*     S(i,j) = sqrt( 1 + 0.5(p-1)**2 ( a(i,j) + b(i,j) ) ) / (p-1)**2
+*     S(i,j) = sqrt( 1 + 0.5(p-1)**2 ( a(i,j)**2 + b(i,j)**2 ) ) / (p-1)**2
 *   where
 *     a(i,j) = x(i,j) - x(i+1,j+1)
 *   and
@@ -32,7 +32,7 @@ NAME          FMINSURF
 *   A Griewank and Ph. Toint,
 *   "Partitioned variable metric updates for large structured
 *   optimization problems",
-*   Numerische Mathematik 39:429-448, 1982.
+*   Numerische Mathematik 39:119-137, 1982.
 
 *   SIF input: Ph. Toint, November 1991.
 
