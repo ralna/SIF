@@ -351,6 +351,7 @@ Corrections to problem statement:
            NYSTROM5.SIF   ORTHRDS2.SIF   ROBOTARM.SIF   SROSENBRNE.SIF
            (reverted 28/May/24 changes to NYSTROM5.SIF and ORTHRDS2.SIF;
             these belong to NYSTROM5C.SIF and ORTHRDS2C.SIF instead)
+15/Oct/26: ARGTRIG.SIF    ARGTRIGLS.SIF  (coefficient of sin x_i is 1, not i)
 
 Changes to default sizes:
 
