@@ -36,6 +36,7 @@ NAME          SBRYBNDNE
 *   Restriction: LB + 1 + UB .le. N
 
  RE ONE                 1.0
+ RM -ONE      ONE       -1.0
  RE KAPPA1              2.0
  RE KAPPA2              5.0
  RE KAPPA3              1.0
@@ -138,6 +139,12 @@ GROUPS
 
  ND
 
+CONSTANTS
+
+ DO I         1                        N
+ X  SBRYBND   G(I)      -1.0
+ ND
+
 BOUNDS
 
  FR SBRYBND   'DEFAULT'
@@ -145,7 +152,7 @@ BOUNDS
 START POINT
 
  DO I         1                        N
- A/ DIV       ONE                      SCALE(I)
+ A/ DIV       -ONE                     SCALE(I)
  ZV SBRYBND   X(I)                     DIV
  ND
 
@@ -200,10 +207,10 @@ GROUP USES
  I+ I+UB      I                        UB
 
  DO J         I-LB                     I-1
- ZE G(I)      Q(J)                     -KAPPA3
+ ZE G(I)      E(J)                     -KAPPA3
  OD J
 
- ZE G(I)      E(I)                     KAPPA2
+ ZE G(I)      Q(I)                     KAPPA2
 
  DO J         I+1                      I+UB
  ZE G(I)      E(J)                     -KAPPA3

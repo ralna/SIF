@@ -146,6 +146,12 @@ GROUPS
 
  ND
 
+CONSTANTS
+
+ DO I         1                        N
+ X  SSBRYBND  G(I)      -1.0
+ ND
+
 BOUNDS
 
  FR SSBRYBND  'DEFAULT'
@@ -208,10 +214,10 @@ GROUP USES
  I+ I+UB      I                        UB
 
  DO J         I-LB                     I-1
- ZE G(I)      Q(J)                     -KAPPA3
+ ZE G(I)      E(J)                     -KAPPA3
  OD J
 
- ZE G(I)      E(I)                     KAPPA2
+ ZE G(I)      Q(I)                     KAPPA2
 
  DO J         I+1                      I+UB
  ZE G(I)      E(J)                     -KAPPA3
