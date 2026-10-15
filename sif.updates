@@ -351,6 +351,7 @@ Corrections to problem statement:
            NYSTROM5.SIF   ORTHRDS2.SIF   ROBOTARM.SIF   SROSENBRNE.SIF
            (reverted 28/May/24 changes to NYSTROM5.SIF and ORTHRDS2.SIF;
             these belong to NYSTROM5C.SIF and ORTHRDS2C.SIF instead)
+15/Oct/26: OSBORNE2.SIF   OSBORNEB.SIF   (abscissae t_i = (i-1)/10)
 
 Changes to default sizes:
 
