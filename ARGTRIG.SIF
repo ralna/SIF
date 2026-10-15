@@ -69,6 +69,7 @@ ELEMENT TYPE
 
  EV COSINE    XJ
  EV SINCOS    XI
+ EP SINCOS    P
 
 ELEMENT USES
 
@@ -77,13 +78,14 @@ ELEMENT USES
  ZV C(I)      XJ                       X(I)
  XT SC(I)     SINCOS
  ZV SC(I)     XI                       X(I)
+ RI REALI     I
+ ZP SC(I)     P                        REALI
  ND
 
 GROUP USES
 
  DO I         1                        N
- RI REALI     I
- ZE G(I)      SC(I)                    REALI
+ XE G(I)      SC(I)
  DO J         1                        N
  XE G(I)      C(J)
  ND
@@ -125,8 +127,8 @@ INDIVIDUALS
  T  SINCOS
  A  CX                  COS( XI )
  A  SX                  SIN( XI )
- F                      CX + SX
- G  XI                  - SX + CX
- H  XI        XI        - CX - SX
+ F                      P * CX + SX
+ G  XI                  - P * SX + CX
+ H  XI        XI        - P * CX - SX
 
 ENDATA
