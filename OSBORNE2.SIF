@@ -150,7 +150,7 @@ ELEMENT USES
 
  DO I         1                        M
 
- IA I-1       I         1
+ IA I-1       I         -1
  RI RI-1      I-1
  RM TI        RI-1      0.1
 
