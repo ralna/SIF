@@ -78,8 +78,14 @@ START POINT
  IA 2I-1      2I        -1
  X  SROSENBR  X(2I)     1.0
  X  SROSENBR  X(2I-1)   1.2
+ ND
+
 * A minus sign to SROSENBR was originally in the wrong field
 * such that it would get cut off, and hence SROSENBR2.
+
+ DO I         1                        N/2
+ IM 2I        I         2
+ IA 2I-1      2I        -1
  X  SROSENBR2 X(2I)     1.0
  X  SROSENBR2 X(2I-1)   -1.2
  ND
