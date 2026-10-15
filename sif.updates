@@ -351,6 +351,7 @@ Corrections to problem statement:
            NYSTROM5.SIF   ORTHRDS2.SIF   ROBOTARM.SIF   SROSENBRNE.SIF
            (reverted 28/May/24 changes to NYSTROM5.SIF and ORTHRDS2.SIF;
             these belong to NYSTROM5C.SIF and ORTHRDS2C.SIF instead)
+15/Oct/26: KOWOSB.SIF     KOWOSBNE.SIF   (abscissa u_11 is 0.0625)
 
 Changes to default sizes:
 
@@ -409,6 +410,7 @@ Corrections to citations or comments:
            MSQRTBLS.SIF SANTA.SIF    ROSENBRTU.SIF PALMER5C.SIF PALMER5D.SIF
            PALMER7C.SIF PALMER8C.SIF
 27/Sep/26: HS113.SIF
+15/Oct/26: KOWOSB.SIF   KOWOSBNE.SIF
 
 Cosmetic changes:
 
