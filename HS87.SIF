@@ -25,6 +25,10 @@ NAME          HS87
 *      A.R. Colville, "A comparative study on nonlinear programming",
 *      IBM Scientific Center Report 320-2949, New York, 1968, problem 6.
 
+*   H+S print b = 1.48577, but their solution, and their constants
+*   d = cos(1.47588) and e = sin(1.47588) with 1.47588 = b - 0.00889,
+*   require b = 1.48477, the value given by Colville.
+
 *   SIF input: Nick Gould, August 1991.
 
 *   classification OOI2-MN-6-4
@@ -36,15 +40,15 @@ NAME          HS87
 *   problem parameters
 
  RE A                   131.078
- RE B                   1.48577        $ as quoted by H+S
+*RE B                   1.48577        $ as printed by H+S
 *RE B                   1.48477        $ as quoted by Himmelblau
-*RE B                   1.48477        $ as quoted by Colville
+ RE B                   1.48477        $ as quoted by Colville
  RE C                   0.90798
  RF D         COS       1.47588
  RF E         SIN       1.47588
- RE F                   1.48577        $ as quoted by H+S
+*RE F                   1.48577        $ as printed by H+S
 *RE F                   1.48577        $ as quoted by Himmelblau
-*RE F                   1.48477        $ as quoted by Colville
+ RE F                   1.48477        $ as quoted by Colville
 
 *   Other useful parameters
 
@@ -90,9 +94,9 @@ BOUNDS
 
 START POINT
 
-*   HS87      X1        390.0          X2        1000.0
-*   HS87      X3        419.5          X4        340.5
-*   HS87      X5        198.175        X6        0.5
+    HS87      X1        390.0          X2        1000.0
+    HS87      X3        419.5          X4        340.5
+    HS87      X5        198.175        X6        0.5
 
     HS87SOL   X1        107.8119       X2        196.3186
     HS87SOL   X3        373.8307       X4        420.0
