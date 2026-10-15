@@ -11,7 +11,7 @@ NAME          PENALTY3
 *   It has a dense Hessian matrix.
 
 *   Source:  problem 114 (p. 81) in
-*   A.R. Buckley,
+*   A.G. Buckley,
 *   "Test functions for unconstrained minimization",
 *   TR 1989CS-3, Mathematics, statistics and computing centre,
 *   Dalhousie University, Halifax (CDN), 1989.
