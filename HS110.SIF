@@ -141,9 +141,9 @@ INDIVIDUALS
  H                      2.0*(1.0 - LOGVAR)/GVAR**2
 
  T  EXP
- A  EXPVAR              -EXP(0.2*GVAR)
+ A  EXPVAR              -EXP(0.2D0*GVAR)
  F                      EXPVAR
- G                      0.2*EXPVAR
- H                      0.04*EXPVAR
+ G                      0.2D0*EXPVAR
+ H                      0.04D0*EXPVAR
 
 ENDATA
