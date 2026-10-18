@@ -7,7 +7,7 @@ NAME          HS81
 *   Problem :
 *   *******
 
-*   Source: problem 80 in
+*   Source: problem 81 in
 *   W. Hock and K. Schittkowski,
 *   "Test examples for nonlinear programming codes",
 *   Lectures Notes in Economics and Mathematical Systems 187, Springer
@@ -152,7 +152,7 @@ OBJECT BOUND
 
 *   Solution
 
-*LO SOLTN               0.539498
+*LO SOLTN               0.0539498478
 
 ENDATA
 

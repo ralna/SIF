@@ -10,7 +10,7 @@ NAME          SPMSRTLS
 *   Liu and Nocedal tridiagonal matrix square root problem.
 
 *   Source:  problem 151 (p. 93) in
-*   A.R. Buckley,
+*   A.G. Buckley,
 *   "Test functions for unconstrained minimization",
 *   TR 1989CS-3, Mathematics, statistics and computing centre,
 *   Dalhousie University, Halifax (CDN), 1989.

@@ -12,7 +12,7 @@ NAME          GENROSE
 
 *   Source: problem 5 in
 *   S. Nash,
-*   "Newton-type minimization via the Lanczos process",
+*   "Newton-type minimization via the Lanczos method",
 *   SIAM J. Num. Anal. 21, 1984, 770-788.
 
 *   SIF input: Nick Gould, Oct 1992.
