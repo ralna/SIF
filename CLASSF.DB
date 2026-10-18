@@ -59,7 +59,9 @@ ACOPR300   QOR2-AN-      738-     1722
 ACOPR57    QOR2-AN-      128-      331
 AGG        LLR2-AN-      163-      488
 AIRCRFTA   NOR2-RN-        8-        5
+AIRCRFTA2  NOR2-RN-        8-        5
 AIRCRFTB   SXR2-RN-        8-        0
+AIRCRFTB2  SXR2-RN-        8-        0
 AIRPORT    SQR2-MN-       84-       42
 AKIVA      OUR2-AN-        2-        0
 ALJAZZAF   QQR2-AN-        V-        V
@@ -428,6 +430,7 @@ DUALC8     QLR2-MN-        8-      503
 ECKERLE4   NOR2-MN-        3-       35
 ECKERLE4LS SUR2-MN-        3-        0
 EDENSCH    OUR2-AN-        V-        0
+EDENSCH2   OUR2-AN-        V-        0
 EG1        OBR2-AY-        3-        0
 EG2        OUR2-AN-     1000-        0
 EG3        OOR2-AY-        V-        V

@@ -8,12 +8,13 @@ NAME          EDENSCH
 *   *********
 
 *   The extended Dennis and Schnabel problem, as defined by Li.
+*   This version is incorrect; see EDENSCH2.SIF for the correct version
 
 *   Source:
 *   G. Li,
-*   "The secant/finite difference algorithm for solving sparse
-*   nonlinear systems of equations",
-*   SIAM Journal on Optimization, (to appear), 1990.
+*   Successive element correction algorithms for sparse unconstrained 
+*   optimization.
+*   J. Optim. Theory Appl. 77(3):523-543, 1993 (doi:10.1007/BF00940448).
 
 *   SIF input: Ph. Toint, Apr 1990.
 *              minor correction by Ph. Shott, January 1995.

@@ -12,6 +12,7 @@ NAME          BOX3
 *   J.J. More', B.S. Garbow and K.E. Hillstrom,
 *   "Testing Unconstrained Optimization Software",
 *   ACM Transactions on Mathematical Software, vol. 7(1), pp. 17-41, 1981.
+*   but starting from (0,10,1)
 
 *   See also Buckley#BOX663
 *   SIF input: Ph. Toint, Dec 1989.
@@ -60,6 +61,10 @@ START POINT
     BOX3      X1        0.0
     BOX3      X2        10.0
     BOX3      X3        1.0
+
+    BOX3ORIG  X1        1.0
+    BOX3ORIG  X2        10.0           $ original starting point
+    BOX3ORIG  X3        20.0
 
 ELEMENT TYPE
 
