@@ -13,6 +13,7 @@ NAME          BIGGS5
 *   "Test functions for unconstrained minimization",
 *   TR 1989CS-3, Mathematics, statistics and computing centre,
 *   Dalhousie University, Halifax (CDN), 1989.
+*   but starting frm a different point (the original is given as a variant)
 
 *   SIF input: Ph. Toint, Dec 1989.
 
@@ -32,7 +33,8 @@ NAME          BIGGS5
 
 *   Number of groups
 
- IE M                   13
+*IE M                   11             $-PARAMETER      original value
+ IE M                   13             $-PARAMETER
 
 *   Useful parameters
 
@@ -86,6 +88,13 @@ START POINT
     BIGGS5    X4        1.0
     BIGGS5    X5        4.0
     BIGGS5    X6        3.0
+
+    BIGGS5OR  X1        1.0
+    BIGGS5OR  X2        2.0
+    BIGGS5OR  X3        1.0
+    BIGGS5OR  X4        1.0
+    BIGGS5OR  X5        1.0
+    BIGGS5OR  X6        3.0
 
 ELEMENT TYPE
 
