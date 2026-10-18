@@ -353,6 +353,7 @@ Corrections to problem statement:
             these belong to NYSTROM5C.SIF and ORTHRDS2C.SIF instead)
 15/Oct/26: GULF.SIF       GULFNE.SIF     HS110.SIF
            (real constants in element and group functions given a D exponent)
+13/Oct/26: WATSON.SIF     WATSONNE.SIF   (second derivatives of element MWSQ)
 
 Changes to default sizes:
 
