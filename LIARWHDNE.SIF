@@ -11,9 +11,12 @@ NAME          LIARWHDNE
 
 *   Source:
 *   G. Li,
-*   "The secant/finite difference algorithm for solving sparse
-*   nonlinear systems of equations",
-*   SIAM Journal on Optimization, (to appear), 1990.
+*   Successive element correction algorithms for sparse unconstrained 
+*   optimization.
+*   J. Optim. Theory Appl. 77(3):523-543, 1993 (doi:10.1007/BF00940448).
+*
+*   specifically, an example of the "arrow-head" structure illustrated
+*   in Section 1.
 
 *   SIF input: Ph. Toint, Aug 1990.
 

@@ -1,0 +1,150 @@
+***************************
+* SET UP THE INITIAL DATA *
+***************************
+
+NAME          EDENSCH2
+
+*   Problem :
+*   *********
+
+*   The extended Dennis and Schnabel problem, as defined by Li.
+*   This version is a corrected version of EDENSCH.SIF
+
+*   Source:
+*   G. Li,
+*   Successive element correction algorithms for sparse unconstrained 
+*   optimization.
+*   J. Optim. Theory Appl. 77(3):523-543, 1993 (doi:10.1007/BF00940448).
+
+*   SIF input: Ph. Toint, Apr 1990.
+*              minor correction by Ph. Shott, January 1995.
+*              update by Tim Holy, October 2026
+
+*   classification OUR2-AN-V-0
+
+*   Number of variables (at least 2)
+
+*IE N                   36             $-PARAMETER     original value
+ IE N                   2000           $-PARAMETER
+ IE N                   36             $-PARAMETER     original value
+
+*   Constants
+
+ IE 1                   1
+
+*   Computed parameters
+
+ IA N-1       N         -1
+
+VARIABLES
+
+ DO I         1                        N
+ X  X(I)
+ ND
+
+GROUPS
+
+ DO I         1                        N-1
+ IA I+1       I         1
+ XN A(I)      X(I)      1.0
+ XN B(I)      X(I+1)    -2.0
+ XN C(I)      X(I+1)    1.0
+ ND
+
+ XN A(N)      X(N)      1.0
+
+CONSTANTS
+
+ DO I         1                        N-1
+ X  EDENSCH   A(I)      2.0
+ X  EDENSCH   C(I)      -1.0
+ ND
+
+ X  EDENSCH   A(N)      2.0
+
+BOUNDS
+
+ FR EDENSCH   'DEFAULT'
+
+START POINT
+
+ XV EDENSCH   'DEFAULT' -1.0
+
+ELEMENT TYPE
+
+ EV 2PR       X                        Y
+
+ELEMENT USES
+
+ XT 'DEFAULT' 2PR
+
+ DO I         1                        N-1
+ IA I+1       I         1
+ ZV E(I)      X                        X(I)
+ ZV E(I)      Y                        X(I+1)
+ ND
+
+GROUP TYPE
+
+ GV L2        GVAR
+ GV L4        GVAR
+
+GROUP USES
+
+ XT 'DEFAULT' L2
+
+ DO I         1                        N-1
+ XT A(I)      L4
+ XE B(I)      E(I)
+ ND
+
+ XT A(N)      L4
+
+OBJECT BOUND
+
+ LO EDENSCH             0.0
+
+*   Solution
+
+*LO SOLTN(36)           2.0873E+02
+*LO SOLTN(2000)         1.1993E+04
+
+ENDATA
+
+***********************
+* SET UP THE FUNCTION *
+* AND RANGE ROUTINES  *
+***********************
+
+ELEMENTS      EDENSCH2
+
+INDIVIDUALS
+
+ T  2PR
+ F                      X * Y
+ G  X                   Y
+ G  Y                   X
+ H  X         Y         1.0
+
+ENDATA
+
+*********************
+* SET UP THE GROUPS *
+* ROUTINE           *
+*********************
+
+GROUPS        EDENSCH2
+
+INDIVIDUALS
+
+ T  L2
+ F                      GVAR * GVAR
+ G                      GVAR + GVAR
+ H                      2.0
+
+ T  L4
+ F                      GVAR**4
+ G                      4.0 * GVAR**3
+ H                      12.0 * GVAR**2
+
+ENDATA
