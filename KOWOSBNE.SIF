@@ -16,6 +16,7 @@ NAME          KOWOSBNE
 *   J.J. More', B.S. Garbow and K.E. Hillstrom,
 *   "Testing Unconstrained Optimization Software",
 *   ACM Transactions on Mathematical Software, vol. 7(1), pp. 17-41, 1981.
+*   but with u_11 = 0.0624, not 0.0625. See KOWOSBNE2 for the correction
 
 *   SIF input: Ph. Toint, Dec 1989.
 *   Modification as a set of nonlinear equations: Nick Gould, Oct 2015.
