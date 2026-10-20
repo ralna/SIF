@@ -809,7 +809,9 @@ KIWCRESC   LQR2-AN-        3-        2
 KOEBHELB   SBR2-RN-        3-        0
 KOEBHELBNE NOR2-RN-        3-      156
 KOWOSB     SUR2-MN-        4-        0
+KOWOSB2    SUR2-MN-        4-        0
 KOWOSBNE   NOR2-MN-        4-       11
+KOWOSBNE2  NOR2-MN-        4-       11
 KSIP       QLR2-AN-       20-     1001
 KSS        NOR2-AN-        V-        V
 KSSLS      SUR2-AN-        V-        0
