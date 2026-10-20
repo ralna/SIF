@@ -15,6 +15,7 @@ NAME          ARGTRIG
 *   J.J. More', B.S. Garbow and K.E. Hillstrom,
 *   "Testing Unconstrained Optimization Software",
 *   ACM Transactions on Mathematical Software, vol. 7(1), pp. 17-41, 1981.
+*   but with sin x_i multiplied by i. See ARGTRIG2 for the correction
 
 *   SIF input: Ph. Toint, Dec 1989.
 
