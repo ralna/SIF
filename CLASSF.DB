@@ -80,7 +80,9 @@ ARGLINA    SUR2-AN-        V-        0
 ARGLINB    SUR2-AN-        V-        0
 ARGLINC    SUR2-AN-        V-        0
 ARGTRIG    NOR2-AN-        V-        V
+ARGTRIG2   NOR2-AN-        V-        V
 ARGTRIGLS  SUR2-AN-        V-        0
+ARGTRIGLS2 SUR2-AN-        V-        0
 ARTIF      NOR2-AN-        V-        V
 ARWHDNE    NOR2-AN-        V-        V
 ARWHEAD    OUR2-AN-        V-        0
