@@ -25,6 +25,9 @@ NAME          HS87
 *      A.R. Colville, "A comparative study on nonlinear programming",
 *      IBM Scientific Center Report 320-2949, New York, 1968, problem 6.
 
+*   See COLVILLE6 for the variant with Colville's B = F = 1.48477.
+*   The H+S solution (HS87SOL) is infeasible for B = F = 1.48577.
+
 *   SIF input: Nick Gould, August 1991.
 
 *   classification OOI2-MN-6-4
@@ -90,9 +93,9 @@ BOUNDS
 
 START POINT
 
-*   HS87      X1        390.0          X2        1000.0
-*   HS87      X3        419.5          X4        340.5
-*   HS87      X5        198.175        X6        0.5
+    HS87ORIG  X1        390.0          X2        1000.0
+    HS87ORIG  X3        419.5          X4        340.5          $ H+S x0
+    HS87ORIG  X5        198.175        X6        0.5
 
     HS87SOL   X1        107.8119       X2        196.3186
     HS87SOL   X3        373.8307       X4        420.0

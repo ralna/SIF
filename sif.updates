@@ -276,6 +276,9 @@ Additions:
            AIRCRFTA2.SIF ( corrrection to AIRCRFTA.SIF)
            AIRCRFTB2.SIF ( corrrection to AIRCRFTB.SIF)
 19/Oct/26: KOWOSB2.SIF    KOWOSBNE2.SIF  (corrections to KOWOSB.SIF, KOWOSBNE.SIF)
+19/Oct/26: COLVILLE6.SIF  (Colville's variant of HS87.SIF)
+19/Oct/26: COLVILLE1.SIF  COLVILLE2.SIF
+           (HS86.SIF and HS117.SIF with A2,4 = 0.4)
 
 Corrections to problem statement:
 
@@ -425,6 +428,9 @@ Corrections to citations or comments:
            AIFCRFTA.SIF AIFCRFTB.SIF EDENSCH.SIF  (report formulation errors)
            LIARWHD.SIF  LIARWHDNE.SIF  
 19/Oct/26: KOWOSB.SIF   KOWOSBNE.SIF (report formulation error)
+19/Oct/26: HS87.SIF     (add the H+S starting point as a variant;
+           point to COLVILLE6)
+19/Oct/26: HS86.SIF     HS117.SIF    (point to COLVILLE1 and COLVILLE2)
 
 Cosmetic changes:
 
