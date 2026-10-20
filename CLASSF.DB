@@ -179,7 +179,9 @@ BROYDN7D   OUR2-AN-        V-        0
 BROYDNBD   NOR2-AN-        V-        V
 BROYDNBDLS SUR2-AN-        V-        0
 BRYBND     SUR2-AN-        V-        0
+BRYBND2    SUR2-AN-        V-        0
 BRYBNDNE   NOR2-AN-        V-        V
+BRYBNDNE2  NOR2-AN-        V-        V
 BT1        QQR2-AN-        2-        1
 BT10       LOR2-AN-        2-        2
 BT11       OOR2-AY-        5-        3
@@ -1326,7 +1328,9 @@ SARO       LOR1-MN-     4754-     4015
 SAROMM     LOR1-MN-     5120-     5110
 SAWPATH    QOR2-AN-      583-      774
 SBRYBND    SUR2-AN-        V-        0
+SBRYBND2   SUR2-AN-        V-        0
 SBRYBNDNE  NOR2-AN-        V-        V
+SBRYBNDNE2 NOR2-AN-        V-        V
 SCHMVETT   OUR2-AY-        V-        0
 SCOND1LS   SBR2-AN-        V-        V
 SCOSINE    OUR2-AN-        V-        0
@@ -1381,6 +1385,8 @@ SREADIN3   OOR2-MN-        V-        V
 SROSENBR   SUR2-AN-        V-        0
 SROSENBRNE NOR2-AN-        V-        V
 SSBRYBND   SUR2-AN-        V-        0
+SSBRYBND2  SUR2-AN-        V-        0
+SSBRYBNDN2 NOR2-AN-        V-        V
 SSBRYBNDNE NOR2-AN-        V-        V
 SSC        OXR2-MY-        V-        0
 SSCOSINE   OUR2-AN-        V-        0
