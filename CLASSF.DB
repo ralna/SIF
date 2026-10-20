@@ -276,6 +276,9 @@ CMPC8      QLR2-RN-     1529-     2350
 CMPC9      QLR2-RN-     1529-     2350
 COATING    SUR2-MN-      134-        0
 COATINGNE  NOR2-MN-      134-      252
+COLVILLE6  OOI2-MN-        6-        4
+COLVILLE1  OLR2-AN-        5-       10
+COLVILLE2  OQR2-AN-       15-        5
 CONCON     LOI2-MN-       15-       11
 CONGIGMZ   LQR2-AN-        3-        5
 CONT5-QP   QLR2-MN-        V-        V
@@ -808,7 +811,9 @@ KIWCRESC   LQR2-AN-        3-        2
 KOEBHELB   SBR2-RN-        3-        0
 KOEBHELBNE NOR2-RN-        3-      156
 KOWOSB     SUR2-MN-        4-        0
+KOWOSB2    SUR2-MN-        4-        0
 KOWOSBNE   NOR2-MN-        4-       11
+KOWOSBNE2  NOR2-MN-        4-       11
 KSIP       QLR2-AN-       20-     1001
 KSS        NOR2-AN-        V-        V
 KSSLS      SUR2-AN-        V-        0
