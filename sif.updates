@@ -441,6 +441,8 @@ Corrections to citations or comments:
            point to COLVILLE6)
 19/Oct/26: HS86.SIF     HS117.SIF    (point to COLVILLE1 and COLVILLE2)
 20/Oct/26: OSBORNE2.SIF OSBORNEB.SIF (report formulation error)
+20/Oct/26: SROSENBR.SIF SROSENBRNE.SIF (add starting points SROSENBR3 and
+           SROSENBR4 that set every variable)
 
 Cosmetic changes:
 
