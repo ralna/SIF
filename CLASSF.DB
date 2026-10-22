@@ -1116,8 +1116,10 @@ ORTHRGDM   QOR2-AY-        V-        V
 ORTHRGDS   QOR2-AY-        V-        V
 OSBORNE1   NOR2-MN-        5-       33
 OSBORNE2   NOR2-MN-       11-       65
+OSBORNE3   NOR2-MN-       11-       65
 OSBORNEA   SUR2-MN-        5-        0
 OSBORNEB   SUR2-MN-       11-        0
+OSBORNEC   SUR2-MN-       11-        0
 OSCIGRAD   SUR2-AN-        V-        0
 OSCIGRNE   NOR2-AN-        V-        V
 OSCIPANE   NOR2-AN-        V-        V

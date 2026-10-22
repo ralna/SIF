@@ -284,6 +284,7 @@ Additions:
 19/Oct/26: COLVILLE6.SIF  (Colville's variant of HS87.SIF)
 19/Oct/26: COLVILLE1.SIF  COLVILLE2.SIF
            (HS86.SIF and HS117.SIF with A2,4 = 0.4)
+20/Oct/26: OSBORNE3.SIF   OSBORNEC.SIF   (corrections to OSBORNE2.SIF, OSBORNEB.SIF)
 
 Corrections to problem statement:
 
@@ -439,6 +440,7 @@ Corrections to citations or comments:
 19/Oct/26: HS87.SIF     (add the H+S starting point as a variant;
            point to COLVILLE6)
 19/Oct/26: HS86.SIF     HS117.SIF    (point to COLVILLE1 and COLVILLE2)
+20/Oct/26: OSBORNE2.SIF OSBORNEB.SIF (report formulation error)
 20/Oct/26: SROSENBR.SIF SROSENBRNE.SIF (add starting points SROSENBR3 and
            SROSENBR4 that set every variable)
 

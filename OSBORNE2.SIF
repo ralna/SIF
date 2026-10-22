@@ -17,6 +17,7 @@ NAME          OSBORNE2
 *   J.J. More', B.S. Garbow and K.E. Hillstrom,
 *   "Testing Unconstrained Optimization Software",
 *   ACM Transactions on Mathematical Software, vol. 7(1), pp. 17-41, 1981.
+*   but with t_i = (i+1)/10, not (i-1)/10. See OSBORNE3 for the correction
 
 *   See also Buckley#32 (p.78).
 
