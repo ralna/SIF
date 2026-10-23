@@ -161,7 +161,7 @@ INDIVIDUALS
 *   Trigonometric element type
 
  T  SCH2
- R  U         V1        3.14159265     V2        1.0
+ R  U         V1        3.1415926537   V2        1.0
  A  HALFU               0.5 * U
  A  SHALFU              SIN( HALFU )
  F                      - SHALFU
